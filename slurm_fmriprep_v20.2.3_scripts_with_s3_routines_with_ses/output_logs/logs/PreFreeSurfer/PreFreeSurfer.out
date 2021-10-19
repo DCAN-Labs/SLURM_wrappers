@@ -1,0 +1,241 @@
+Wed Mar 10 11:44:25 CST 2021 - PreFreeSurferPipeline.sh - Platform Information Follows: 
+Linux cn0096 3.10.0-1160.15.2.el7.x86_64 #1 SMP Wed Feb 3 15:06:38 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+Wed Mar 10 11:44:25 CST 2021 - PreFreeSurferPipeline.sh - Parsing Command Line Options
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - Finished Parsing Command Line Options
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - StudyFolder: /output_dir/sub-0015417/ses-01/files
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - Subject: 0015417
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - T1wInputImages: /bids_dir/sub-0015417/ses-01/anat/sub-0015417_ses-01_T1w.nii.gz
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - T2wInputImages: /bids_dir/sub-0015417/ses-01/anat/sub-0015417_ses-01_T2w.nii.gz
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - T1wTemplate: /opt/pipeline/global/templates/MNI152_T1_1mm.nii.gz
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - T1wTemplateBrain: /opt/pipeline/global/templates/MNI152_T1_1mm_brain.nii.gz
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - T1wTemplate2mm: /opt/pipeline/global/templates/MNI152_T1_2mm.nii.gz
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - T1wTemplate2mmBrain: 
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - T2wTemplate: /opt/pipeline/global/templates/MNI152_T2_1mm.nii.gz
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - T2wTemplateBrain: /opt/pipeline/global/templates/MNI152_T2_1mm_brain.nii.gz
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - T2wTemplate2mm: /opt/pipeline/global/templates/MNI152_T2_2mm.nii.gz
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - TemplateMask: /opt/pipeline/global/templates/MNI152_T1_1mm_brain_mask.nii.gz
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - Template2mmMask: /opt/pipeline/global/templates/MNI152_T1_2mm_brain_mask_dil.nii.gz
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - BrainSize: 150
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - FNIRTConfig: /opt/pipeline/global/config/T1_2_MNI152_2mm.cnf
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - MagnitudeInputName: NONE
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - PhaseInputName: NONE
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - GEB0InputName: NONE
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - TE: NONE
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - SpinEchoPhaseEncodeNegative: /bids_dir/sub-0015417/ses-01/fmap/sub-0015417_ses-01_dir-AP_run-01_epi.nii.gz
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - SpinEchoPhaseEncodePositive: /bids_dir/sub-0015417/ses-01/fmap/sub-0015417_ses-01_dir-PA_run-01_epi.nii.gz
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - DwellTime: 0.000580009
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - SEUnwarpDir: y-
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - T1wSampleSpacing: 0.000002237
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - T2wSampleSpacing: 0.000002237
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - UnwarpDir: z
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - GradientDistortionCoeffs: NONE
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - AvgrdcSTRING: TOPUP
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - TopupConfig: /opt/pipeline/global/config/b02b0.cnf
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - BiasFieldSmoothingSigma: 
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - UseJacobian: true
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - useT2: true
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - usemask: 
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - useStudyTemplate: false
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - FSLDIR: /opt/fsl
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - HCPPIPEDIR: /opt/pipeline
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - HCPPIPEDIR_Global: /opt/pipeline/global/scripts
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - HCPPIPEDIR_PreFS: /opt/pipeline/PreFreeSurfer/scripts
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - T1wFolder: /output_dir/sub-0015417/ses-01/files/T1w
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - T2wFolder: /output_dir/sub-0015417/ses-01/files/T2w
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - AtlasSpaceFolder: /output_dir/sub-0015417/ses-01/files/MNINonLinear
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - mkdir -p /output_dir/sub-0015417/ses-01/files/T1w/xfms/
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - mkdir -p /output_dir/sub-0015417/ses-01/files/T2w/xfms/
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - mkdir -p /output_dir/sub-0015417/ses-01/files/MNINonLinear/xfms/
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - POSIXLY_CORRECT=
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - Processing Modality:  T1w
+Wed Mar 10 11:44:26 CST 2021 - PreFreeSurferPipeline.sh - NOT PERFORMING GRADIENT DISTORTION CORRECTION
+Wed Mar 10 12:55:15 CST 2021 - PreFreeSurferPipeline.sh - Not Averaging T1w Images
+Wed Mar 10 12:55:15 CST 2021 - PreFreeSurferPipeline.sh - ONLY ONE AVERAGE FOUND: COPYING
+Wed Mar 10 12:57:31 CST 2021 - PreFreeSurferPipeline.sh - Aligning T1w image to 0.7mm MNI T1wTemplate to create native volume space
+Wed Mar 10 12:57:31 CST 2021 - PreFreeSurferPipeline.sh - mkdir -p /output_dir/sub-0015417/ses-01/files/T1w/ACPCAlignment
+ 
+ START: ACPCAlignment
+Final FOV is: 
+0.000000 208.000000 0.000000 300.000000 68.000000 188.000000 
+
+ 
+ END: ACPCAlignment
+Wed Mar 10 12:59:02 CST 2021 - PreFreeSurferPipeline.sh - Performing Brain Extraction using FNIRT-based Masking
+Wed Mar 10 12:59:02 CST 2021 - PreFreeSurferPipeline.sh - mkdir -p /output_dir/sub-0015417/ses-01/files/T1w/BrainExtraction_FNIRTbased
+ 
+ START: BrainExtraction_FNIRT
+ 
+ END: BrainExtraction_FNIRT
+Wed Mar 10 13:06:02 CST 2021 - PreFreeSurferPipeline.sh - Processing Modality:  T2w
+Wed Mar 10 13:06:02 CST 2021 - PreFreeSurferPipeline.sh - NOT PERFORMING GRADIENT DISTORTION CORRECTION
+Wed Mar 10 14:13:49 CST 2021 - PreFreeSurferPipeline.sh - Not Averaging T2w Images
+Wed Mar 10 14:13:49 CST 2021 - PreFreeSurferPipeline.sh - ONLY ONE AVERAGE FOUND: COPYING
+Wed Mar 10 14:18:03 CST 2021 - PreFreeSurferPipeline.sh - Aligning T2w image to 0.7mm MNI T2wTemplate to create native volume space
+Wed Mar 10 14:18:03 CST 2021 - PreFreeSurferPipeline.sh - mkdir -p /output_dir/sub-0015417/ses-01/files/T2w/ACPCAlignment
+ 
+ START: ACPCAlignment
+Final FOV is: 
+0.000000 208.000000 0.000000 300.000000 70.000000 188.000000 
+
+ 
+ END: ACPCAlignment
+Wed Mar 10 14:19:33 CST 2021 - PreFreeSurferPipeline.sh - Performing Brain Extraction using FNIRT-based Masking
+Wed Mar 10 14:19:33 CST 2021 - PreFreeSurferPipeline.sh - mkdir -p /output_dir/sub-0015417/ses-01/files/T2w/BrainExtraction_FNIRTbased
+ 
+ START: BrainExtraction_FNIRT
+ 
+ END: BrainExtraction_FNIRT
+Wed Mar 10 14:27:42 CST 2021 - PreFreeSurferPipeline.sh - Performing TOPUP Readout Distortion Correction
+Wed Mar 10 14:27:43 CST 2021 - PreFreeSurferPipeline.sh - mkdir -p /output_dir/sub-0015417/ses-01/files/T2w/T2wToT1wDistortionCorrectAndReg
+ 
+ START: T2WToT1wDistortionCorrectAndReg.sh
+Wed Mar 10 14:27:44 CST 2021 - TopupPreprocessingAll.sh - START: Topup Field Map Generation and Gradient Unwarping
+SSD = 1075.42	n = 88400	Reg = 0	Cost = 1075.42
+SSD = 756.811	n = 88400	Reg = 59.3918	Cost = 816.203
+SSD = 619.615	n = 88400	Reg = 102.764	Cost = 722.379
+SSD = 558.761	n = 88373	Reg = 125.127	Cost = 683.889
+SSD = 529.349	n = 88180	Reg = 137.651	Cost = 667
+SSD = 514.673	n = 88032	Reg = 144.769	Cost = 659.443
+***Going to next resolution level***
+SSD = 790.367	n = 88032	Reg = 66.9563	Cost = 857.323
+SSD = 515.827	n = 88148	Reg = 103.285	Cost = 619.112
+SSD = 416.022	n = 88266	Reg = 134.693	Cost = 550.715
+SSD = 376.092	n = 88357	Reg = 149.367	Cost = 525.459
+SSD = 357.948	n = 88396	Reg = 156.72	Cost = 514.667
+SSD = 348.962	n = 88400	Reg = 160.659	Cost = 509.621
+***Going to next resolution level***
+SSD = 814.488	n = 88400	Reg = 37.5155	Cost = 852.003
+SSD = 593.358	n = 88400	Reg = 69.5222	Cost = 662.88
+SSD = 526.814	n = 88400	Reg = 89.1406	Cost = 615.955
+SSD = 506.516	n = 88400	Reg = 96.7121	Cost = 603.228
+SSD = 498.738	n = 88400	Reg = 99.619	Cost = 598.357
+SSD = 494.988	n = 88400	Reg = 101.075	Cost = 596.062
+***Going to next resolution level***
+SSD = 754.572	n = 88400	Reg = 29.1	Cost = 783.672
+SSD = 577.262	n = 88400	Reg = 35.5381	Cost = 612.8
+SSD = 527.493	n = 88400	Reg = 49.0931	Cost = 576.586
+SSD = 514.699	n = 88400	Reg = 55.0902	Cost = 569.79
+SSD = 509.888	n = 88400	Reg = 57.4321	Cost = 567.321
+SSD = 507.602	n = 88400	Reg = 58.5305	Cost = 566.133
+***Going to next resolution level***
+SSD = 507.645	n = 88400	Reg = 19.5274	Cost = 527.173
+SSD = 490.547	n = 88400	Reg = 26.2635	Cost = 516.81
+SSD = 482.504	n = 88400	Reg = 30.7605	Cost = 513.265
+SSD = 479.942	n = 88400	Reg = 32.3841	Cost = 512.326
+SSD = 479.007	n = 88400	Reg = 32.9537	Cost = 511.96
+SSD = 478.547	n = 88400	Reg = 33.2178	Cost = 511.765
+***Going to next resolution level***
+SSD = 1024.9	n = 737418	Reg = 84.0653	Cost = 1108.97
+SSD = 993.75	n = 737418	Reg = 81.494	Cost = 1075.24
+SSD = 956.899	n = 737418	Reg = 78.4628	Cost = 1035.36
+SSD = 906.548	n = 737418	Reg = 74.366	Cost = 980.914
+SSD = 845.639	n = 737418	Reg = 69.5903	Cost = 915.229
+SSD = 811.789	n = 737418	Reg = 67.0721	Cost = 878.861
+SSD = 759.587	n = 737418	Reg = 63.5168	Cost = 823.104
+SSD = 714.287	n = 737418	Reg = 60.975	Cost = 775.262
+SSD = 684.25	n = 737418	Reg = 59.9614	Cost = 744.211
+SSD = 650.559	n = 737418	Reg = 59.5383	Cost = 710.097
+SSD = 632.012	n = 737418	Reg = 59.6731	Cost = 691.685
+***Going to next resolution level***
+SSD = 964.399	n = 737418	Reg = 16.3087	Cost = 980.707
+SSD = 951.033	n = 737418	Reg = 16.0867	Cost = 967.12
+SSD = 930.995	n = 737418	Reg = 15.7605	Cost = 946.756
+SSD = 899.322	n = 737418	Reg = 15.2613	Cost = 914.583
+SSD = 855.526	n = 737418	Reg = 14.6138	Cost = 870.14
+SSD = 830.503	n = 737418	Reg = 14.291	Cost = 844.794
+SSD = 774.49	n = 737418	Reg = 13.6105	Cost = 788.1
+SSD = 734.962	n = 737418	Reg = 13.2773	Cost = 748.24
+SSD = 690.837	n = 737418	Reg = 13.1081	Cost = 703.945
+SSD = 665.185	n = 737418	Reg = 13.2383	Cost = 678.423
+SSD = 641.051	n = 737418	Reg = 13.6061	Cost = 654.657
+***Going to next resolution level***
+SSD = 641.193	n = 737418	Reg = 0.136091	Cost = 641.329
+SSD = 637.691	n = 737418	Reg = 0.13532	Cost = 637.826
+SSD = 633.684	n = 737418	Reg = 0.134417	Cost = 633.819
+SSD = 626.716	n = 737418	Reg = 0.13286	Cost = 626.848
+SSD = 616.373	n = 737418	Reg = 0.130677	Cost = 616.503
+SSD = 605.663	n = 737418	Reg = 0.128748	Cost = 605.792
+SSD = 599.482	n = 737418	Reg = 0.127785	Cost = 599.61
+SSD = 582.986	n = 737418	Reg = 0.125898	Cost = 583.112
+SSD = 574.36	n = 737418	Reg = 0.125616	Cost = 574.486
+SSD = 559.43	n = 737418	Reg = 0.126789	Cost = 559.557
+SSD = 545.79	n = 737418	Reg = 0.129537	Cost = 545.92
+SSD = 534.326	n = 737418	Reg = 0.134337	Cost = 534.461
+SSD = 517.72	n = 737418	Reg = 0.144419	Cost = 517.864
+SSD = 509.613	n = 737418	Reg = 0.150709	Cost = 509.764
+SSD = 499.99	n = 737418	Reg = 0.160623	Cost = 500.151
+SSD = 492.945	n = 737418	Reg = 0.166919	Cost = 493.112
+SSD = 488.082	n = 737418	Reg = 0.171452	Cost = 488.253
+SSD = 481.122	n = 737418	Reg = 0.178444	Cost = 481.3
+SSD = 476.995	n = 737418	Reg = 0.181946	Cost = 477.177
+SSD = 473.802	n = 737418	Reg = 0.184357	Cost = 473.986
+SSD = 467.076	n = 737418	Reg = 0.189069	Cost = 467.265
+***Going to next resolution level***
+SSD = 467.076	n = 737418	Reg = 0.00378138	Cost = 467.079
+SSD = 465.918	n = 737418	Reg = 0.00377026	Cost = 465.922
+SSD = 464.633	n = 737418	Reg = 0.00375628	Cost = 464.637
+SSD = 462.617	n = 737418	Reg = 0.00373185	Cost = 462.621
+SSD = 459.27	n = 737418	Reg = 0.0036897	Cost = 459.274
+SSD = 455.976	n = 737418	Reg = 0.00364519	Cost = 455.979
+SSD = 452.262	n = 737418	Reg = 0.00359522	Cost = 452.265
+SSD = 447.335	n = 737418	Reg = 0.0035245	Cost = 447.338
+SSD = 441.369	n = 737418	Reg = 0.00343717	Cost = 441.372
+SSD = 436.583	n = 737418	Reg = 0.00335969	Cost = 436.586
+SSD = 432.293	n = 737418	Reg = 0.00328679	Cost = 432.296
+SSD = 429.688	n = 737418	Reg = 0.00324315	Cost = 429.691
+SSD = 426.79	n = 737418	Reg = 0.00319953	Cost = 426.794
+SSD = 424.84	n = 737418	Reg = 0.00317907	Cost = 424.843
+SSD = 423.376	n = 737418	Reg = 0.00317202	Cost = 423.379
+SSD = 421.642	n = 737418	Reg = 0.0031741	Cost = 421.645
+SSD = 420.89	n = 737418	Reg = 0.00318031	Cost = 420.894
+SSD = 419.404	n = 737418	Reg = 0.003206	Cost = 419.407
+SSD = 417.588	n = 737418	Reg = 0.00324913	Cost = 417.591
+SSD = 416.653	n = 737418	Reg = 0.0032755	Cost = 416.656
+SSD = 413.533	n = 737418	Reg = 0.00338838	Cost = 413.537
+SSD = 410.5	n = 737418	Reg = 0.00350852	Cost = 410.503
+SSD = 408.94	n = 737418	Reg = 0.00356729	Cost = 408.943
+SSD = 404.312	n = 737418	Reg = 0.00376508	Cost = 404.316
+SSD = 401.417	n = 737418	Reg = 0.00388857	Cost = 401.421
+SSD = 400.078	n = 737418	Reg = 0.00393566	Cost = 400.082
+SSD = 396.017	n = 737418	Reg = 0.00409236	Cost = 396.021
+SSD = 393.803	n = 737418	Reg = 0.00418212	Cost = 393.807
+SSD = 392.083	n = 737418	Reg = 0.00426271	Cost = 392.087
+SSD = 390.48	n = 737418	Reg = 0.00433739	Cost = 390.484
+SSD = 387.651	n = 737418	Reg = 0.00447405	Cost = 387.656
+SSD = 385.146	n = 737418	Reg = 0.00460552	Cost = 385.15
+SSD = 383.627	n = 737418	Reg = 0.00467815	Cost = 383.632
+SSD = 381.923	n = 737418	Reg = 0.00476115	Cost = 381.928
+SSD = 379.705	n = 737418	Reg = 0.00487609	Cost = 379.71
+SSD = 378.196	n = 737418	Reg = 0.00495089	Cost = 378.201
+SSD = 377.084	n = 737418	Reg = 0.00501008	Cost = 377.089
+SSD = 376.282	n = 737418	Reg = 0.00504877	Cost = 376.287
+SSD = 375.015	n = 737418	Reg = 0.00510854	Cost = 375.02
+SSD = 373.801	n = 737418	Reg = 0.00516698	Cost = 373.806
+SSD = 372.924	n = 737418	Reg = 0.00520672	Cost = 372.93
+SSD = 372.071	n = 737418	Reg = 0.00524572	Cost = 372.076
+SSD = 370.914	n = 737418	Reg = 0.00529458	Cost = 370.92
+SSD = 369.89	n = 737418	Reg = 0.00533606	Cost = 369.896
+SSD = 368.83	n = 737418	Reg = 0.00537531	Cost = 368.835
+SSD = 367.93	n = 737418	Reg = 0.00540631	Cost = 367.935
+SSD = 367.21	n = 737418	Reg = 0.00543104	Cost = 367.215
+SSD = 366.199	n = 737418	Reg = 0.00546427	Cost = 366.205
+SSD = 365.551	n = 737418	Reg = 0.00548357	Cost = 365.557
+SSD = 364.685	n = 737418	Reg = 0.00550843	Cost = 364.69
+SSD = 363.962	n = 737418	Reg = 0.00552857	Cost = 363.968
+Wed Mar 10 14:39:23 CST 2021 - TopupPreprocessingAll.sh - END: Topup Field Map Generation and Gradient Unwarping
+Running FAST segmentation
+FLIRT pre-alignment
+Running BBR
+0.271780 0.999998 -0.001927 -0.001097 0.000000 0.001928 0.999998 0.000666 0.000000 0.001096 -0.000668 0.999999 0.000000 -0.598074 -0.164584 -0.273729 1.000000 
+ 
+ END: T2WToT1wDistortionCorrectAndReg.sh
+Wed Mar 10 14:48:29 CST 2021 - PreFreeSurferPipeline.sh - Performing Bias Field Correction
+Wed Mar 10 14:48:29 CST 2021 - PreFreeSurferPipeline.sh - mkdir -p /output_dir/sub-0015417/ses-01/files/T1w/BiasFieldCorrection_sqrtT1wXT1w
+ 
+ START: BiasFieldCorrection
+0.238635
+0.975915
+.8565975
+ 
+ END: BiasFieldCorrection
+Wed Mar 10 14:49:36 CST 2021 - PreFreeSurferPipeline.sh - Completed

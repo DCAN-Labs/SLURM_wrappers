@@ -1,0 +1,1009 @@
+Thu Mar 11 03:23:04 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - Parsing Command Line Options
+Thu Mar 11 03:23:04 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - Path: /output_dir/sub-0015417/ses-01/files
+Thu Mar 11 03:23:04 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - Subject: 0015417
+Thu Mar 11 03:23:04 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - NameOffMRI: task-carit01
+Thu Mar 11 03:23:04 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - fMRITimeSeries: /bids_dir/sub-0015417/ses-01/func/sub-0015417_ses-01_task-carit_dir-AP_run-01_bold.nii.gz
+Thu Mar 11 03:23:04 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - fMRIScout: NONE
+Thu Mar 11 03:23:04 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - SpinEchoPhaseEncodeNegative: /bids_dir/sub-0015417/ses-01/fmap/sub-0015417_ses-01_dir-AP_run-01_epi.nii.gz
+Thu Mar 11 03:23:04 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - SpinEchoPhaseEncodePositive: /bids_dir/sub-0015417/ses-01/fmap/sub-0015417_ses-01_dir-PA_run-01_epi.nii.gz
+Thu Mar 11 03:23:04 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - MagnitudeInputName: NONE
+Thu Mar 11 03:23:04 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - PhaseInputName: NONE
+Thu Mar 11 03:23:04 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - GEB0InputName: NONE
+Thu Mar 11 03:23:04 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - DwellTime: 0.000580009
+Thu Mar 11 03:23:04 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - deltaTE: NONE
+Thu Mar 11 03:23:04 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - UnwarpDir: y-
+Thu Mar 11 03:23:04 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - FinalfMRIResolution: 2.0
+Thu Mar 11 03:23:05 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - DistortionCorrection: TOPUP
+Thu Mar 11 03:23:05 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - BiasCorrection: NONE
+Thu Mar 11 03:23:05 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - GradientDistortionCoeffs: NONE
+Thu Mar 11 03:23:05 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - TopupConfig: /opt/pipeline/global/config/b02b0.cnf
+Thu Mar 11 03:23:05 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - dof: 6
+Thu Mar 11 03:23:05 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - useT2: true
+Thu Mar 11 03:23:05 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - RUN: 
+Thu Mar 11 03:23:05 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - UseJacobian: 
+Thu Mar 11 03:23:05 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - JacobianDefault: true
+Thu Mar 11 03:23:05 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - After taking default value if necessary, UseJacobian: true
+Thu Mar 11 03:23:05 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - mkdir /output_dir/sub-0015417/ses-01/files/task-carit01
+Thu Mar 11 03:23:22 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - Gradient Distortion Correction of fMRI
+Thu Mar 11 03:23:22 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - NOT PERFORMING GRADIENT DISTORTION CORRECTION
+Thu Mar 11 03:24:17 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - mkdir -p /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection
+Thu Mar 11 03:24:17 CST 2021 - MotionCorrection.sh - START
+/output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection /tmp
+Thu Mar 11 03:24:17 CST 2021 - MotionCorrection.sh - Do motion correction
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0000
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0001
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0002
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0003
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0004
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0005
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0006
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0007
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0008
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0009
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0010
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0011
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0012
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0013
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0014
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0015
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0016
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0017
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0018
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0019
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0020
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0021
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0022
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0023
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0024
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0025
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0026
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0027
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0028
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0029
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0030
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0031
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0032
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0033
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0034
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0035
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0036
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0037
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0038
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0039
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0040
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0041
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0042
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0043
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0044
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0045
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0046
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0047
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0048
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0049
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0050
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0051
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0052
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0053
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0054
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0055
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0056
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0057
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0058
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0059
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0060
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0061
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0062
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0063
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0064
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0065
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0066
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0067
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0068
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0069
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0070
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0071
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0072
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0073
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0074
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0075
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0076
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0077
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0078
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0079
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0080
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0081
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0082
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0083
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0084
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0085
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0086
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0087
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0088
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0089
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0090
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0091
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0092
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0093
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0094
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0095
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0096
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0097
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0098
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0099
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0100
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0101
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0102
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0103
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0104
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0105
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0106
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0107
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0108
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0109
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0110
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0111
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0112
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0113
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0114
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0115
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0116
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0117
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0118
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0119
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0120
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0121
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0122
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0123
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0124
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0125
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0126
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0127
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0128
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0129
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0130
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0131
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0132
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0133
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0134
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0135
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0136
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0137
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0138
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0139
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0140
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0141
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0142
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0143
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0144
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0145
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0146
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0147
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0148
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0149
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0150
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0151
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0152
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0153
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0154
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0155
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0156
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0157
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0158
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0159
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0160
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0161
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0162
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0163
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0164
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0165
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0166
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0167
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0168
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0169
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0170
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0171
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0172
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0173
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0174
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0175
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0176
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0177
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0178
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0179
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0180
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0181
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0182
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0183
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0184
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0185
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0186
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0187
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0188
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0189
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0190
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0191
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0192
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0193
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0194
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0195
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0196
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0197
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0198
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0199
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0200
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0201
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0202
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0203
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0204
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0205
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0206
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0207
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0208
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0209
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0210
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0211
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0212
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0213
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0214
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0215
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0216
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0217
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0218
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0219
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0220
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0221
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0222
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0223
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0224
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0225
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0226
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0227
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0228
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0229
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0230
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0231
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0232
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0233
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0234
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0235
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0236
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0237
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0238
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0239
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0240
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0241
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0242
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0243
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0244
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0245
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0246
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0247
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0248
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0249
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0250
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0251
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0252
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0253
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0254
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0255
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0256
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0257
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0258
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0259
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0260
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0261
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0262
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0263
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0264
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0265
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0266
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0267
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0268
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0269
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0270
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0271
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0272
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0273
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0274
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0275
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0276
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0277
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0278
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0279
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0280
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0281
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0282
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0283
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0284
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0285
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0286
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0287
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0288
+processing /output_dir/sub-0015417/ses-01/files/task-carit01/MotionCorrection/task-carit01_mc.mat/MAT_0289
+Thu Mar 11 03:28:51 CST 2021 - MotionCorrection.sh - Change names of all matrices in OutputMotionMatrixFolder
+Thu Mar 11 03:28:54 CST 2021 - MotionCorrection.sh - Run the Derive function to generate appropriate regressors from the par file
+Thu Mar 11 03:29:35 CST 2021 - MotionCorrection.sh - END
+/tmp
+Thu Mar 11 03:29:35 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - EPI Distortion Correction and EPI to T1w Registration
+Thu Mar 11 03:29:35 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - mkdir -p /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased
+Thu Mar 11 03:29:40 CST 2021 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - START
+Thu Mar 11 03:29:41 CST 2021 - TopupPreprocessingAll.sh - START: Topup Field Map Generation and Gradient Unwarping
+SSD = 1075.42	n = 88400	Reg = 0	Cost = 1075.42
+SSD = 756.811	n = 88400	Reg = 59.3918	Cost = 816.203
+SSD = 619.615	n = 88400	Reg = 102.764	Cost = 722.379
+SSD = 558.761	n = 88373	Reg = 125.127	Cost = 683.889
+SSD = 529.349	n = 88180	Reg = 137.651	Cost = 667
+SSD = 514.673	n = 88032	Reg = 144.769	Cost = 659.443
+***Going to next resolution level***
+SSD = 790.367	n = 88032	Reg = 66.9563	Cost = 857.323
+SSD = 515.827	n = 88148	Reg = 103.285	Cost = 619.112
+SSD = 416.022	n = 88266	Reg = 134.693	Cost = 550.715
+SSD = 376.092	n = 88357	Reg = 149.367	Cost = 525.459
+SSD = 357.948	n = 88396	Reg = 156.72	Cost = 514.667
+SSD = 348.962	n = 88400	Reg = 160.659	Cost = 509.621
+***Going to next resolution level***
+SSD = 814.488	n = 88400	Reg = 37.5155	Cost = 852.003
+SSD = 593.358	n = 88400	Reg = 69.5222	Cost = 662.88
+SSD = 526.814	n = 88400	Reg = 89.1406	Cost = 615.955
+SSD = 506.516	n = 88400	Reg = 96.7121	Cost = 603.228
+SSD = 498.738	n = 88400	Reg = 99.619	Cost = 598.357
+SSD = 494.988	n = 88400	Reg = 101.075	Cost = 596.062
+***Going to next resolution level***
+SSD = 754.572	n = 88400	Reg = 29.1	Cost = 783.672
+SSD = 577.262	n = 88400	Reg = 35.5381	Cost = 612.8
+SSD = 527.493	n = 88400	Reg = 49.0931	Cost = 576.586
+SSD = 514.699	n = 88400	Reg = 55.0902	Cost = 569.79
+SSD = 509.888	n = 88400	Reg = 57.4321	Cost = 567.321
+SSD = 507.602	n = 88400	Reg = 58.5305	Cost = 566.133
+***Going to next resolution level***
+SSD = 507.645	n = 88400	Reg = 19.5274	Cost = 527.173
+SSD = 490.547	n = 88400	Reg = 26.2635	Cost = 516.81
+SSD = 482.504	n = 88400	Reg = 30.7605	Cost = 513.265
+SSD = 479.942	n = 88400	Reg = 32.3841	Cost = 512.326
+SSD = 479.007	n = 88400	Reg = 32.9537	Cost = 511.96
+SSD = 478.547	n = 88400	Reg = 33.2178	Cost = 511.765
+***Going to next resolution level***
+SSD = 1024.9	n = 737418	Reg = 84.0653	Cost = 1108.97
+SSD = 993.75	n = 737418	Reg = 81.494	Cost = 1075.24
+SSD = 956.899	n = 737418	Reg = 78.4628	Cost = 1035.36
+SSD = 906.548	n = 737418	Reg = 74.366	Cost = 980.914
+SSD = 845.639	n = 737418	Reg = 69.5903	Cost = 915.229
+SSD = 811.789	n = 737418	Reg = 67.0721	Cost = 878.861
+SSD = 759.587	n = 737418	Reg = 63.5168	Cost = 823.104
+SSD = 714.287	n = 737418	Reg = 60.975	Cost = 775.262
+SSD = 684.25	n = 737418	Reg = 59.9614	Cost = 744.211
+SSD = 650.559	n = 737418	Reg = 59.5383	Cost = 710.097
+SSD = 632.012	n = 737418	Reg = 59.6731	Cost = 691.685
+***Going to next resolution level***
+SSD = 964.399	n = 737418	Reg = 16.3087	Cost = 980.707
+SSD = 951.033	n = 737418	Reg = 16.0867	Cost = 967.12
+SSD = 930.995	n = 737418	Reg = 15.7605	Cost = 946.756
+SSD = 899.322	n = 737418	Reg = 15.2613	Cost = 914.583
+SSD = 855.526	n = 737418	Reg = 14.6138	Cost = 870.14
+SSD = 830.503	n = 737418	Reg = 14.291	Cost = 844.794
+SSD = 774.49	n = 737418	Reg = 13.6105	Cost = 788.1
+SSD = 734.962	n = 737418	Reg = 13.2773	Cost = 748.24
+SSD = 690.837	n = 737418	Reg = 13.1081	Cost = 703.945
+SSD = 665.185	n = 737418	Reg = 13.2383	Cost = 678.423
+SSD = 641.051	n = 737418	Reg = 13.6061	Cost = 654.657
+***Going to next resolution level***
+SSD = 641.193	n = 737418	Reg = 0.136091	Cost = 641.329
+SSD = 637.691	n = 737418	Reg = 0.13532	Cost = 637.826
+SSD = 633.684	n = 737418	Reg = 0.134417	Cost = 633.819
+SSD = 626.716	n = 737418	Reg = 0.13286	Cost = 626.848
+SSD = 616.373	n = 737418	Reg = 0.130677	Cost = 616.503
+SSD = 605.663	n = 737418	Reg = 0.128748	Cost = 605.792
+SSD = 599.482	n = 737418	Reg = 0.127785	Cost = 599.61
+SSD = 582.986	n = 737418	Reg = 0.125898	Cost = 583.112
+SSD = 574.36	n = 737418	Reg = 0.125616	Cost = 574.486
+SSD = 559.43	n = 737418	Reg = 0.126789	Cost = 559.557
+SSD = 545.79	n = 737418	Reg = 0.129537	Cost = 545.92
+SSD = 534.326	n = 737418	Reg = 0.134337	Cost = 534.461
+SSD = 517.72	n = 737418	Reg = 0.144419	Cost = 517.864
+SSD = 509.613	n = 737418	Reg = 0.150709	Cost = 509.764
+SSD = 499.99	n = 737418	Reg = 0.160623	Cost = 500.151
+SSD = 492.945	n = 737418	Reg = 0.166919	Cost = 493.112
+SSD = 488.082	n = 737418	Reg = 0.171452	Cost = 488.253
+SSD = 481.122	n = 737418	Reg = 0.178444	Cost = 481.3
+SSD = 476.995	n = 737418	Reg = 0.181946	Cost = 477.177
+SSD = 473.802	n = 737418	Reg = 0.184357	Cost = 473.986
+SSD = 467.076	n = 737418	Reg = 0.189069	Cost = 467.265
+***Going to next resolution level***
+SSD = 467.076	n = 737418	Reg = 0.00378138	Cost = 467.079
+SSD = 465.918	n = 737418	Reg = 0.00377026	Cost = 465.922
+SSD = 464.633	n = 737418	Reg = 0.00375628	Cost = 464.637
+SSD = 462.617	n = 737418	Reg = 0.00373185	Cost = 462.621
+SSD = 459.27	n = 737418	Reg = 0.0036897	Cost = 459.274
+SSD = 455.976	n = 737418	Reg = 0.00364519	Cost = 455.979
+SSD = 452.262	n = 737418	Reg = 0.00359522	Cost = 452.265
+SSD = 447.335	n = 737418	Reg = 0.0035245	Cost = 447.338
+SSD = 441.369	n = 737418	Reg = 0.00343717	Cost = 441.372
+SSD = 436.583	n = 737418	Reg = 0.00335969	Cost = 436.586
+SSD = 432.293	n = 737418	Reg = 0.00328679	Cost = 432.296
+SSD = 429.688	n = 737418	Reg = 0.00324315	Cost = 429.691
+SSD = 426.79	n = 737418	Reg = 0.00319953	Cost = 426.794
+SSD = 424.84	n = 737418	Reg = 0.00317907	Cost = 424.843
+SSD = 423.376	n = 737418	Reg = 0.00317202	Cost = 423.379
+SSD = 421.642	n = 737418	Reg = 0.0031741	Cost = 421.645
+SSD = 420.89	n = 737418	Reg = 0.00318031	Cost = 420.894
+SSD = 419.404	n = 737418	Reg = 0.003206	Cost = 419.407
+SSD = 417.588	n = 737418	Reg = 0.00324913	Cost = 417.591
+SSD = 416.653	n = 737418	Reg = 0.0032755	Cost = 416.656
+SSD = 413.533	n = 737418	Reg = 0.00338838	Cost = 413.537
+SSD = 410.5	n = 737418	Reg = 0.00350852	Cost = 410.503
+SSD = 408.94	n = 737418	Reg = 0.00356729	Cost = 408.943
+SSD = 404.312	n = 737418	Reg = 0.00376508	Cost = 404.316
+SSD = 401.417	n = 737418	Reg = 0.00388857	Cost = 401.421
+SSD = 400.078	n = 737418	Reg = 0.00393566	Cost = 400.082
+SSD = 396.017	n = 737418	Reg = 0.00409236	Cost = 396.021
+SSD = 393.803	n = 737418	Reg = 0.00418212	Cost = 393.807
+SSD = 392.083	n = 737418	Reg = 0.00426271	Cost = 392.087
+SSD = 390.48	n = 737418	Reg = 0.00433739	Cost = 390.484
+SSD = 387.651	n = 737418	Reg = 0.00447405	Cost = 387.656
+SSD = 385.146	n = 737418	Reg = 0.00460552	Cost = 385.15
+SSD = 383.627	n = 737418	Reg = 0.00467815	Cost = 383.632
+SSD = 381.923	n = 737418	Reg = 0.00476115	Cost = 381.928
+SSD = 379.705	n = 737418	Reg = 0.00487609	Cost = 379.71
+SSD = 378.196	n = 737418	Reg = 0.00495089	Cost = 378.201
+SSD = 377.084	n = 737418	Reg = 0.00501008	Cost = 377.089
+SSD = 376.282	n = 737418	Reg = 0.00504877	Cost = 376.287
+SSD = 375.015	n = 737418	Reg = 0.00510854	Cost = 375.02
+SSD = 373.801	n = 737418	Reg = 0.00516698	Cost = 373.806
+SSD = 372.924	n = 737418	Reg = 0.00520672	Cost = 372.93
+SSD = 372.071	n = 737418	Reg = 0.00524572	Cost = 372.076
+SSD = 370.914	n = 737418	Reg = 0.00529458	Cost = 370.92
+SSD = 369.89	n = 737418	Reg = 0.00533606	Cost = 369.896
+SSD = 368.83	n = 737418	Reg = 0.00537531	Cost = 368.835
+SSD = 367.93	n = 737418	Reg = 0.00540631	Cost = 367.935
+SSD = 367.21	n = 737418	Reg = 0.00543104	Cost = 367.215
+SSD = 366.199	n = 737418	Reg = 0.00546427	Cost = 366.205
+SSD = 365.551	n = 737418	Reg = 0.00548357	Cost = 365.557
+SSD = 364.685	n = 737418	Reg = 0.00550843	Cost = 364.69
+SSD = 363.962	n = 737418	Reg = 0.00552857	Cost = 363.968
+Thu Mar 11 03:41:57 CST 2021 - TopupPreprocessingAll.sh - END: Topup Field Map Generation and Gradient Unwarping
+Thu Mar 11 03:41:57 CST 2021 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - create a spline interpolated image of scout (distortion corrected in same space)
+Thu Mar 11 03:41:58 CST 2021 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - apply Jacobian correction to scout image
+Thu Mar 11 03:41:58 CST 2021 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - register undistorted scout image to T1w
+Running FAST segmentation
+FLIRT pre-alignment
+Running BBR
+0.403330 0.999993 -0.003316 0.001448 0.000000 0.003312 0.999989 0.003223 0.000000 -0.001459 -0.003218 0.999994 0.000000 -0.232464 0.985243 0.821906 1.000000 
+Thu Mar 11 03:48:28 CST 2021 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - generate combined warpfields and spline interpolated images and apply bias field correction
+Thu Mar 11 03:49:26 CST 2021 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - On to ComputeSpinEchoBiasField iff NONE = SEBASED
+Thu Mar 11 03:49:26 CST 2021 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - apply Jacobian correction to scout image
+Thu Mar 11 03:49:27 CST 2021 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - Check to see if FreeSurferNHP.sh was used
+Thu Mar 11 03:49:27 CST 2021 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - /output_dir/sub-0015417/ses-01/files/T1w/0015417_1mm does not exist. FreeSurferNHP.sh was not used.
+Thu Mar 11 03:49:27 CST 2021 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - Run Normally
+Thu Mar 11 03:49:27 CST 2021 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - Use "hidden" bbregister DOF options
+Log file is /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/EPItoT1w.dat.log
+Thu Mar 11 03:49:28 CST 2021
+
+setenv SUBJECTS_DIR /output_dir/sub-0015417/ses-01/files/T1w
+cd /tmp
+/opt/freesurfer/bin/bbregister --s 0015417 --mov /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Scout_gdc_undistorted2T1w_init.nii.gz --surf white.deformed --init-reg /output_dir/sub-0015417/ses-01/files/T1w/0015417/mri/transforms/eye.dat --bold --reg /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/EPItoT1w.dat --6 --o /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Scout_gdc_undistorted2T1w.nii.gz
+
+$Id: bbregister,v 1.49.2.3 2013/03/25 18:04:53 greve Exp $
+Linux cn0096 3.10.0-1160.15.2.el7.x86_64 #1 SMP Wed Feb 3 15:06:38 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+FREESURFER_HOME /opt/freesurfer
+mri_convert /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Scout_gdc_undistorted2T1w_init.nii.gz /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.789710/template.nii
+mri_convert /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Scout_gdc_undistorted2T1w_init.nii.gz /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.789710/template.nii 
+$Id: mri_convert.c,v 1.179.2.7 2012/09/05 21:55:16 mreuter Exp $
+reading from /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Scout_gdc_undistorted2T1w_init.nii.gz...
+TR=800.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+writing to /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.789710/template.nii...
+mri_segreg --mov /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.789710/template.nii --init-reg /output_dir/sub-0015417/ses-01/files/T1w/0015417/mri/transforms/eye.dat --out-reg /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.789710/bbr.pass1.dat --subsamp-brute 100 --subsamp 100 --tol 1e-4 --tol1d 1e-3 --brute -4 4 4 --surf white.deformed --gm-proj-frac 0.5 --gm-gt-wm 0.5
+$Id: mri_segreg.c,v 1.103.2.1 2011/10/07 19:14:42 greve Exp $
+setenv SUBJECTS_DIR /output_dir/sub-0015417/ses-01/files/T1w
+cd /tmp
+mri_segreg --mov /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.789710/template.nii --init-reg /output_dir/sub-0015417/ses-01/files/T1w/0015417/mri/transforms/eye.dat --out-reg /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.789710/bbr.pass1.dat --subsamp-brute 100 --subsamp 100 --tol 1e-4 --tol1d 1e-3 --brute -4 4 4 --surf white.deformed --gm-proj-frac 0.5 --gm-gt-wm 0.5 
+sysname  Linux
+hostname cn0096
+machine  x86_64
+user     hough129
+movvol /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.789710/template.nii
+regfile /output_dir/sub-0015417/ses-01/files/T1w/0015417/mri/transforms/eye.dat
+subject 0015417
+dof 6
+outregfile /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.789710/bbr.pass1.dat
+UseMask 0
+UseLH 1
+UseRH 1
+nsubsamp 100
+PenaltySign  -1
+PenaltySlope 0.500000
+PenaltyCenter 0.000000
+surfname white.deformed
+GMProjFrac 0.500000
+WMProjAbs 2.000000
+lhcostfile (null)
+rhcostfile (null)
+interp  trilinear (1)
+frame  0
+TolPowell 0.000100
+nMaxItersPowell 36
+n1dmin  3
+Profile   0
+Gdiag_no  -1
+AddNoise  0 (0)
+SynthSeed 1616123321
+TransRandMax 0.000000
+RotRandMax 0.000000
+Translations 0.000000 0.000000 0.000000
+Rotations   0.000000 0.000000 0.000000
+Input reg
+ 1.000   0.000   0.000   0.000;
+ 0.000   1.000   0.000   0.000;
+ 0.000   0.000   1.000   0.000;
+ 0.000   0.000   0.000   1.000;
+
+Loading mov
+Projecting LH Surfs
+Loading lh.white.deformed surf
+Loading lh.thickness for GM
+GM Proj: 1 0.500000 2.000000
+WM Proj: 0 0.500000 2.000000
+Projecting RH Surfs
+Loading rh.white.deformed surf
+Loading rh.thickness
+Projecting RH Surfs
+Computing relative cost
+ 0  -25.0 -25.0 -25.0   0.999080
+ 1  -25.0 -25.0  25.0   1.032633
+ 2  -25.0  25.0 -25.0   1.010023
+ 3  -25.0  25.0  25.0   0.979970
+ 4   25.0 -25.0 -25.0   1.002794
+ 5   25.0 -25.0  25.0   0.984236
+ 6   25.0  25.0 -25.0   0.978494
+ 7   25.0  25.0  25.0   0.998221
+REL:  8  0.411837    7.985451  0.998181 rel = 0.412587 
+Initial costs ----------------
+Number of surface hits 2896
+WM  Intensity  4450.6857 +/- 1261.4528
+Ctx Intensity  4920.0055 +/- 1506.9579
+Pct Contrast      8.6694 +/-  22.5740
+Cost   0.4118
+RelCost   0.4126
+
+------------------------------------
+Brute force preopt -4 4 4, n = 729
+     0  -4.0000  -4.0000  -4.0000  -4.0000  -4.0000  -4.0000      0.9723   0.9723  0.0
+     2  -4.0000  -4.0000  -4.0000  -4.0000  -4.0000   4.0000      0.9696   0.9696  0.0
+     3  -4.0000  -4.0000  -4.0000  -4.0000   0.0000  -4.0000      0.9680   0.9680  0.0
+     4  -4.0000  -4.0000  -4.0000  -4.0000   0.0000   0.0000      0.9642   0.9642  0.0
+     6  -4.0000  -4.0000  -4.0000  -4.0000   4.0000  -4.0000      0.9531   0.9531  0.0
+     7  -4.0000  -4.0000  -4.0000  -4.0000   4.0000   0.0000      0.9362   0.9362  0.0
+     8  -4.0000  -4.0000  -4.0000  -4.0000   4.0000   4.0000      0.9182   0.9182  0.0
+    11  -4.0000  -4.0000  -4.0000   0.0000  -4.0000   4.0000      0.9166   0.9166  0.0
+    19  -4.0000  -4.0000  -4.0000   4.0000  -4.0000   0.0000      0.9042   0.9042  0.0
+    33  -4.0000  -4.0000   0.0000  -4.0000   4.0000  -4.0000      0.8950   0.8950  0.0
+   118  -4.0000   0.0000   0.0000   0.0000  -4.0000   0.0000      0.8763   0.8763  0.0
+   275   0.0000  -4.0000   0.0000  -4.0000   0.0000   4.0000      0.8587   0.8587  0.0
+   292   0.0000  -4.0000   0.0000   4.0000   0.0000   0.0000      0.8354   0.8354  0.0
+   355   0.0000   0.0000   0.0000  -4.0000   0.0000   0.0000      0.8025   0.8025  0.0
+   363   0.0000   0.0000   0.0000   0.0000   0.0000  -4.0000      0.7519   0.7519  0.0
+   364   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000      0.4118   0.4118  0.0
+Brute Force --------------------------
+Min cost was 0.411837
+Number of iterations   729
+Search time 2.320000 sec
+Parameters at best (transmm, rotdeg)
+  0.000   0.000   0.000  0.000  0.000  0.000 
+--------------------------------------------
+
+Starting Powell Minimization
+Init Powel Params dof = 6
+0 0
+1 0
+2 0
+3 0
+4 0
+5 0
+   7  0.087  0.000  0.000  0.000  0.000  0.000   0.4110613038
+   8  0.098  0.000  0.000  0.000  0.000  0.000   0.4109716317
+  10  0.125  0.000  0.000  0.000  0.000  0.000   0.4107857333
+  12  0.128  0.000  0.000  0.000  0.000  0.000   0.4107821384
+  13  0.129  0.000  0.000  0.000  0.000  0.000   0.4107818590
+  14  0.130  0.000  0.000  0.000  0.000  0.000   0.4107817484
+  23  0.130  0.040  0.000  0.000  0.000  0.000   0.4104873210
+  34  0.130  0.040  0.046  0.000  0.000  0.000   0.4096041780
+  35  0.130  0.040  0.102  0.000  0.000  0.000   0.4088496947
+  38  0.130  0.040  0.111  0.000  0.000  0.000   0.4088115902
+  40  0.130  0.040  0.115  0.000  0.000  0.000   0.4088072537
+  49  0.130  0.040  0.115 -0.035  0.000  0.000   0.4082835703
+  51  0.130  0.040  0.115 -0.072  0.000  0.000   0.4082317902
+  52  0.130  0.040  0.115 -0.058  0.000  0.000   0.4081724529
+  54  0.130  0.040  0.115 -0.059  0.000  0.000   0.4081724142
+  63  0.130  0.040  0.115 -0.059  0.001  0.000   0.4081721821
+  72  0.130  0.040  0.115 -0.059  0.001 -0.236   0.4076825496
+  73  0.130  0.040  0.115 -0.059  0.001 -0.134   0.4070734763
+  74  0.130  0.040  0.115 -0.059  0.001 -0.135   0.4070504743
+  75  0.130  0.040  0.115 -0.059  0.001 -0.169   0.4068271561
+  76  0.130  0.040  0.115 -0.059  0.001 -0.168   0.4068228311
+  77  0.130  0.040  0.115 -0.059  0.001 -0.162   0.4068063525
+  81  0.130  0.040  0.115 -0.059  0.001 -0.161   0.4068057285
+  94  0.118  0.040  0.115 -0.059  0.001 -0.161   0.4067891653
+  95  0.121  0.040  0.115 -0.059  0.001 -0.161   0.4067842006
+  96  0.122  0.040  0.115 -0.059  0.001 -0.161   0.4067835000
+ 104  0.122  0.081  0.115 -0.059  0.001 -0.161   0.4066888757
+ 105  0.122  0.071  0.115 -0.059  0.001 -0.161   0.4066484960
+ 107  0.122  0.068  0.115 -0.059  0.001 -0.161   0.4066477672
+ 117  0.122  0.068  0.116 -0.059  0.001 -0.161   0.4066427940
+ 119  0.122  0.068  0.126 -0.059  0.001 -0.161   0.4066264924
+ 121  0.122  0.068  0.128 -0.059  0.001 -0.161   0.4066262996
+ 133  0.122  0.068  0.128 -0.062  0.001 -0.161   0.4066230561
+ 134  0.122  0.068  0.128 -0.063  0.001 -0.161   0.4066229980
+ 143  0.122  0.068  0.128 -0.063  0.037 -0.161   0.4064005159
+ 146  0.122  0.068  0.128 -0.063  0.049 -0.161   0.4063623363
+ 147  0.122  0.068  0.128 -0.063  0.051 -0.161   0.4063581778
+ 149  0.122  0.068  0.128 -0.063  0.054 -0.161   0.4063561276
+ 160  0.122  0.068  0.128 -0.063  0.054 -0.153   0.4063415245
+ 161  0.122  0.068  0.128 -0.063  0.054 -0.148   0.4063378338
+ 162  0.122  0.068  0.128 -0.063  0.054 -0.146   0.4063375873
+ 172  0.085  0.068  0.128 -0.063  0.054 -0.146   0.4061497000
+ 174  0.092  0.068  0.128 -0.063  0.054 -0.146   0.4061342813
+ 176  0.094  0.068  0.128 -0.063  0.054 -0.146   0.4061332231
+ 177  0.095  0.068  0.128 -0.063  0.054 -0.146   0.4061330985
+ 187  0.095  0.070  0.128 -0.063  0.054 -0.146   0.4061311240
+ 188  0.095  0.072  0.128 -0.063  0.054 -0.146   0.4061308295
+ 199  0.095  0.072  0.130 -0.063  0.054 -0.146   0.4061298292
+ 209  0.095  0.072  0.130 -0.059  0.054 -0.146   0.4061266809
+ 219  0.095  0.072  0.130 -0.059  0.052 -0.146   0.4061248917
+ 220  0.095  0.072  0.130 -0.059  0.050 -0.146   0.4061244470
+ 222  0.095  0.072  0.130 -0.059  0.051 -0.146   0.4061244112
+ 230  0.095  0.072  0.130 -0.059  0.051 -0.123   0.4060727046
+ 231  0.095  0.072  0.130 -0.059  0.051 -0.121   0.4060709624
+ 233  0.095  0.072  0.130 -0.059  0.051 -0.118   0.4060704057
+ 234  0.095  0.072  0.130 -0.059  0.051 -0.119   0.4060697525
+ 236  0.069  0.076  0.132 -0.056  0.047 -0.092   0.4059203856
+ 239  0.026  0.083  0.134 -0.051  0.042 -0.048   0.4058035615
+ 242  0.042  0.080  0.133 -0.053  0.044 -0.064   0.4057972983
+ 244  0.035  0.081  0.134 -0.052  0.043 -0.057   0.4057899831
+ 245  0.035  0.081  0.134 -0.052  0.043 -0.057   0.4057898681
+ 249  0.035  0.081  0.134 -0.052  0.043 -0.057   0.4057898055
+ 259  0.035  0.081  0.134 -0.052  0.043 -0.051   0.4057874002
+ 261  0.035  0.081  0.134 -0.052  0.043 -0.053   0.4057872657
+ 269  0.035  0.110  0.134 -0.052  0.043 -0.053   0.4056735343
+ 272  0.035  0.109  0.134 -0.052  0.043 -0.053   0.4056727248
+ 286  0.035  0.109  0.135 -0.052  0.043 -0.053   0.4056725125
+ 296  0.035  0.109  0.135 -0.061  0.043 -0.053   0.4056459324
+ 297  0.035  0.109  0.135 -0.063  0.043 -0.053   0.4056449709
+ 306  0.035  0.109  0.135 -0.063  0.038 -0.053   0.4056285824
+ 308  0.035  0.109  0.135 -0.063  0.035 -0.053   0.4056263179
+ 312  0.008  0.113  0.136 -0.060  0.031 -0.026   0.4055451019
+ 317  0.000  0.114  0.137 -0.059  0.030 -0.017   0.4055413999
+ 318  0.000  0.114  0.137 -0.059  0.030 -0.017   0.4055413069
+ 357  0.000  0.114  0.135 -0.059  0.030 -0.017   0.4055380654
+ 358  0.000  0.114  0.133 -0.059  0.030 -0.017   0.4055379926
+ 369  0.000  0.114  0.133 -0.062  0.030 -0.017   0.4055355879
+ 379  0.000  0.114  0.133 -0.062  0.021 -0.017   0.4054803347
+ 380  0.000  0.114  0.133 -0.062  0.014 -0.017   0.4054769267
+ 381  0.000  0.114  0.133 -0.062  0.017 -0.017   0.4054737235
+ 390  0.001  0.114  0.133 -0.062  0.017 -0.019   0.4054721481
+ 392  0.002  0.114  0.133 -0.062  0.017 -0.019   0.4054721135
+ 393  0.002  0.114  0.133 -0.062  0.017 -0.019   0.4054718510
+ 398  0.002  0.114  0.133 -0.062  0.017 -0.019   0.4054717639
+ 408  0.002  0.114  0.133 -0.062  0.017 -0.025   0.4054695781
+ 442  0.002  0.114  0.133 -0.061  0.017 -0.025   0.4054691848
+ 453  0.002  0.114  0.133 -0.061  0.016 -0.025   0.4054679889
+Powell done niters = 5
+Computing relative cost
+ 0  -25.0 -25.0 -25.0   1.001012
+ 1  -25.0 -25.0  25.0   1.029042
+ 2  -25.0  25.0 -25.0   1.015008
+ 3  -25.0  25.0  25.0   0.986430
+ 4   25.0 -25.0 -25.0   0.999183
+ 5   25.0 -25.0  25.0   0.991667
+ 6   25.0  25.0 -25.0   0.981875
+ 7   25.0  25.0  25.0   0.994235
+REL:  8  0.405468    7.998453  0.999807 rel = 0.405546 
+Number of iterations     5
+Min cost was 0.405468
+Number of FunctionCalls   470
+TolPowell 0.000100
+nMaxItersPowell 36
+OptimizationTime 1.399000 sec
+Parameters at optimum (transmm)  0.00172  0.11423  0.13298
+Parameters at optimum (rotdeg) -0.06057  0.01604 -0.02470 
+Final costs ----------------
+Number of surface hits 2896
+WM  Intensity  4454.8812 +/- 1258.9756
+Ctx Intensity  4923.3227 +/- 1500.8881
+Pct Contrast      8.6848 +/-  22.5108
+Cost   0.4055
+RelCost   0.4126
+Reg at min cost was 
+ 1.000   0.000   0.000   0.002;
+-0.000   1.000   0.001   0.114;
+-0.000  -0.001   1.000   0.133;
+ 0.000   0.000   0.000   1.000;
+
+Writing optimal reg to /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.789710/bbr.pass1.dat, type = 14 
+Original Reg 
+ 1.000   0.000   0.000   0.000;
+ 0.000   1.000   0.000   0.000;
+ 0.000   0.000   1.000   0.000;
+ 0.000   0.000   0.000   1.000;
+
+Original Reg - Optimal Reg
+ 0.000  -0.000  -0.000  -0.002;
+ 0.000   0.000  -0.001  -0.114;
+ 0.000   0.001   0.000  -0.133;
+ 0.000   0.000   0.000   0.000;
+
+Computing change in lh position
+LH rmsDiffMean 0.201504
+Computing change in rh position
+Surface RMS Diff (mm) 0.188224 0.266035
+mri_segreg done
+mri_segreg --mov /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.789710/template.nii --init-reg /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.789710/bbr.pass1.dat --out-reg /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/EPItoT1w.dat --brute -0.1 0.1 0.1 --interp trilinear --wm-proj-abs 2 --tol 1e-8 --tol1d 1e-3 --c0 0 --mincost /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/EPItoT1w.dat.mincost --dof 6 --nmax 36 --param /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/EPItoT1w.dat.param --surf white.deformed --cur-reg /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.789710/reg.curopt.dat --gm-proj-frac 0.5 --nsub 1 --o /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Scout_gdc_undistorted2T1w.nii.gz --gm-gt-wm 0.5
+$Id: mri_segreg.c,v 1.103.2.1 2011/10/07 19:14:42 greve Exp $
+setenv SUBJECTS_DIR /output_dir/sub-0015417/ses-01/files/T1w
+cd /tmp
+mri_segreg --mov /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.789710/template.nii --init-reg /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.789710/bbr.pass1.dat --out-reg /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/EPItoT1w.dat --brute -0.1 0.1 0.1 --interp trilinear --wm-proj-abs 2 --tol 1e-8 --tol1d 1e-3 --c0 0 --mincost /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/EPItoT1w.dat.mincost --dof 6 --nmax 36 --param /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/EPItoT1w.dat.param --surf white.deformed --cur-reg /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.789710/reg.curopt.dat --gm-proj-frac 0.5 --nsub 1 --o /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Scout_gdc_undistorted2T1w.nii.gz --gm-gt-wm 0.5 
+sysname  Linux
+hostname cn0096
+machine  x86_64
+user     hough129
+movvol /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.789710/template.nii
+regfile /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.789710/bbr.pass1.dat
+subject 0015417
+dof 6
+outregfile /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/EPItoT1w.dat
+outfile /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Scout_gdc_undistorted2T1w.nii.gz
+UseMask 0
+UseLH 1
+UseRH 1
+nsubsamp 1
+PenaltySign  -1
+PenaltySlope 0.500000
+PenaltyCenter 0.000000
+surfname white.deformed
+GMProjFrac 0.500000
+WMProjAbs 2.000000
+lhcostfile (null)
+rhcostfile (null)
+interp  trilinear (1)
+frame  0
+TolPowell 0.000000
+nMaxItersPowell 36
+n1dmin  3
+Profile   0
+Gdiag_no  -1
+AddNoise  0 (0)
+SynthSeed 1616095864
+TransRandMax 0.000000
+RotRandMax 0.000000
+Translations 0.000000 0.000000 0.000000
+Rotations   0.000000 0.000000 0.000000
+Input reg
+ 1.000   0.000   0.000   0.002;
+-0.000   1.000   0.001   0.114;
+-0.000  -0.001   1.000   0.133;
+ 0.000   0.000   0.000   1.000;
+
+Loading mov
+Projecting LH Surfs
+Loading lh.white.deformed surf
+Loading lh.thickness for GM
+GM Proj: 1 0.500000 2.000000
+WM Proj: 0 0.500000 2.000000
+Projecting RH Surfs
+Loading rh.white.deformed surf
+Loading rh.thickness
+Projecting RH Surfs
+Computing relative cost
+ 0  -25.0 -25.0 -25.0   0.996748
+ 1  -25.0 -25.0  25.0   1.015396
+ 2  -25.0  25.0 -25.0   1.005067
+ 3  -25.0  25.0  25.0   0.973853
+ 4   25.0 -25.0 -25.0   0.997926
+ 5   25.0 -25.0  25.0   0.990860
+ 6   25.0  25.0 -25.0   0.974236
+ 7   25.0  25.0  25.0   0.986561
+REL:  8  0.406836    7.940648  0.992581 rel = 0.409877 
+Initial costs ----------------
+Number of surface hits 290119
+WM  Intensity  4468.3202 +/- 1281.8291
+Ctx Intensity  4943.9090 +/- 1495.3693
+Pct Contrast      9.0441 +/-  22.0844
+Cost   0.4068
+RelCost   0.4099
+
+------------------------------------
+Brute force preopt -0.1 0.1 0.1, n = 729
+     0  -0.1000  -0.1000  -0.1000  -0.1000  -0.1000  -0.1000      0.4093   0.4093  0.0
+     3  -0.1000  -0.1000  -0.1000  -0.1000   0.0000  -0.1000      0.4091   0.4091  0.0
+     4  -0.1000  -0.1000  -0.1000  -0.1000   0.0000   0.0000      0.4090   0.4090  0.0
+    27  -0.1000  -0.1000   0.0000  -0.1000  -0.1000  -0.1000      0.4080   0.4080  0.0
+    81  -0.1000   0.0000  -0.1000  -0.1000  -0.1000  -0.1000      0.4075   0.4075  0.0
+    82  -0.1000   0.0000  -0.1000  -0.1000  -0.1000   0.0000      0.4074   0.4074  0.0
+    85  -0.1000   0.0000  -0.1000  -0.1000   0.0000   0.0000      0.4072   0.4072  0.0
+    94  -0.1000   0.0000  -0.1000   0.0000   0.0000   0.0000      0.4072   0.4072  0.0
+    95  -0.1000   0.0000  -0.1000   0.0000   0.0000   0.1000      0.4071   0.4071  0.0
+   108  -0.1000   0.0000   0.0000  -0.1000  -0.1000  -0.1000      0.4068   0.4068  0.0
+   112  -0.1000   0.0000   0.0000  -0.1000   0.0000   0.0000      0.4068   0.4068  0.0
+   117  -0.1000   0.0000   0.0000   0.0000  -0.1000  -0.1000      0.4066   0.4066  0.0
+   163  -0.1000   0.1000  -0.1000  -0.1000  -0.1000   0.0000      0.4059   0.4059  0.0
+   364   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000      0.4055   0.4055  0.0
+Brute Force --------------------------
+Min cost was 0.405468
+Number of iterations   729
+Search time 2.299000 sec
+Parameters at best (transmm, rotdeg)
+  0.000   0.000   0.000  0.000  0.000  0.000 
+--------------------------------------------
+
+Starting Powell Minimization
+Init Powel Params dof = 6
+0 0
+1 0
+2 0
+3 0
+4 0
+5 0
+   7  0.011  0.000  0.000  0.000  0.000  0.000   0.4068278405
+   8  0.010  0.000  0.000  0.000  0.000  0.000   0.4068277631
+  16  0.010 -0.055  0.000  0.000  0.000  0.000   0.4066395289
+  17  0.010 -0.046  0.000  0.000  0.000  0.000   0.4066347973
+  18  0.010 -0.048  0.000  0.000  0.000  0.000   0.4066347175
+  26  0.010 -0.048 -0.073  0.000  0.000  0.000   0.4061009062
+  28  0.010 -0.048 -0.077  0.000  0.000  0.000   0.4060994942
+  37  0.010 -0.048 -0.077  0.108  0.000  0.000   0.4056267567
+  39  0.010 -0.048 -0.077  0.103  0.000  0.000   0.4056255143
+  40  0.010 -0.048 -0.077  0.104  0.000  0.000   0.4056254801
+  48  0.010 -0.048 -0.077  0.104  0.013  0.000   0.4056148287
+  49  0.010 -0.048 -0.077  0.104  0.012  0.000   0.4056147304
+  57  0.010 -0.048 -0.077  0.104  0.012  0.007   0.4056085778
+  58  0.010 -0.048 -0.077  0.104  0.012  0.014   0.4056061915
+  61  0.010 -0.048 -0.077  0.104  0.012  0.015   0.4056059940
+  69  0.014 -0.048 -0.077  0.104  0.012  0.015   0.4055978855
+  70  0.023 -0.048 -0.077  0.104  0.012  0.015   0.4055891591
+  71  0.024 -0.048 -0.077  0.104  0.012  0.015   0.4055890621
+  72  0.025 -0.048 -0.077  0.104  0.012  0.015   0.4055890620
+  80  0.025 -0.052 -0.077  0.104  0.012  0.015   0.4055802440
+  81  0.025 -0.062 -0.077  0.104  0.012  0.015   0.4055694346
+  82  0.025 -0.064 -0.077  0.104  0.012  0.015   0.4055688112
+  83  0.025 -0.067 -0.077  0.104  0.012  0.015   0.4055682686
+  93  0.025 -0.068 -0.093  0.104  0.012  0.015   0.4055339826
+  94  0.025 -0.068 -0.098  0.104  0.012  0.015   0.4055331175
+  95  0.025 -0.068 -0.096  0.104  0.012  0.015   0.4055328941
+ 104  0.025 -0.068 -0.096  0.101  0.012  0.015   0.4055328185
+ 106  0.025 -0.068 -0.096  0.102  0.012  0.015   0.4055327606
+ 115  0.025 -0.068 -0.096  0.102  0.022  0.015   0.4055254449
+ 116  0.025 -0.068 -0.096  0.102  0.021  0.015   0.4055253772
+ 125  0.025 -0.068 -0.096  0.102  0.021  0.018   0.4055250709
+ 136  0.027 -0.068 -0.096  0.102  0.021  0.018   0.4055248873
+ 145  0.027 -0.064 -0.096  0.102  0.021  0.018   0.4055237451
+ 146  0.027 -0.065 -0.096  0.102  0.021  0.018   0.4055236679
+ 164  0.027 -0.065 -0.096  0.100  0.021  0.018   0.4055235729
+ 174  0.027 -0.065 -0.096  0.100  0.020  0.018   0.4055235647
+ 184  0.027 -0.065 -0.096  0.100  0.020  0.017   0.4055235448
+ 192  0.027 -0.063 -0.096  0.099  0.019  0.017   0.4055234146
+ 194  0.027 -0.063 -0.096  0.099  0.019  0.017   0.4055233947
+ 195  0.027 -0.063 -0.096  0.099  0.019  0.017   0.4055233917
+ 204  0.028 -0.063 -0.096  0.099  0.019  0.017   0.4055233528
+ 231  0.028 -0.063 -0.096  0.100  0.019  0.017   0.4055232388
+ 240  0.028 -0.063 -0.096  0.100  0.021  0.017   0.4055231971
+ 298  0.028 -0.063 -0.096  0.100  0.020  0.017   0.4055231321
+ 306  0.028 -0.064 -0.096  0.100  0.020  0.017   0.4055231272
+ 368  0.028 -0.063 -0.096  0.100  0.020  0.017   0.4055231190
+Powell done niters = 5
+Computing relative cost
+ 0  -25.0 -25.0 -25.0   0.997423
+ 1  -25.0 -25.0  25.0   1.016315
+ 2  -25.0  25.0 -25.0   1.005176
+ 3  -25.0  25.0  25.0   0.972986
+ 4   25.0 -25.0 -25.0   0.997826
+ 5   25.0 -25.0  25.0   0.991756
+ 6   25.0  25.0 -25.0   0.973890
+ 7   25.0  25.0  25.0   0.985790
+REL:  8  0.405523    7.941162  0.992645 rel = 0.408528 
+Number of iterations     5
+Min cost was 0.405523
+Number of FunctionCalls   379
+TolPowell 0.000000
+nMaxItersPowell 36
+OptimizationTime 40.950000 sec
+Parameters at optimum (transmm)  0.02813 -0.06349 -0.09597
+Parameters at optimum (rotdeg)  0.10013  0.02027  0.01668 
+Final costs ----------------
+Number of surface hits 290119
+WM  Intensity  4467.2127 +/- 1284.0149
+Ctx Intensity  4943.7356 +/- 1499.8255
+Pct Contrast      9.0598 +/-  22.0306
+Cost   0.4055
+RelCost   0.4099
+Reg at min cost was 
+ 1.000   0.000   0.001   0.030;
+-0.000   1.000  -0.001   0.051;
+-0.001   0.001   1.000   0.037;
+ 0.000   0.000   0.000   1.000;
+
+Writing optimal reg to /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/EPItoT1w.dat, type = 14 
+Writing output volume to /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Scout_gdc_undistorted2T1w.nii.gz 
+Original Reg 
+ 1.000   0.000   0.000   0.002;
+-0.000   1.000   0.001   0.114;
+-0.000  -0.001   1.000   0.133;
+ 0.000   0.000   0.000   1.000;
+
+Original Reg - Optimal Reg
+ 0.000   0.000  -0.000  -0.028;
+-0.000  -0.000   0.002   0.064;
+ 0.000  -0.002  -0.000   0.096;
+ 0.000   0.000   0.000   0.000;
+
+Computing change in lh position
+LH rmsDiffMean 0.145903
+Computing change in rh position
+Surface RMS Diff (mm) 0.149652 0.258842
+mri_segreg done
+Cleaning up
+ 
+Started at Thu Mar 11 03:49:27 CST 2021 
+Ended   at Thu Mar 11 03:50:38 CST 2021
+BBR-Run-Time-Sec 69
+ 
+bbregister Done
+To check results, run:
+tkregister2 --mov /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Scout_gdc_undistorted2T1w_init.nii.gz --reg /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/EPItoT1w.dat --surf
+ 
+Thu Mar 11 03:50:38 CST 2021 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - Create FSL-style matrix and then combine with existing warp fields
+tkregister_tcl /opt/freesurfer/tktools/tkregister2.tcl
+target  volume /output_dir/sub-0015417/ses-01/files/T1w/T1w_acpc_dc.nii.gz
+movable volume /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Scout_gdc_undistorted2T1w_init.nii.gz
+reg file       /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/EPItoT1w.dat
+LoadVol        0
+ZeroCRAS       0
+$Id: tkregister2.c,v 1.121.2.1 2011/03/28 20:25:16 greve Exp $
+Diagnostic Level -1
+---- Input registration matrix --------
+ 1.000   0.000   0.001   0.030;
+-0.000   1.000  -0.001   0.051;
+-0.001   0.001   1.000   0.037;
+ 0.000   0.000   0.000   1.000;
+float2int = 0
+---------------------------------------
+INFO: loading target /output_dir/sub-0015417/ses-01/files/T1w/T1w_acpc_dc.nii.gz
+INFO: target does not conform to COR format, so I'm going to
+reslice to COR. This will not affect the final registration.
+Ttarg: --------------------
+-1.000   0.000   0.000   128.000;
+ 0.000   0.000   1.000  -128.000;
+ 0.000  -1.000   0.000   128.000;
+ 0.000   0.000   0.000   1.000;
+INFO: loading movable /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Scout_gdc_undistorted2T1w_init.nii.gz
+Tmov: --------------------
+-1.000   0.000   0.000   91.000;
+ 0.000   0.000   1.000  -91.000;
+ 0.000  -1.000   0.000   109.000;
+ 0.000   0.000   0.000   1.000;
+mkheaderreg = 0, float2int = 0
+---- Input registration matrix --------
+ 1.000  -0.001   0.000   0.030;
+-0.000   0.001   1.000   0.051;
+-0.001  -1.000   0.001   0.037;
+ 0.000   0.000   0.000   1.000;
+Determinant 1
+subject = 0015417
+RegMat ---------------------------
+ 1.000   0.000   0.001   0.030;
+-0.000   1.000  -0.001   0.051;
+-0.001   0.001   1.000   0.037;
+ 0.000   0.000   0.000   1.000;
+FSLOUTPUTTYPE NIFTI_GZ 
+tkreg2FSL: mov det = -1, ref det = -1
+Thu Mar 11 03:51:23 CST 2021 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - Create warped image with spline interpolation, bias correction and (optional) Jacobian modulation
+Thu Mar 11 03:51:37 CST 2021 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - applying Jacobian modulation
+Thu Mar 11 03:51:39 CST 2021 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - cp /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Scout_gdc_undistorted2T1w.nii.gz /output_dir/sub-0015417/ses-01/files/task-carit01/Scout2T1w.nii.gz
+Thu Mar 11 03:51:39 CST 2021 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - cp /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/fMRI2str.nii.gz /output_dir/sub-0015417/ses-01/files/T1w/xfms/task-carit012str.nii.gz
+Thu Mar 11 03:51:39 CST 2021 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - cp /output_dir/sub-0015417/ses-01/files/task-carit01/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Jacobian2T1w.nii.gz /output_dir/sub-0015417/ses-01/files/task-carit01/Jacobian.nii.gz
+Thu Mar 11 03:51:39 CST 2021 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - generating QA image (sqrt of EPI * T1w)
+Thu Mar 11 03:51:43 CST 2021 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - END
+Thu Mar 11 03:51:43 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - One Step Resampling
+Thu Mar 11 03:51:43 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - mkdir -p /output_dir/sub-0015417/ses-01/files/task-carit01/OneStepResampling
+ 
+ START: OneStepResampling

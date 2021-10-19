@@ -1,0 +1,576 @@
+Thu Mar 11 04:12:31 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - Parsing Command Line Options
+Thu Mar 11 04:12:31 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - Path: /output_dir/sub-0015417/ses-01/files
+Thu Mar 11 04:12:31 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - Subject: 0015417
+Thu Mar 11 04:12:31 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - NameOffMRI: task-rest04
+Thu Mar 11 04:12:31 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - fMRITimeSeries: /bids_dir/sub-0015417/ses-01/func/sub-0015417_ses-01_task-rest_dir-PA_run-04_bold.nii.gz
+Thu Mar 11 04:12:31 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - fMRIScout: NONE
+Thu Mar 11 04:12:31 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - SpinEchoPhaseEncodeNegative: /bids_dir/sub-0015417/ses-01/fmap/sub-0015417_ses-01_dir-AP_run-01_epi.nii.gz
+Thu Mar 11 04:12:31 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - SpinEchoPhaseEncodePositive: /bids_dir/sub-0015417/ses-01/fmap/sub-0015417_ses-01_dir-PA_run-01_epi.nii.gz
+Thu Mar 11 04:12:31 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - MagnitudeInputName: NONE
+Thu Mar 11 04:12:31 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - PhaseInputName: NONE
+Thu Mar 11 04:12:31 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - GEB0InputName: NONE
+Thu Mar 11 04:12:31 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - DwellTime: 0.000580009
+Thu Mar 11 04:12:31 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - deltaTE: NONE
+Thu Mar 11 04:12:31 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - UnwarpDir: y
+Thu Mar 11 04:12:32 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - FinalfMRIResolution: 2.0
+Thu Mar 11 04:12:32 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - DistortionCorrection: TOPUP
+Thu Mar 11 04:12:32 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - BiasCorrection: NONE
+Thu Mar 11 04:12:32 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - GradientDistortionCoeffs: NONE
+Thu Mar 11 04:12:33 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - TopupConfig: /opt/pipeline/global/config/b02b0.cnf
+Thu Mar 11 04:12:33 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - dof: 6
+Thu Mar 11 04:12:33 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - useT2: true
+Thu Mar 11 04:12:34 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - RUN: 
+Thu Mar 11 04:12:34 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - UseJacobian: 
+Thu Mar 11 04:12:34 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - JacobianDefault: true
+Thu Mar 11 04:12:34 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - After taking default value if necessary, UseJacobian: true
+Thu Mar 11 04:12:34 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - mkdir /output_dir/sub-0015417/ses-01/files/task-rest04
+Thu Mar 11 04:12:48 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - Gradient Distortion Correction of fMRI
+Thu Mar 11 04:12:48 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - NOT PERFORMING GRADIENT DISTORTION CORRECTION
+Thu Mar 11 04:13:00 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - mkdir -p /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection
+Thu Mar 11 04:13:00 CST 2021 - MotionCorrection.sh - START
+/output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection /tmp
+Thu Mar 11 04:13:00 CST 2021 - MotionCorrection.sh - Do motion correction
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0000
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0001
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0002
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0003
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0004
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0005
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0006
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0007
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0008
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0009
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0010
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0011
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0012
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0013
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0014
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0015
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0016
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0017
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0018
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0019
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0020
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0021
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0022
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0023
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0024
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0025
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0026
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0027
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0028
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0029
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0030
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0031
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0032
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0033
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0034
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0035
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0036
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0037
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0038
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0039
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0040
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0041
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0042
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0043
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0044
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0045
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0046
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0047
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0048
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0049
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0050
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0051
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0052
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0053
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0054
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0055
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0056
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0057
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0058
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0059
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0060
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0061
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0062
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0063
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0064
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0065
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0066
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0067
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0068
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0069
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0070
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0071
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0072
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0073
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0074
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0075
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0076
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0077
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0078
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0079
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0080
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0081
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0082
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0083
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0084
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0085
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0086
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0087
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0088
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0089
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0090
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0091
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0092
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0093
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0094
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0095
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0096
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0097
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0098
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0099
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0100
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0101
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0102
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0103
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0104
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0105
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0106
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0107
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0108
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0109
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0110
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0111
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0112
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0113
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0114
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0115
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0116
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0117
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0118
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0119
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0120
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0121
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0122
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0123
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0124
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0125
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0126
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0127
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0128
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0129
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0130
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0131
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0132
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0133
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0134
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0135
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0136
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0137
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0138
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0139
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0140
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0141
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0142
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0143
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0144
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0145
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0146
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0147
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0148
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0149
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0150
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0151
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0152
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0153
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0154
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0155
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0156
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0157
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0158
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0159
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0160
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0161
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0162
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0163
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0164
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0165
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0166
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0167
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0168
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0169
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0170
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0171
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0172
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0173
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0174
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0175
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0176
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0177
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0178
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0179
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0180
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0181
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0182
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0183
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0184
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0185
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0186
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0187
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0188
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0189
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0190
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0191
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0192
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0193
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0194
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0195
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0196
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0197
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0198
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0199
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0200
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0201
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0202
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0203
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0204
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0205
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0206
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0207
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0208
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0209
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0210
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0211
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0212
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0213
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0214
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0215
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0216
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0217
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0218
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0219
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0220
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0221
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0222
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0223
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0224
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0225
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0226
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0227
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0228
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0229
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0230
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0231
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0232
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0233
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0234
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0235
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0236
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0237
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0238
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0239
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0240
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0241
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0242
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0243
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0244
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0245
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0246
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0247
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0248
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0249
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0250
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0251
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0252
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0253
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0254
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0255
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0256
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0257
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0258
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0259
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0260
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0261
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0262
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0263
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0264
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0265
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0266
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0267
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0268
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0269
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0270
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0271
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0272
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0273
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0274
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0275
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0276
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0277
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0278
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0279
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0280
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0281
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0282
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0283
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0284
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0285
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0286
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0287
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0288
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0289
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0290
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0291
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0292
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0293
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0294
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0295
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0296
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0297
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0298
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0299
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0300
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0301
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0302
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0303
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0304
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0305
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0306
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0307
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0308
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0309
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0310
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0311
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0312
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0313
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0314
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0315
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0316
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0317
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0318
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0319
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0320
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0321
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0322
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0323
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0324
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0325
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0326
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0327
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0328
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0329
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0330
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0331
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0332
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0333
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0334
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0335
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0336
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0337
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0338
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0339
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0340
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0341
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0342
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0343
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0344
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0345
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0346
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0347
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0348
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0349
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0350
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0351
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0352
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0353
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0354
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0355
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0356
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0357
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0358
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0359
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0360
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0361
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0362
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0363
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0364
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0365
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0366
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0367
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0368
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0369
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0370
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0371
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0372
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0373
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0374
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0375
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0376
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0377
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0378
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0379
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0380
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0381
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0382
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0383
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0384
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0385
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0386
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0387
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0388
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0389
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0390
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0391
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0392
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0393
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0394
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0395
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0396
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0397
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0398
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0399
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0400
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0401
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0402
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0403
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0404
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0405
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0406
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0407
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0408
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0409
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0410
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0411
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0412
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0413
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0414
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0415
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0416
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0417
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0418
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0419
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0420
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0421
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0422
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0423
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0424
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0425
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0426
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0427
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0428
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0429
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0430
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0431
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0432
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0433
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0434
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0435
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0436
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0437
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0438
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0439
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0440
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0441
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0442
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0443
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0444
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0445
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0446
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0447
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0448
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0449
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0450
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0451
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0452
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0453
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0454
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0455
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0456
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0457
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0458
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0459
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0460
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0461
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0462
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0463
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0464
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0465
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0466
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0467
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0468
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0469
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0470
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0471
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0472
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0473
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0474
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0475
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0476
+processing /output_dir/sub-0015417/ses-01/files/task-rest04/MotionCorrection/task-rest04_mc.mat/MAT_0477
+Thu Mar 11 04:22:07 CST 2021 - MotionCorrection.sh - Change names of all matrices in OutputMotionMatrixFolder
+Thu Mar 11 04:22:21 CST 2021 - MotionCorrection.sh - Run the Derive function to generate appropriate regressors from the par file
+Thu Mar 11 04:23:56 CST 2021 - MotionCorrection.sh - END
+/tmp
+Thu Mar 11 04:23:56 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - EPI Distortion Correction and EPI to T1w Registration
+Thu Mar 11 04:23:56 CST 2021 - GenericfMRIVolumeProcessingPipeline.sh - mkdir -p /output_dir/sub-0015417/ses-01/files/task-rest04/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased
+Thu Mar 11 04:23:58 CST 2021 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - START
+Thu Mar 11 04:23:59 CST 2021 - TopupPreprocessingAll.sh - START: Topup Field Map Generation and Gradient Unwarping
+SSD = 1075.42	n = 88400	Reg = 0	Cost = 1075.42
+SSD = 756.811	n = 88400	Reg = 59.3918	Cost = 816.203
+SSD = 619.615	n = 88400	Reg = 102.764	Cost = 722.379
+SSD = 558.761	n = 88373	Reg = 125.127	Cost = 683.889
+SSD = 529.349	n = 88180	Reg = 137.651	Cost = 667
+SSD = 514.673	n = 88032	Reg = 144.769	Cost = 659.443
+***Going to next resolution level***
+SSD = 790.367	n = 88032	Reg = 66.9563	Cost = 857.323
+SSD = 515.827	n = 88148	Reg = 103.285	Cost = 619.112
+SSD = 416.022	n = 88266	Reg = 134.693	Cost = 550.715
+SSD = 376.092	n = 88357	Reg = 149.367	Cost = 525.459
+SSD = 357.948	n = 88396	Reg = 156.72	Cost = 514.667
+SSD = 348.962	n = 88400	Reg = 160.659	Cost = 509.621
+***Going to next resolution level***
+SSD = 814.488	n = 88400	Reg = 37.5155	Cost = 852.003
+SSD = 593.358	n = 88400	Reg = 69.5222	Cost = 662.88
+SSD = 526.814	n = 88400	Reg = 89.1406	Cost = 615.955
+SSD = 506.516	n = 88400	Reg = 96.7121	Cost = 603.228
+SSD = 498.738	n = 88400	Reg = 99.619	Cost = 598.357
+SSD = 494.988	n = 88400	Reg = 101.075	Cost = 596.062
+***Going to next resolution level***
+SSD = 754.572	n = 88400	Reg = 29.1	Cost = 783.672
+SSD = 577.262	n = 88400	Reg = 35.5381	Cost = 612.8
+SSD = 527.493	n = 88400	Reg = 49.0931	Cost = 576.586
+SSD = 514.699	n = 88400	Reg = 55.0902	Cost = 569.79
+SSD = 509.888	n = 88400	Reg = 57.4321	Cost = 567.321
+SSD = 507.602	n = 88400	Reg = 58.5305	Cost = 566.133
+***Going to next resolution level***
+SSD = 507.645	n = 88400	Reg = 19.5274	Cost = 527.173
+SSD = 490.547	n = 88400	Reg = 26.2635	Cost = 516.81
+SSD = 482.504	n = 88400	Reg = 30.7605	Cost = 513.265
+SSD = 479.942	n = 88400	Reg = 32.3841	Cost = 512.326
+SSD = 479.007	n = 88400	Reg = 32.9537	Cost = 511.96
+SSD = 478.547	n = 88400	Reg = 33.2178	Cost = 511.765
+***Going to next resolution level***
+SSD = 1024.9	n = 737418	Reg = 84.0653	Cost = 1108.97
+SSD = 993.75	n = 737418	Reg = 81.494	Cost = 1075.24
+SSD = 956.899	n = 737418	Reg = 78.4628	Cost = 1035.36
+SSD = 906.548	n = 737418	Reg = 74.366	Cost = 980.914
+SSD = 845.639	n = 737418	Reg = 69.5903	Cost = 915.229
+SSD = 811.789	n = 737418	Reg = 67.0721	Cost = 878.861
+SSD = 759.587	n = 737418	Reg = 63.5168	Cost = 823.104
+SSD = 714.287	n = 737418	Reg = 60.975	Cost = 775.262
+SSD = 684.25	n = 737418	Reg = 59.9614	Cost = 744.211
+SSD = 650.559	n = 737418	Reg = 59.5383	Cost = 710.097
+SSD = 632.012	n = 737418	Reg = 59.6731	Cost = 691.685
+***Going to next resolution level***
+SSD = 964.399	n = 737418	Reg = 16.3087	Cost = 980.707
+SSD = 951.033	n = 737418	Reg = 16.0867	Cost = 967.12
+SSD = 930.995	n = 737418	Reg = 15.7605	Cost = 946.756
+SSD = 899.322	n = 737418	Reg = 15.2613	Cost = 914.583
+SSD = 855.526	n = 737418	Reg = 14.6138	Cost = 870.14
+SSD = 830.503	n = 737418	Reg = 14.291	Cost = 844.794
+SSD = 774.49	n = 737418	Reg = 13.6105	Cost = 788.1
+SSD = 734.962	n = 737418	Reg = 13.2773	Cost = 748.24
+SSD = 690.837	n = 737418	Reg = 13.1081	Cost = 703.945
+SSD = 665.185	n = 737418	Reg = 13.2383	Cost = 678.423
+SSD = 641.051	n = 737418	Reg = 13.6061	Cost = 654.

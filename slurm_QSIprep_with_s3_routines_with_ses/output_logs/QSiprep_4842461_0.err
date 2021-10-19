@@ -1,0 +1,9 @@
+INFO: Retrieving list of remote files for s3://HCP-Dv2_BIDS/sub-0001305/ses-V1 ...
+INFO: Summary: 80 remote files to download
+INFO: Creating directory: /tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/anat
+INFO: Creating directory: /tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi
+INFO: Creating directory: /tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/fmap
+INFO: Creating directory: /tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/func
+INFO: Summary: 1 remote files to download
+FATAL:   while parsing bind path: wrong bind syntax: s3://HCP-Dv2_BIDS:/sngl/out
+ERROR: Parameter problem: Invalid source: '/tmp/HCP-Dv2_BIDS/derivatives/QSIprep-v0.12.2/sub-0001305/ses-V1/' is not an existing file or directory

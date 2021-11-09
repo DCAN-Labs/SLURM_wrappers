@@ -17,11 +17,9 @@ else
       echo "Submitting the following jobs for sMRI processing now: $array"
       echo ""
 
-      sMRI=$(sbatch --parsable -a $array slurm_sMRI.sh)
-      fMRI=$(sbatch --parsable --dependency=aftercorr:${sMRI} -a $array slurm_fMRI.sh)
+      abcd_dicom2bids=$(sbatch --parsable -a $array slurm_dicom2bids.sh)
       
-      echo "sMRI JOB ID: $sMRI"
-      echo "fMRI JOB ID: $fMRI"
+      echo "abcd-dicom2bids JOB ID: $abcd_dicom2bids"
 
 
       echo ""

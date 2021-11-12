@@ -1,8 +1,8 @@
 #!/bin/bash -l
 #SBATCH --job-name=abcd2bids
 #SBATCH --time=2:00:00
-#SBATCH --mem-per-cpu=40gb
-#SBATCH --tmp=40gb
+#SBATCH --mem-per-cpu=10gb
+#SBATCH --tmp=10gb
 #SBATCH --partition=dcan
 #SBATCH --output=output_logs/dicom2bids_%A_%a.out
 #SBATCH --error=output_logs/dicom2bids_%A_%a.err

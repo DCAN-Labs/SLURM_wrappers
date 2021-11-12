@@ -2,7 +2,6 @@
 
 set +x 
 # determine data directory, run folders, and run templates
-data_dir=`cd ../../; pwd` # path to BIDS folder 
 run_folder=`pwd`
 
 dicom2bids_folder="${run_folder}/run_files.dicom2bids"
@@ -25,7 +24,7 @@ k=0
 
 cat year_2_sub_list.txt | while read line; do
 	echo ${line} > ${dicom2bids_subjects}/sub-${line}.txt
-	sed -e "s:SUBJECTID:${line}:g" -e "s:DATADIR:${data_dir}:g" -e "s:RUNDIR:${run_folder}:g" -e "s:SUBJECTDIR:${dicom2bids_subjects}:g" ${run_folder}/template.dicom2bids > ${dicom2bids_folder}/run${k}
+	sed -e "s:SUBJECTID:${line}:g" -e "s:SUBJECTDIR:${dicom2bids_subjects}:g" ${run_folder}/template.dicom2bids > ${dicom2bids_folder}/run${k}
 
 	k=$((k+1))
 done

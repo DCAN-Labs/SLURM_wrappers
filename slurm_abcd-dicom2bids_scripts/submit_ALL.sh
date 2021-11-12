@@ -14,7 +14,7 @@ then
 
 else
       echo ""
-      echo "Submitting the following jobs for sMRI processing now: $array"
+      echo "Submitting the following jobs for abcd-dicom2bids conversion now: $array"
       echo ""
 
       abcd_dicom2bids=$(sbatch --parsable -a $array slurm_dicom2bids.sh)
@@ -22,8 +22,7 @@ else
       echo "abcd-dicom2bids JOB ID: $abcd_dicom2bids"
 
 
-      echo ""
-      echo "If a job sucessfully completes sMRI processing, fMRI processing jobs will begin in parallel." 
+
       echo ""
       echo "Output logs will appear in output_logs folder. Use 'squeue -al --me' to monitor jobs."
       echo ""

@@ -19,3 +19,7 @@ export PATH=$PATH:/home/feczk001/shared/code/external/utilities/dcmtk-3.6.5/dcmt
 export PATH=$PATH:/home/feczk001/shared/code/external/utilities/jq-1.5
 
 python /home/rando149/shared/code/internal/utilities/abcd-dicom2bids/abcd2bids.py /panfs/roc/msisoft/fsl/6.0.2 /home/feczk001/shared/code/external/utilities/MATLAB_MCR/v91 -l ${subj_dir}/sub-${subj_id}.txt -o ${output_dir} --temp=${work_dir} --download=${download_dir} -y 2_year_follow_up_y_arm_1 -x /home/rando149/shared/code/internal/utilities/abcd-dicom2bids/validator_latest.sif
+
+#sync at subject dir
+s3cmd sync -F --recursive -v ${data_dir}/processed/abcd-hcp-pipeline/sub-${subj_id}/ ${data_bucket}/processed/abcd-hcp-pipeline/sub-${subj_id}/
+#make all dirs temp, including output

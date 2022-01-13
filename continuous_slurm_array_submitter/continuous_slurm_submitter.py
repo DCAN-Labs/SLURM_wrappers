@@ -49,7 +49,7 @@ parser.add_argument('--total_memory', '--total-memory', help='The total amount o
 parser.add_argument('--array-size', '--array_size', help='Desired number of jobs to continuous be in the queue to be run. If using MSI, the max is 1000.',
                     default=1000, type=int)
 parser.add_argument('--submission-interval','--submission_internval', help='How often should continuous batches be submitted, in minutes?',default=10,type=int)
-parser.add_argument('--account-name','--account_name',help='What account name to charge job too. If using MSI, you can discover group by typing `id -nG`. Default is primary group (`id -ng`.)',required=True)
+parser.add_argument('--account_name',nargs='+',help='What account name to charge job too. If using MSI, you can discover group by typing `id -nG`. Default is primary group (`id -ng`.). Can select multiple accounts with a space separated list',required=True)
 parser.add_argument('--high-priority','--high_priority',help='Run jobs with a higher priority. Note, you need special permission to run this',action='store_true')
 
 # Parse and gather arguments
@@ -57,15 +57,16 @@ args = parser.parse_args()
 print(args)
 script_path=os.path.dirname(__file__)
 # validate integrity of inputted arguments
-if not args.account_name:
-    account_name = run(command='id -ng')
-else:
-    account_name = args.account_name
-    all_account_names = run(command='id -nG')
-    assert account_name in all_account_names, 'You are not a member of the account you specified: ' + account_name + '. Exiting.'
+user_name = run(command='whoami')
+#if not args.account_name:
+#    account_name = run(command='id -ng')
+#else:
+#    account_name = args.account_name
+#    all_account_names = run(command='id -nG')
+#    assert account_name in all_account_names, 'You are not a member of the account you specified: ' + account_name + '. Exiting.'
 if not os.path.isdir(args.log_dir):
-    os.system('sg {account_name} -c "mkdir -p {log_dir}"'.format(account_name=account_name,log_dir=args.log_dir)) # make folder based on provided account
-    os.system('sg {account_name} -c "chmod 777 {log_dir}"'.format(account_name=account_name,log_dir=args.log_dir)) # make folder based on provided account
+    os.system("mkdir -p {log_dir}".format(log_dir=args.log_dir)) # make folder based on provided account
+    os.system("chmod 777 {log_dir}".format(log_dir=args.log_dir)) # make folder based on provided account
 job_name = args.job_name
 for run_folder in args.run_folder:
   assert os.path.exists(run_folder),'run folder ' + run_folder + ' does not exist. Exiting.'
@@ -73,6 +74,10 @@ if len(args.partition) > 1:
   args.partition = ','.join([str(elem) for elem in args.partition])
 else:
   args.partition = args.partition[0]
+if len(args.account_name) > 1:
+    args.account_name = ','.join([str(elem) for elem in args.account_name])
+else:
+    args.account_name = args.account_name[0]
 if args.high_priority:
     priority_text = '-q highprio'
 else:
@@ -83,7 +88,7 @@ assert dns_name.split('.')[0]=='mesabi' or dns_name.split('.')[0]=='mangi', 'Mus
 
 total_run_files_length = 0 
 for run_folder in args.run_folder:
-    run_files_length = len(glob(os.path.join(run_folder,'run*')))
+    run_files_length = len(glob(os.path.join(run_folder,'*run*')))
     total_run_files_length += run_files_length
 while True:
     try:
@@ -97,16 +102,22 @@ while True:
     jobs_in_queue = int(run(command='squeue -r -n ' + job_name + ' | wc -l'))
     while jobs_in_queue >= args.array_size:
         time.sleep(args.submission_interval*60) # wait before checking again in a while loop
+    
     jobs_to_submit = args.array_size - jobs_in_queue
+    fairshares=list()
+    for account in args.account_name.split(','):
+        fairshare=float(run(command="sshare --account="+account+" | grep " + user_name + " | awk '{print $NF}'"))
+        fairshares.append(fairshare)
+    jobs_to_submit_by_account=[round((fairshare/sum(fairshares)) * jobs_to_submit) for fairshare in fairshares]
     job_count = 0 # keep track of number of jobs
     # for each run folder in submitted run folders
     for run_folder in args.run_folder:
         # for each run file within each run folder
-        run_files = glob(os.path.join(run_folder,'run*'))
+        run_files = glob(os.path.join(run_folder,'*run*'))
         run_files_length = len(run_files)
         run_file_list=[]
         for run_file_count, run_file in enumerate(run_files):
-            run_file_num = os.path.basename(run_file).split('run')[1]
+            run_file_num = os.path.basename(run_file).split('run')[1].strip('.sh')
             run_file_lines = open(run_file,'r').readlines()
             for line in run_file_lines: 
                 if 'subject_id=' in line:
@@ -134,12 +145,22 @@ while True:
                     job_count += 1
                     
             if job_count == jobs_to_submit or ((run_file_count + 1)==run_files_length) or ((run_file_count + 1)==total_run_files_length):
-                run_file_list =','.join([str(elem) for elem in run_file_list])
-                parsed_run_file_list = run(command='bash '+ script_path+'/job_array_modifier.sh ' + run_file_list)
-                print('sg {account_name} -c "sbatch --array={array} -A {account_name} -J {job_name} -o {log_dir}/{job_name}_%A_%a.out -e {log_dir}/{job_name}_%A_%a.err -p {partition} --cpus-per-task {n_cpus} --mem={memory}gb {priority} --tmp={tmp_storage}gb -t {time} {path}/continuous_array_submitter.sh {run_folder}"'.format(
-                    array=parsed_run_file_list,account_name=account_name,partition=args.partition,log_dir=args.log_dir,job_name=job_name,n_cpus=str(args.n_cpus),memory=str(args.total_memory),priority=priority_text,tmp_storage=args.tmp_storage, time=args.time_limit,run_folder=run_folder,path=script_path))
-                os.system('sg {account_name} -c "sbatch --array={array} -A {account_name} -J {job_name} -o {log_dir}/{job_name}_%A_%a.out -e {log_dir}/{job_name}_%A_%a.err -p {partition} --cpus-per-task {n_cpus} --mem={memory}gb {priority} --tmp={tmp_storage}gb -t {time} {path}/continuous_array_submitter.sh {run_folder}"'.format(
-                    array=parsed_run_file_list,account_name=account_name,log_dir=args.log_dir,partition=args.partition,job_name=job_name,n_cpus=str(args.n_cpus),memory=str(args.total_memory),priority=priority_text,tmp_storage=args.tmp_storage,time=args.time_limit,run_folder=run_folder,path=script_path))
+                start=0
+                for idx,submission_size in enumerate(jobs_to_submit_by_account):
+                    end=int(start+submission_size+1)
+                    if not start+1==end:
+                        account_name=args.account_name.split(',')[idx]
+                        account_run_file_list=run_file_list[start:end]
+                        account_run_file_list=','.join([str(elem) for elem in account_run_file_list])
+                        parsed_account_run_file_list = run(command='bash '+ script_path+'/job_array_modifier.sh ' + account_run_file_list)
+                        print("sbatch --array={array} -A {account_name} -J {job_name} -o {log_dir}/{job_name}_%A_%a.out -e {log_dir}/{job_name}_%A_%a.err -p {partition} --cpus-per-task {n_cpus} --mem={memory}gb {priority} --tmp={tmp_storage}gb -t {time} {path}/continuous_array_submitter.sh {run_folder}".format(
+                            array=parsed_account_run_file_list,account_name=account_name,partition=args.partition,log_dir=args.log_dir,job_name=job_name,n_cpus=str(args.n_cpus),memory=str(args.total_memory),priority=priority_text,tmp_storage=args.tmp_storage, time=args.time_limit,run_folder=run_folder,path=script_path))
+                        os.system("sbatch --array={array} -A {account_name} -J {job_name} -o {log_dir}/{job_name}_%A_%a.out -e {log_dir}/{job_name}_%A_%a.err -p {partition} --cpus-per-task {n_cpus} --mem={memory}gb {priority} --tmp={tmp_storage}gb -t {time} {path}/continuous_array_submitter.sh {run_folder}".format(
+                            array=parsed_account_run_file_list,account_name=account_name,log_dir=args.log_dir,partition=args.partition,job_name=job_name,n_cpus=str(args.n_cpus),memory=str(args.total_memory),priority=priority_text,tmp_storage=args.tmp_storage,time=args.time_limit,run_folder=run_folder,path=script_path))
+                        start=end
+                    else:
+                        start=end
+                        continue
                 time.sleep(args.submission_interval*60) # wait before checking again in a while loop
                 break
             else:

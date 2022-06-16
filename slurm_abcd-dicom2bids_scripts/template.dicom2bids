@@ -3,14 +3,17 @@
 subject_id=SUBJECTID
 subject_dir=SUBJECTDIR
 singularity=`which singularity`
-output_dir=
-work_dir=/tmp/dicom2bids/work
-download_dir=/tmp/dicom2bids/download
-
+output_dir=/tmp/dicom2bids/SUBJECTID
+work_dir=/tmp/dicom2bids/SUBJECTID/work
+download_dir=/tmp/dicom2bids/SUBJECTID/download
+data_bucket=s3://ABCD_missing_SST
 
 pwd; hostname; date
 
-#source /home/rando149/shared/code/internal/utilities/abcd-dicom2bids/env/bin/activate
+mkdir -p ${output_dir}
+mkdir -p ${work_dir}
+mkdir -p ${download_dir}
+
 module load singularity
 
 . "/home/faird/shared/code/external/envs/miniconda3/mini3/etc/profile.d/conda.sh"
@@ -18,8 +21,11 @@ export PATH="/home/faird/shared/code/external/envs/miniconda3/mini3/bin:$PATH"
 export PATH=$PATH:/home/feczk001/shared/code/external/utilities/dcmtk-3.6.5/dcmtk-3.6.5-build/bin
 export PATH=$PATH:/home/feczk001/shared/code/external/utilities/jq-1.5
 
-python /home/rando149/shared/code/internal/utilities/abcd-dicom2bids/abcd2bids.py /panfs/roc/msisoft/fsl/6.0.2 /home/feczk001/shared/code/external/utilities/MATLAB_MCR/v91 -l ${subject_dir}/sub-${subject_id}.txt -o ${output_dir} --temp=${work_dir} --download=${download_dir} -y 2_year_follow_up_y_arm_1 -x /home/rando149/shared/code/internal/utilities/abcd-dicom2bids/validator_latest.sif
+python /home/rando149/shared/code/internal/utilities/abcd-dicom2bids/abcd2bids.py /panfs/roc/msisoft/fsl/6.0.2 /home/feczk001/shared/code/external/utilities/MATLAB_MCR/v91 -l ${subject_dir}/sub-${subject_id}.txt -o ${output_dir} --temp=${work_dir} --download=${download_dir} -y baseline_year_1_arm_1 -x /home/rando149/shared/code/internal/utilities/abcd-dicom2bids/validator_latest.sif
 
 #sync at subject dir
-s3cmd sync -F --recursive -v ${data_dir}/processed/abcd-hcp-pipeline/sub-${subject_id}/ ${data_bucket}/processed/abcd-hcp-pipeline/sub-${subject_id}/
-#make all dirs temp, including output
+s3cmd sync -F --recursive -v ${output_dir}/sub-SUBJECTID ${data_bucket}/
+s3cmd sync -F --recursive -v ${output_dir}/sourcedata ${data_bucket}/
+
+rm -rf ${output_dir}
+

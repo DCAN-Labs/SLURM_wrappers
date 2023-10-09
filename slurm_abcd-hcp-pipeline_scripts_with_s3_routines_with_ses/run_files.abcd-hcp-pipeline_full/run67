@@ -1,0 +1,66 @@
+#!/bin/bash
+
+subj_id=MSC07
+ses_id=07
+data_dir=/tmp/MSC_BIDS
+data_bucket=s3://MSC_BIDS
+run_dir=/home/faird/shared/code/internal/utilities/slurm_pipeline_wrappers/slurm_abcd-hcp-pipeline_scripts_with_s3_routines_with_ses
+cpu_usage=8
+singularity=`which singularity`
+
+# pull down needed data and files from BIDS bucket
+if [ ! -d ${data_dir}/sub-${subj_id}/ses-${ses_id} ]; then
+	mkdir -p ${data_dir}/sub-${subj_id}
+	s3cmd get ${data_bucket}/sorted/sub-${subj_id}/ses-${ses_id} ${data_dir}/sub-${subj_id} --recursive -v
+fi
+if [ ! -e ${data_dir}/dataset_description.json ]; then
+	cp ${run_dir}/dataset_description.json ${data_dir}
+fi
+if [ ! -e ${data_dir}/participants.tsv ]; then
+	s3cmd get ${data_bucket}/sorted/participants.tsv ${data_dir} -v 
+fi
+
+# create processed and derivatives folders if they do not exist
+if [ ! -d ${data_dir}/processed/abcd-hcp-pipeline ]; then
+	mkdir -p ${data_dir}/processed/abcd-hcp-pipeline
+fi
+#if [ ! -d ${data_dir}/derivatives/abcd-hcp-pipeline ]; then
+#	mkdir -p ${data_dir}/derivatives/abcd-hcp-pipeline
+#fi
+
+# run abcd-hcp-pipeline
+env -i ${singularity} run \
+-B ${data_dir}:/bids_dir \
+-B ${data_dir}/processed/abcd-hcp-pipeline:/output_dir \
+-B ${run_dir}/license.txt:/opt/freesurfer/license.txt \
+/home/umii/public/hendr522/singularity_images/abcd-hcp-pipeline_v0.0.3.sif \
+/bids_dir /output_dir \
+--freesurfer-license /opt/freesurfer/license.txt \
+--participant-label ${subj_id} \
+--stages "PreFreeSurfer:ExecutiveSummary" \
+--ncpus ${cpu_usage}
+
+# run CustomClean
+#env -i ${singularity} run \
+#-B ${data_dir}:/bids_dir \
+#-B ${data_dir}/processed/abcd-hcp-pipeline:/output_dir \
+#-B ${run_dir}/license.txt:/opt/freesurfer/license.txt \
+#-B ${run_dir}/HCP-D_BIDS_cleaning.json:/HCP-D_BIDS_cleaning.json \
+#/home/umii/public/hendr522/singularity_images/abcd-hcp-pipeline_v0.0.3.sif \
+#/bids_dir /output_dir \
+#--freesurfer-license /opt/freesurfer/license.txt \
+#--participant-label ${subj_id} \
+#--stages "CustomClean" \
+#--custom-clean /HCP-D_BIDS_cleaning.json \
+#--ncpus ${cpu_usage}
+
+#push processed outputs to bucket
+s3cmd sync -F --recursive -v ${data_dir}/processed/abcd-hcp-pipeline/sub-${subj_id}/ses-${ses_id}/ ${data_bucket}/processed/abcd-hcp-pipeline/sub-${subj_id}/ses-${ses_id}/
+
+# run filemapper
+
+
+
+
+
+

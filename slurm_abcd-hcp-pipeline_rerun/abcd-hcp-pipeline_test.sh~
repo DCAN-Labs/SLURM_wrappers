@@ -1,0 +1,29 @@
+#!/bin/bash -l
+
+#SBATCH -J abcd-hcp-pipeline_full
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=10
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=100gb
+#SBATCH --tmp=100gb
+#SBATCH -t 72:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=lundq163@umn.edu
+#SBATCH -p amd512,amdsmall,ram1t,ram256g
+#SBATCH -o output_logs/abcd-hcp-pipeline_full_%A_%a.out
+#SBATCH -e output_logs/abcd-hcp-pipeline_full_%A_%a.err
+#SBATCH -A rando149
+
+sg rando149
+
+env -i singularity run --cleanenv --no-home \
+-B /home/rando149/shared/code/internal/utilities/slurm_pipeline_wrappers/slurm_abcd-hcp-pipeline_rerun/data/:/bids_dir \
+-B /home/rando149/shared/code/internal/utilities/slurm_pipeline_wrappers/slurm_abcd-hcp-pipeline_rerun/full_rerun_v013/:/output_dir \
+-B /home/rando149/shared/code/internal/utilities/slurm_pipeline_wrappers/slurm_abcd-hcp-pipeline_rerun/license.txt:/opt/freesurfer/license.txt \
+-B /home/rando149/shared/code/internal/utilities/slurm_pipeline_wrappers/slurm_abcd-hcp-pipeline_rerun/ABCD_BIDS_cleaning.json:/ABCD_BIDS_cleaning.json \
+/home/faird/shared/code/internal/pipelines/abcd-hcp-pipeline_containers/abcd-hcp-pipeline_v0_1_3.sif \
+/bids_dir /output_dir \
+--freesurfer-license /opt/freesurfer/license.txt \
+--participant-label NDARINV04CLBZAD \
+--custom-clean /ABCD_BIDS_cleaning.json \
+--ncpus 8

@@ -1,0 +1,99 @@
+#!/bin/bash
+
+subj_id=SUBJECTID
+ses_id=SESID
+data_dir=DATADIR
+xcpd_dir=XCPDDIR
+data_bucket=BUCKET
+run_dir=RUNDIR
+cpu_usage=4
+singularity=`which singularity`
+
+# pull down needed data and files from BIDS bucket
+if [ ! -d ${data_dir}/bids_dir/sub-${subj_id}_ses-${ses_id}/sub-${subj_id}/ses-${ses_id} ]; then
+	mkdir -p ${data_dir}/bids_dir/sub-${subj_id}_ses-${ses_id}/sub-${subj_id}
+	s3cmd get ${data_bucket}/sorted/sub-${subj_id}/ses-${ses_id} ${data_dir}/bids_dir/sub-${subj_id}_ses-${ses_id}/sub-${subj_id} --recursive -v
+fi
+if [ ! -d ${data_dir}/bids_dir/sub-${subj_id}_ses-${ses_id}/derivatives/precomputed/sub-${subj_id} ]; then
+        mkdir -p ${data_dir}/bids_dir/sub-${subj_id}_ses-${ses_id}/derivatives/precomputed/sub-${subj_id}
+        s3cmd get ${data_bucket}/sorted/derivatives/precomputed/sub-${subj_id} ${data_dir}/bids_dir/sub-${subj_id}_ses-${ses_id}/derivatives/precomputed --recursive -v
+fi
+
+if [ ! -e ${data_dir}/bids_dir/sub-${subj_id}_ses-${ses_id}/dataset_description.json ]; then
+	cp ${run_dir}/dataset_description.json ${data_dir}/bids_dir/sub-${subj_id}_ses-${ses_id}
+fi
+if [ ! -e ${data_dir}/bids_dir/sub-${subj_id}_ses-${ses_id}/participants.tsv ]; then
+	s3cmd get ${data_bucket}/sorted/participants.tsv ${data_dir}/bids_dir/sub-${subj_id}_ses-${ses_id} -v 
+fi
+
+# create nibabies and xcp-d scratch output and workdirs
+
+if [ ! -d ${data_dir}/processed/nibabies/sub-${subj_id}_ses-${ses_id} ]; then
+	mkdir -p ${data_dir}/processed/nibabies/sub-${subj_id}_ses-${ses_id}
+fi
+
+if [ ! -d ${data_dir}/work_dir/nibabies/sub-${subj_id}_ses-${ses_id} ]; then
+	mkdir -p ${data_dir}/work_dir/nibabies/sub-${subj_id}_ses-${ses_id}
+fi
+
+if [ ! -d ${xcpd_dir}/processed/sub-${subj_id}_ses-${ses_id} ]; then
+	mkdir -p ${xcpd_dir}/processed/sub-${subj_id}_ses-${ses_id}
+fi
+
+if [ ! -d ${xcpd_dir}/work_dir/sub-${subj_id}_ses-${ses_id} ]; then
+	mkdir -p ${xcpd_dir}/work_dir/sub-${subj_id}_ses-${ses_id}
+fi
+
+#if [ ! -d ${data_dir}/derivatives/abcd-hcp-pipeline ]; then
+#	mkdir -p ${data_dir}/derivatives/abcd-hcp-pipeline
+#fi
+
+# run nibabies
+
+singularity run --cleanenv \
+-B ${data_dir}/bids_dir/sub-${subj_id}_ses-${ses_id}:/bids_dir \
+-B ${data_dir}/processed/nibabies/sub-${subj_id}_ses-${ses_id}:/output_dir \
+-B ${data_dir}/work_dir/nibabies/sub-${subj_id}_ses-${ses_id}:/wd \
+-B ${run_dir}/license.txt:/opt/freesurfer/license.txt \
+-B ${run_dir}/license.txt:/license.txt \
+/home/faird/shared/code/external/pipelines/nibabies/nibabies_22.0.2.sif \
+--fs-license-file /license.txt \
+--omp-nthreads ${cpu_usage} \
+--nthreads ${cpu_usage} \
+--cifti-output 91k \
+--topup-max-vols 2 \
+--fd-radius 45 \
+-vv \
+-w /wd \
+--derivatives /bids_dir/derivatives/precomputed \
+/bids_dir /output_dir participant
+
+# run xcp-d
+
+singularity run --cleanenv \
+-B ${data_dir}/processed/nibabies/sub-${subj_id}_ses-${ses_id}:/nibabies_out \
+-B ${xcpd_dir}/processed/sub-${subj_id}_ses-${ses_id}:/xcpd_out \
+-B ${xcpd_dir}/work_dir/sub-${subj_id}_ses-${ses_id}:/wkdir \
+/panfs/roc/groups/8/faird/shared/code/external/pipelines/ABCD-XCP/xcp-d_unstable04152022a.sif \
+--cifti \
+-w /wkdir \
+-f 0.2 \
+--verbose \
+-m \
+-r 45 \
+--input-type fmirprep \
+/nibabies_out \
+/xcpd_out
+
+#push processed outputs and (if uncommented) work dirs to bucket
+s3cmd sync -F --recursive -v --delete-removed ${data_dir}/processed/nibabies/sub-${subj_id}_ses-${ses_id}/sub-${subj_id}/ ${data_bucket}/processed/nibabies/sub-${subj_id}/ses-${ses_id}/
+s3cmd sync -F --recursive -v --delete-removed ${xcpd_dir}/processed/sub-${subj_id}_ses-${ses_id}/ ${data_bucket}/processed/xcpd/sub-${subj_id}_ses-${ses_id}/
+
+#s3cmd sync -F --recursive -v --delete-removed ${data_dir}/work_dir/nibabies/sub-${subj_id}_ses-${ses_id} ${data_bucket}/work_dir/nibabies/sub-${subj_id}/ses-${ses_id}/
+#s3cmd sync -F --recursive -v --delete-removed ${data_dir}/work_dir/xcpd/sub-${subj_id}_ses-${ses_id} ${data_bucket}/work_dir/xcpd/sub-${subj_id}/ses-${ses_id}/
+
+
+
+
+
+

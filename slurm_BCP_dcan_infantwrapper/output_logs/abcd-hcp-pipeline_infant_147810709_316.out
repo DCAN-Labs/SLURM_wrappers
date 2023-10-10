@@ -1,791 +1,0 @@
-download: 's3://UNC_BCP/sub-908754/ses-6mo/anat/sub-908754_ses-6mo_run-001_T1w.json' -> '/tmp/UNC_BCP/sub-908754/ses-6mo/anat/sub-908754_ses-6mo_run-001_T1w.json'  [1 of 27]
- 1931 of 1931   100% in    0s    28.68 KB/s 1931 of 1931   100% in    0s    28.62 KB/s  done
-download: 's3://UNC_BCP/sub-908754/ses-6mo/anat/sub-908754_ses-6mo_run-001_T1w.nii.gz' -> '/tmp/UNC_BCP/sub-908754/ses-6mo/anat/sub-908754_ses-6mo_run-001_T1w.nii.gz'  [2 of 27]
-  1048576 of 16389569     6% in    0s    10.09 MB/s 16389569 of 16389569   100% in    0s    69.89 MB/s  done
-download: 's3://UNC_BCP/sub-908754/ses-6mo/anat/sub-908754_ses-6mo_run-002_T2w.json' -> '/tmp/UNC_BCP/sub-908754/ses-6mo/anat/sub-908754_ses-6mo_run-002_T2w.json'  [3 of 27]
- 1954 of 1954   100% in    0s    14.14 KB/s 1954 of 1954   100% in    0s    14.12 KB/s  done
-download: 's3://UNC_BCP/sub-908754/ses-6mo/anat/sub-908754_ses-6mo_run-002_T2w.nii.gz' -> '/tmp/UNC_BCP/sub-908754/ses-6mo/anat/sub-908754_ses-6mo_run-002_T2w.nii.gz'  [4 of 27]
-  1048576 of 13287169     7% in    0s     9.83 MB/s 13287169 of 13287169   100% in    0s    56.59 MB/s  done
-download: 's3://UNC_BCP/sub-908754/ses-6mo/anat/sub-908754_ses-6mo_run-003_T2w.json' -> '/tmp/UNC_BCP/sub-908754/ses-6mo/anat/sub-908754_ses-6mo_run-003_T2w.json'  [5 of 27]
- 1956 of 1956   100% in    0s    22.79 KB/s 1956 of 1956   100% in    0s    22.74 KB/s  done
-download: 's3://UNC_BCP/sub-908754/ses-6mo/anat/sub-908754_ses-6mo_run-003_T2w.nii.gz' -> '/tmp/UNC_BCP/sub-908754/ses-6mo/anat/sub-908754_ses-6mo_run-003_T2w.nii.gz'  [6 of 27]
-  1048576 of 13075002     8% in    0s    11.51 MB/s 13075002 of 13075002   100% in    0s    71.68 MB/s  done
-download: 's3://UNC_BCP/sub-908754/ses-6mo/anat/sub-908754_ses-6mo_run-004_T1w.json' -> '/tmp/UNC_BCP/sub-908754/ses-6mo/anat/sub-908754_ses-6mo_run-004_T1w.json'  [7 of 27]
- 1931 of 1931   100% in    0s    32.80 KB/s 1931 of 1931   100% in    0s    32.67 KB/s  done
-download: 's3://UNC_BCP/sub-908754/ses-6mo/anat/sub-908754_ses-6mo_run-004_T1w.nii.gz' -> '/tmp/UNC_BCP/sub-908754/ses-6mo/anat/sub-908754_ses-6mo_run-004_T1w.nii.gz'  [8 of 27]
-  1048576 of 15931049     6% in    0s    10.74 MB/s 15931049 of 15931049   100% in    0s    72.98 MB/s  done
-download: 's3://UNC_BCP/sub-908754/ses-6mo/fmap/sub-908754_ses-6mo_dir-AP_run-01_epi.json' -> '/tmp/UNC_BCP/sub-908754/ses-6mo/fmap/sub-908754_ses-6mo_dir-AP_run-01_epi.json'  [9 of 27]
- 3860 of 3860   100% in    0s    50.26 KB/s 3860 of 3860   100% in    0s    50.16 KB/s  done
-download: 's3://UNC_BCP/sub-908754/ses-6mo/fmap/sub-908754_ses-6mo_dir-AP_run-01_epi.nii.gz' -> '/tmp/UNC_BCP/sub-908754/ses-6mo/fmap/sub-908754_ses-6mo_dir-AP_run-01_epi.nii.gz'  [10 of 27]
- 1048576 of 3541341    29% in    0s    11.71 MB/s 3541341 of 3541341   100% in    0s    34.36 MB/s  done
-download: 's3://UNC_BCP/sub-908754/ses-6mo/fmap/sub-908754_ses-6mo_dir-PA_run-02_epi.json' -> '/tmp/UNC_BCP/sub-908754/ses-6mo/fmap/sub-908754_ses-6mo_dir-PA_run-02_epi.json'  [11 of 27]
- 3863 of 3863   100% in    0s    51.70 KB/s 3863 of 3863   100% in    0s    51.55 KB/s  done
-download: 's3://UNC_BCP/sub-908754/ses-6mo/fmap/sub-908754_ses-6mo_dir-PA_run-02_epi.nii.gz' -> '/tmp/UNC_BCP/sub-908754/ses-6mo/fmap/sub-908754_ses-6mo_dir-PA_run-02_epi.nii.gz'  [12 of 27]
- 1048576 of 3527324    29% in    0s    12.34 MB/s 3527324 of 3527324   100% in    0s    35.91 MB/s  done
-download: 's3://UNC_BCP/sub-908754/ses-6mo/fmap/sub-908754_ses-6mo_dir-PA_run-03_epi.json' -> '/tmp/UNC_BCP/sub-908754/ses-6mo/fmap/sub-908754_ses-6mo_dir-PA_run-03_epi.json'  [13 of 27]
- 3859 of 3859   100% in    0s    56.62 KB/s 3859 of 3859   100% in    0s    56.46 KB/s  done
-download: 's3://UNC_BCP/sub-908754/ses-6mo/fmap/sub-908754_ses-6mo_dir-PA_run-03_epi.nii.gz' -> '/tmp/UNC_BCP/sub-908754/ses-6mo/fmap/sub-908754_ses-6mo_dir-PA_run-03_epi.nii.gz'  [14 of 27]
- 1048576 of 3531742    29% in    0s    11.05 MB/s 3531742 of 3531742   100% in    0s    32.57 MB/s  done
-download: 's3://UNC_BCP/sub-908754/ses-6mo/func/sub-908754_ses-6mo_task-rest_acq-AP_run-01_bold.json' -> '/tmp/UNC_BCP/sub-908754/ses-6mo/func/sub-908754_ses-6mo_task-rest_acq-AP_run-01_bold.json'  [15 of 27]
- 3610 of 3610   100% in    0s    40.69 KB/s 3610 of 3610   100% in    0s    40.60 KB/s  done
-download: 's3://UNC_BCP/sub-908754/ses-6mo/func/sub-908754_ses-6mo_task-rest_acq-AP_run-01_bold.nii.gz' -> '/tmp/UNC_BCP/sub-908754/ses-6mo/func/sub-908754_ses-6mo_task-rest_acq-AP_run-01_bold.nii.gz'  [16 of 27]
-   1048576 of 435320259     0% in    0s    11.98 MB/s 185597952 of 435320259    42% in    1s   158.90 MB/s 362807296 of 435320259    83% in    2s   163.48 MB/s 435320259 of 435320259   100% in    2s   167.22 MB/s  done
-download: 's3://UNC_BCP/sub-908754/ses-6mo/func/sub-908754_ses-6mo_task-rest_acq-AP_run-04_sbref.json' -> '/tmp/UNC_BCP/sub-908754/ses-6mo/func/sub-908754_ses-6mo_task-rest_acq-AP_run-04_sbref.json'  [17 of 27]
- 2803 of 2803   100% in    0s    30.92 KB/s 2803 of 2803   100% in    0s    30.87 KB/s  done
-download: 's3://UNC_BCP/sub-908754/ses-6mo/func/sub-908754_ses-6mo_task-rest_acq-AP_run-04_sbref.nii.gz' -> '/tmp/UNC_BCP/sub-908754/ses-6mo/func/sub-908754_ses-6mo_task-rest_acq-AP_run-04_sbref.nii.gz'  [18 of 27]
- 1048576 of 1178697    88% in    0s    16.75 MB/s 1178697 of 1178697   100% in    0s    18.54 MB/s  done
-download: 's3://UNC_BCP/sub-908754/ses-6mo/func/sub-908754_ses-6mo_task-rest_acq-PA_run-02_bold.json' -> '/tmp/UNC_BCP/sub-908754/ses-6mo/func/sub-908754_ses-6mo_task-rest_acq-PA_run-02_bold.json'  [19 of 27]
- 3609 of 3609   100% in    0s    38.71 KB/s 3609 of 3609   100% in    0s    38.62 KB/s  done
-download: 's3://UNC_BCP/sub-908754/ses-6mo/func/sub-908754_ses-6mo_task-rest_acq-PA_run-02_bold.nii.gz' -> '/tmp/UNC_BCP/sub-908754/ses-6mo/func/sub-908754_ses-6mo_task-rest_acq-PA_run-02_bold.nii.gz'  [20 of 27]
-   1048576 of 441887515     0% in    0s    11.48 MB/s 188743680 of 441887515    42% in    1s   164.99 MB/s 382730240 of 441887515    86% in    2s   174.02 MB/s 441887515 of 441887515   100% in    2s   176.04 MB/s  done
-download: 's3://UNC_BCP/sub-908754/ses-6mo/func/sub-908754_ses-6mo_task-rest_acq-PA_run-03_bold.json' -> '/tmp/UNC_BCP/sub-908754/ses-6mo/func/sub-908754_ses-6mo_task-rest_acq-PA_run-03_bold.json'  [21 of 27]
- 3584 of 3584   100% in    0s    40.15 KB/s 3584 of 3584   100% in    0s    40.09 KB/s  done
-download: 's3://UNC_BCP/sub-908754/ses-6mo/func/sub-908754_ses-6mo_task-rest_acq-PA_run-03_bold.nii.gz' -> '/tmp/UNC_BCP/sub-908754/ses-6mo/func/sub-908754_ses-6mo_task-rest_acq-PA_run-03_bold.nii.gz'  [22 of 27]
-   1048576 of 439175943     0% in    0s    13.89 MB/s 179306496 of 439175943    40% in    1s   159.36 MB/s 370147328 of 439175943    84% in    2s   169.96 MB/s 439175943 of 439175943   100% in    2s   168.84 MB/s  done
-download: 's3://UNC_BCP/sub-908754/ses-6mo/func/sub-908754_ses-6mo_task-rest_acq-PA_run-05_sbref.json' -> '/tmp/UNC_BCP/sub-908754/ses-6mo/func/sub-908754_ses-6mo_task-rest_acq-PA_run-05_sbref.json'  [23 of 27]
- 2798 of 2798   100% in    0s    33.87 KB/s 2798 of 2798   100% in    0s    33.80 KB/s  done
-download: 's3://UNC_BCP/sub-908754/ses-6mo/func/sub-908754_ses-6mo_task-rest_acq-PA_run-05_sbref.nii.gz' -> '/tmp/UNC_BCP/sub-908754/ses-6mo/func/sub-908754_ses-6mo_task-rest_acq-PA_run-05_sbref.nii.gz'  [24 of 27]
- 1048576 of 1189004    88% in    0s    26.47 MB/s 1189004 of 1189004   100% in    0s    29.32 MB/s  done
-download: 's3://UNC_BCP/sub-908754/ses-6mo/func/sub-908754_ses-6mo_task-rest_acq-PA_run-06_sbref.json' -> '/tmp/UNC_BCP/sub-908754/ses-6mo/func/sub-908754_ses-6mo_task-rest_acq-PA_run-06_sbref.json'  [25 of 27]
- 2779 of 2779   100% in    0s    43.85 KB/s 2779 of 2779   100% in    0s    43.72 KB/s  done
-download: 's3://UNC_BCP/sub-908754/ses-6mo/func/sub-908754_ses-6mo_task-rest_acq-PA_run-06_sbref.nii.gz' -> '/tmp/UNC_BCP/sub-908754/ses-6mo/func/sub-908754_ses-6mo_task-rest_acq-PA_run-06_sbref.nii.gz'  [26 of 27]
- 1048576 of 1177724    89% in    0s    16.08 MB/s 1177724 of 1177724   100% in    0s    17.79 MB/s  done
-download: 's3://UNC_BCP/sub-908754/ses-6mo/sub-908754_ses-6mo_scans.tsv' -> '/tmp/UNC_BCP/sub-908754/ses-6mo/sub-908754_ses-6mo_scans.tsv'  [27 of 27]
- 1212 of 1212   100% in    0s    16.81 KB/s 1212 of 1212   100% in    0s    16.77 KB/s  done
-download: 's3://UNC_BCP/participants.tsv' -> '/tmp/UNC_BCP/participants.tsv'  [1 of 1]
- 8517 of 8517   100% in    0s   183.05 KB/s 8517 of 8517   100% in    0s   182.54 KB/s  done
-/home/feczk001/shared/code/internal/pipelines/DCAN-infant-BIDS/infant-abcd-bids-pipeline_dbp-hotfix-03172022.sif
-DEBUG:
-these must be the same:
-first: /opt/freesurfer/license.txt
-second: /opt/freesurfer/license.txt
-running PreFreeSurfer
-/opt/pipeline/PreFreeSurfer/PreFreeSurferPipeline.sh \
-    --path=/output/sub-908754/ses-6mo/files \
-    --t1=/bids_input/sub-908754/ses-6mo/anat/sub-908754_ses-6mo_run-001_T1w.nii.gz@/bids_input/sub-908754/ses-6mo/anat/sub-908754_ses-6mo_run-004_T1w.nii.gz \
-    --t2=/bids_input/sub-908754/ses-6mo/anat/sub-908754_ses-6mo_run-002_T2w.nii.gz@/bids_input/sub-908754/ses-6mo/anat/sub-908754_ses-6mo_run-003_T2w.nii.gz \
-    --t1template=/opt/pipeline/global/templates/INFANT_MNI_T1_1mm.nii.gz \
-    --t1templatebrain=/opt/pipeline/global/templates/INFANT_MNI_T1_1mm_brain.nii.gz \
-    --t1template2mm=/opt/pipeline/global/templates/INFANT_MNI_T1_2mm.nii.gz \
-    --t2template=/opt/pipeline/global/templates/INFANT_MNI_T2_1mm.nii.gz \
-    --t2templatebrain=/opt/pipeline/global/templates/INFANT_MNI_T2_1mm_brain.nii.gz \
-    --t2template2mm=/opt/pipeline/global/templates/INFANT_MNI_T2_2mm.nii.gz \
-    --templatemask=/opt/pipeline/global/templates/INFANT_MNI_T1_1mm_brain_mask.nii.gz \
-    --template2mmmask=/opt/pipeline/global/templates/INFANT_MNI_T1_2mm_brain_mask_dil.nii.gz \
-    --brainsize=120 \
-    --fnirtconfig=/opt/pipeline/global/config/T1_2_MNI152_2mm.cnf \
-    --fmapmag=NONE \
-    --fmapphase=NONE \
-    --fmapgeneralelectric=NONE \
-    --echodiff=NONE \
-    --SEPhaseNeg=NONE \
-    --SEPhasePos=NONE \
-    --echospacing=0.000580009 \
-    --seunwarpdir=y- \
-    --t1samplespacing=0.000007937 \
-    --t2samplespacing=0.000002237 \
-    --unwarpdir=z- \
-    --gdcoeffs=NONE \
-    --avgrdcmethod=NONE \
-    --topupconfig=/opt/pipeline/global/config/b02b0.cnf \
-    --useT2=true \
-    --t1n=true \
-    --printcom= \
-    --multitemplatedir=/opt/pipeline/global/templates/JLF_templates \
-    --multimaskingdir=/opt/pipeline/global/templates/DCAN_neo_JLF_heads \
-    --t1studytemplate=NONE \
-    --t1studytemplatebrain=NONE \
-    --t2studytemplate=/opt/pipeline/global/templates/temp_nih_T2w_atl.nii.gz \
-    --t2studytemplatebrain=/opt/pipeline/global/templates/temp_nih_T2w_atl_brain.nii.gz \
-    --atroposmaskmethod=NONE \
-    --atroposlabelmin=4 \
-    --atroposlabelmax=5 \
-    --jlfmethod=T1W \
-    --t1brainmask=NONE \
-    --crop=True \
-    --aseg=DEFAULT
-Templates information follows:
-	JLF_templates:
-	/home/groups/brainmri/infant/TEMPLATES_FOLDERS/JLF_templates/08-24
-	Contains DCAN_neo_JLF_brains, which were run through JLF using ABCD subjects. Formerly known as babyCouncil.
-	
-Keep ITK_GLOBAL_DEFAULT_NUMBER_OF_THREADS at 1 instead of 12.
-running FreeSurfer
-/opt/pipeline/FreeSurfer/FNL_FreeInfantPipeline.sh \
-    --subject=908754 \
-    --subjectDIR=/output/sub-908754/ses-6mo/files/T1w \
-    --t1=/output/sub-908754/ses-6mo/files/T1w/T1w_acpc_dc_restore.nii.gz \
-    --t1brain=/output/sub-908754/ses-6mo/files/T1w/T1w_acpc_dc_restore_brain.nii.gz \
-    --t2=/output/sub-908754/ses-6mo/files/T1w/T2w_acpc_dc_restore.nii.gz \
-    --useT2=true \
-    --aseg=/output/sub-908754/ses-6mo/files/T1w/aseg_acpc.nii.gz \
-    --t1n=/output/sub-908754/ses-6mo/files/T1w/T1wN_acpc.nii.gz \
-    --t1nbrain=/output/sub-908754/ses-6mo/files/T1w/T1wN_acpc_brain.nii.gz \
-    --gca=/opt/freesurfer/average/RB_all_2008-03-26.gca \
-    --maxThickness=5 \
-    --smoothingIterations=10 \
-    --normalizationMethod=ROI_IPS \
-    --printcom=
-Templates information follows:
-	JLF_templates:
-	/home/groups/brainmri/infant/TEMPLATES_FOLDERS/JLF_templates/08-24
-	Contains DCAN_neo_JLF_brains, which were run through JLF using ABCD subjects. Formerly known as babyCouncil.
-	
-Keep ITK_GLOBAL_DEFAULT_NUMBER_OF_THREADS at 1 instead of 12.
-running PostFreeSurfer
-/opt/pipeline/PostFreeSurfer/PostFreeSurferPipeline.sh \
-    --path=/output/sub-908754/ses-6mo/files \
-    --subject=908754 \
-    --surfatlasdir=/opt/pipeline/global/templates/standard_mesh_atlases \
-    --grayordinatesdir=/opt/pipeline/global/templates/91282_Greyordinates \
-    --grayordinatesres=2 \
-    --hiresmesh=164 \
-    --lowresmesh=32 \
-    --subcortgraylabels=/opt/pipeline/global/config/FreeSurferSubcorticalLabelTableLut.txt \
-    --freesurferlabels=/opt/pipeline/global/config/FreeSurferAllLut.txt \
-    --refmyelinmaps=/opt/pipeline/global/templates/standard_mesh_atlases/Conte69.MyelinMap_BC.164k_fs_LR.dscalar.nii \
-    --regname=FS \
-    --useT2=true \
-    --printcom=
-Templates information follows:
-	JLF_templates:
-	/home/groups/brainmri/infant/TEMPLATES_FOLDERS/JLF_templates/08-24
-	Contains DCAN_neo_JLF_brains, which were run through JLF using ABCD subjects. Formerly known as babyCouncil.
-	
-Keep ITK_GLOBAL_DEFAULT_NUMBER_OF_THREADS at 1 instead of 12.
-missing expected outputs from PostFreeSurfer
-file not found: /output/sub-908754/ses-6mo/files/T1w/ribbon.nii.gz
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/ribbon.nii.gz
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/fsaverage_LR32k/908754.ArealDistortion_FS.32k_fs_LR.dscalar.nii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/908754.thickness.164k_fs_LR.dscalar.nii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/908754.sulc.164k_fs_LR.dscalar.nii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/908754.curvature.164k_fs_LR.dscalar.nii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/908754.ArealDistortion_FS.164k_fs_LR.dscalar.nii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/fsaverage_LR32k/908754.thickness.32k_fs_LR.dscalar.nii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/fsaverage_LR32k/908754.sulc.32k_fs_LR.dscalar.nii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/fsaverage_LR32k/908754.curvature.32k_fs_LR.dscalar.nii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/Native/908754.ArealDistortion_FS.native.dscalar.nii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/Native/908754.L.aparc.a2009s.native.label.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/Native/908754.L.aparc.native.label.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/Native/908754.L.atlasroi.native.shape.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/Native/908754.L.curvature.native.shape.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/Native/908754.L.inflated.native.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/Native/908754.L.midthickness.native.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/Native/908754.L.pial.native.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/Native/908754.L.roi.native.shape.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/Native/908754.L.sphere.native.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/Native/908754.L.sphere.reg.native.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/Native/908754.L.sphere.reg.reg_LR.native.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/Native/908754.L.sulc.native.shape.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/Native/908754.L.thickness.native.shape.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/Native/908754.L.very_inflated.native.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/Native/908754.L.white.native.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/Native/908754.R.aparc.a2009s.native.label.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/Native/908754.R.aparc.native.label.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/Native/908754.R.atlasroi.native.shape.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/Native/908754.R.curvature.native.shape.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/Native/908754.R.inflated.native.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/Native/908754.R.midthickness.native.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/Native/908754.R.pial.native.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/Native/908754.R.roi.native.shape.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/Native/908754.R.sphere.native.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/Native/908754.R.sphere.reg.native.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/Native/908754.R.sphere.reg.reg_LR.native.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/Native/908754.R.sulc.native.shape.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/Native/908754.R.thickness.native.shape.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/Native/908754.R.very_inflated.native.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/Native/908754.R.white.native.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/Native/908754.aparc.a2009s.native.dlabel.nii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/Native/908754.aparc.native.dlabel.nii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/Native/908754.curvature.native.dscalar.nii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/Native/908754.sulc.native.dscalar.nii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/Native/908754.thickness.native.dscalar.nii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/fsaverage/908754.L.def_sphere.164k_fs_L.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/fsaverage/908754.L.sphere.164k_fs_L.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/fsaverage/908754.R.def_sphere.164k_fs_R.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/fsaverage/908754.R.sphere.164k_fs_R.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/fsaverage_LR32k/908754.L.ArealDistortion_FS.32k_fs_LR.shape.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/fsaverage_LR32k/908754.L.aparc.32k_fs_LR.label.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/fsaverage_LR32k/908754.L.aparc.a2009s.32k_fs_LR.label.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/fsaverage_LR32k/908754.L.atlasroi.32k_fs_LR.shape.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/fsaverage_LR32k/908754.L.curvature.32k_fs_LR.shape.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/fsaverage_LR32k/908754.L.flat.32k_fs_LR.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/fsaverage_LR32k/908754.L.inflated.32k_fs_LR.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/fsaverage_LR32k/908754.L.midthickness.32k_fs_LR.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/fsaverage_LR32k/908754.L.pial.32k_fs_LR.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/fsaverage_LR32k/908754.L.sphere.32k_fs_LR.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/fsaverage_LR32k/908754.L.sulc.32k_fs_LR.shape.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/fsaverage_LR32k/908754.L.thickness.32k_fs_LR.shape.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/fsaverage_LR32k/908754.L.very_inflated.32k_fs_LR.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/fsaverage_LR32k/908754.L.white.32k_fs_LR.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/fsaverage_LR32k/908754.R.ArealDistortion_FS.32k_fs_LR.shape.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/fsaverage_LR32k/908754.R.aparc.32k_fs_LR.label.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/fsaverage_LR32k/908754.R.aparc.a2009s.32k_fs_LR.label.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/fsaverage_LR32k/908754.R.atlasroi.32k_fs_LR.shape.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/fsaverage_LR32k/908754.R.curvature.32k_fs_LR.shape.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/fsaverage_LR32k/908754.R.flat.32k_fs_LR.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/fsaverage_LR32k/908754.R.inflated.32k_fs_LR.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/fsaverage_LR32k/908754.R.midthickness.32k_fs_LR.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/fsaverage_LR32k/908754.R.pial.32k_fs_LR.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/fsaverage_LR32k/908754.R.sphere.32k_fs_LR.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/fsaverage_LR32k/908754.R.sulc.32k_fs_LR.shape.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/fsaverage_LR32k/908754.R.thickness.32k_fs_LR.shape.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/fsaverage_LR32k/908754.R.very_inflated.32k_fs_LR.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/fsaverage_LR32k/908754.R.white.32k_fs_LR.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/fsaverage_LR32k/908754.aparc.32k_fs_LR.dlabel.nii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/fsaverage_LR32k/908754.aparc.a2009s.32k_fs_LR.dlabel.nii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/908754.L.ArealDistortion_FS.164k_fs_LR.shape.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/908754.L.aparc.164k_fs_LR.label.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/908754.L.aparc.a2009s.164k_fs_LR.label.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/908754.L.atlasroi.164k_fs_LR.shape.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/908754.L.curvature.164k_fs_LR.shape.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/908754.L.flat.164k_fs_LR.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/908754.L.inflated.164k_fs_LR.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/908754.L.midthickness.164k_fs_LR.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/908754.L.pial.164k_fs_LR.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/908754.L.refsulc.164k_fs_LR.shape.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/908754.L.sphere.164k_fs_LR.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/908754.L.sulc.164k_fs_LR.shape.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/908754.L.thickness.164k_fs_LR.shape.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/908754.L.very_inflated.164k_fs_LR.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/908754.L.white.164k_fs_LR.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/908754.R.ArealDistortion_FS.164k_fs_LR.shape.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/908754.R.aparc.164k_fs_LR.label.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/908754.R.aparc.a2009s.164k_fs_LR.label.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/908754.R.atlasroi.164k_fs_LR.shape.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/908754.R.curvature.164k_fs_LR.shape.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/908754.R.flat.164k_fs_LR.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/908754.R.inflated.164k_fs_LR.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/908754.R.midthickness.164k_fs_LR.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/908754.R.pial.164k_fs_LR.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/908754.R.refsulc.164k_fs_LR.shape.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/908754.R.sphere.164k_fs_LR.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/908754.R.sulc.164k_fs_LR.shape.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/908754.R.thickness.164k_fs_LR.shape.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/908754.R.very_inflated.164k_fs_LR.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/908754.R.white.164k_fs_LR.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/908754.aparc.164k_fs_LR.dlabel.nii
-file not found: /output/sub-908754/ses-6mo/files/MNINonLinear/908754.aparc.a2009s.164k_fs_LR.dlabel.nii
-file not found: /output/sub-908754/ses-6mo/files/T1w/Native/908754.L.inflated.native.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/T1w/Native/908754.L.midthickness.native.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/T1w/Native/908754.L.pial.native.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/T1w/Native/908754.L.very_inflated.native.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/T1w/Native/908754.R.inflated.native.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/T1w/Native/908754.R.midthickness.native.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/T1w/Native/908754.R.pial.native.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/T1w/Native/908754.R.very_inflated.native.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/T1w/Native/908754.R.white.native.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/T1w/fsaverage_LR32k/908754.L.inflated.32k_fs_LR.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/T1w/fsaverage_LR32k/908754.L.midthickness.32k_fs_LR.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/T1w/fsaverage_LR32k/908754.L.pial.32k_fs_LR.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/T1w/fsaverage_LR32k/908754.L.very_inflated.32k_fs_LR.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/T1w/fsaverage_LR32k/908754.L.white.32k_fs_LR.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/T1w/fsaverage_LR32k/908754.R.inflated.32k_fs_LR.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/T1w/fsaverage_LR32k/908754.R.midthickness.32k_fs_LR.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/T1w/fsaverage_LR32k/908754.R.pial.32k_fs_LR.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/T1w/fsaverage_LR32k/908754.R.very_inflated.32k_fs_LR.surf.gii
-file not found: /output/sub-908754/ses-6mo/files/T1w/fsaverage_LR32k/908754.R.white.32k_fs_LR.surf.gii
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/ROIs/Atlas_wmparc.2.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/ROIs/Atlas_wmparc.2.nii.gz'  [1 of 243]
- 84357 of 84357   100% in    0s    47.35 MB/s 84357 of 84357   100% in    0s  1421.64 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/ROIs/ROIs.2.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/ROIs/ROIs.2.nii.gz'  [2 of 243]
- 11520 of 11520   100% in    0s    13.41 MB/s 11520 of 11520   100% in    0s   338.37 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/ROIs/wmparc.2.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/ROIs/wmparc.2.nii.gz'  [3 of 243]
- 53293 of 53293   100% in    0s    46.33 MB/s 53293 of 53293   100% in    0s   592.21 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/T1w.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/T1w.nii.gz'  [4 of 243]
-  1048576 of 12319318     8% in    0s    19.89 MB/s 12319318 of 12319318   100% in    0s    32.32 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/T1w_restore.2.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/T1w_restore.2.nii.gz'  [5 of 243]
- 1048576 of 3127001    33% in    0s    60.34 MB/s 3127001 of 3127001   100% in    0s    27.75 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/T1w_restore.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/T1w_restore.nii.gz'  [6 of 243]
-  1048576 of 12285399     8% in    0s    20.24 MB/s 12285399 of 12285399   100% in    0s    33.32 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/T1w_restore_brain.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/T1w_restore_brain.nii.gz'  [7 of 243]
- 1048576 of 3519128    29% in    0s    55.53 MB/s 3519128 of 3519128   100% in    0s    26.04 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/T2w.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/T2w.nii.gz'  [8 of 243]
-  1048576 of 10987336     9% in    0s    22.84 MB/s 10987336 of 10987336   100% in    0s    31.74 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/T2w_restore.2.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/T2w_restore.2.nii.gz'  [9 of 243]
- 1048576 of 3109784    33% in    0s    61.36 MB/s 3109784 of 3109784   100% in    0s    23.16 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/T2w_restore.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/T2w_restore.nii.gz'  [10 of 243]
-  1048576 of 11935112     8% in    0s    21.19 MB/s 11935112 of 11935112   100% in    0s    35.75 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/T2w_restore_brain.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/T2w_restore_brain.nii.gz'  [11 of 243]
- 1048576 of 3285364    31% in    0s    59.51 MB/s 3285364 of 3285364   100% in    0s    32.46 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/aparc+aseg.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/aparc+aseg.nii.gz'  [12 of 243]
- 221096 of 221096   100% in    0s    84.78 MB/s 221096 of 221096   100% in    0s     6.15 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/aparc.a2009s+aseg.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/aparc.a2009s+aseg.nii.gz'  [13 of 243]
- 236577 of 236577   100% in    0s    78.42 MB/s 236577 of 236577   100% in    0s     3.57 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/brainmask_fs.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/brainmask_fs.nii.gz'  [14 of 243]
- 82977 of 82977   100% in    0s    54.76 MB/s 82977 of 82977   100% in    0s  1735.54 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/wmparc.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/wmparc.nii.gz'  [15 of 243]
- 255406 of 255406   100% in    0s    87.18 MB/s 255406 of 255406   100% in    0s     6.55 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/xfms/NonlinearRegJacobians.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/xfms/NonlinearRegJacobians.nii.gz'  [16 of 243]
-  1048576 of 11650460     9% in    0s    21.22 MB/s 11650460 of 11650460   100% in    0s    28.53 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/xfms/acpc_dc2standard.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/xfms/acpc_dc2standard.nii.gz'  [17 of 243]
-  1048576 of 74987080     1% in    0s     3.63 MB/s 74987080 of 74987080   100% in    1s    66.69 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/xfms/antsacpc2standard.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/xfms/antsacpc2standard.nii.gz'  [18 of 243]
-   1048576 of 158541468     0% in    0s  1779.73 KB/s 145752064 of 158541468    91% in    1s    88.13 MB/s 158541468 of 158541468   100% in    1s    82.77 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/xfms/antsreg0GenericAffine.mat' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/xfms/antsreg0GenericAffine.mat'  [19 of 243]
- 193 of 193   100% in    0s   229.01 KB/s 193 of 193   100% in    0s  1297.02 B/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/xfms/antsreg1InverseWarp.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/xfms/antsreg1InverseWarp.nii.gz'  [20 of 243]
- 914121 of 914121   100% in    0s   106.07 MB/s 914121 of 914121   100% in    0s    10.01 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/xfms/antsreg1Warp.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/xfms/antsreg1Warp.nii.gz'  [21 of 243]
- 914723 of 914723   100% in    0s   109.67 MB/s 914723 of 914723   100% in    0s    15.50 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/xfms/antsstandard2acpc.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/xfms/antsstandard2acpc.nii.gz'  [22 of 243]
-   1048576 of 160692492     0% in    0s  1760.95 KB/s 145752064 of 160692492    90% in    1s    87.20 MB/s 160692492 of 160692492   100% in    2s    76.37 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/xfms/log.txt' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/xfms/log.txt'  [23 of 243]
- 1679 of 1679   100% in    0s  1753.63 KB/s 1679 of 1679   100% in    0s    38.37 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/xfms/standard2acpc_dc.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/MNINonLinear/xfms/standard2acpc_dc.nii.gz'  [24 of 243]
-  1048576 of 76839862     1% in    0s     3.55 MB/s 76839862 of 76839862   100% in    0s    76.20 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.BA.annot' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.BA.annot'  [25 of 243]
- 868800 of 868800   100% in    0s   110.55 MB/s 868800 of 868800   100% in    0s    12.89 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.BA.thresh.annot' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.BA.thresh.annot'  [26 of 243]
- 868800 of 868800   100% in    0s   113.78 MB/s 868800 of 868800   100% in    0s    14.74 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.BA1.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.BA1.label'  [27 of 243]
- 162581 of 162581   100% in    0s    82.87 MB/s 162581 of 162581   100% in    0s     7.86 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.BA1.thresh.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.BA1.thresh.label'  [28 of 243]
- 40926 of 40926   100% in    0s    39.19 MB/s 40926 of 40926   100% in    0s   958.02 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.BA2.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.BA2.label'  [29 of 243]
- 252557 of 252557   100% in    0s    86.14 MB/s 252557 of 252557   100% in    0s  1932.23 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.BA2.thresh.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.BA2.thresh.label'  [30 of 243]
- 74644 of 74644   100% in    0s    58.06 MB/s 74644 of 74644   100% in    0s  1473.33 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.BA3a.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.BA3a.label'  [31 of 243]
- 129021 of 129021   100% in    0s    66.51 MB/s 129021 of 129021   100% in    0s     2.05 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.BA3a.thresh.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.BA3a.thresh.label'  [32 of 243]
- 48728 of 48728   100% in    0s    43.39 MB/s 48728 of 48728   100% in    0s   749.47 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.BA3b.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.BA3b.label'  [33 of 243]
- 221638 of 221638   100% in    0s    88.89 MB/s 221638 of 221638   100% in    0s     3.12 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.BA3b.thresh.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.BA3b.thresh.label'  [34 of 243]
- 75918 of 75918   100% in    0s    58.06 MB/s 75918 of 75918   100% in    0s  1392.20 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.BA44.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.BA44.label'  [35 of 243]
- 132132 of 132132   100% in    0s    75.32 MB/s 132132 of 132132   100% in    0s     6.44 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.BA44.thresh.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.BA44.thresh.label'  [36 of 243]
- 63554 of 63554   100% in    0s    52.43 MB/s 63554 of 63554   100% in    0s     2.09 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.BA45.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.BA45.label'  [37 of 243]
- 85532 of 85532   100% in    0s    61.47 MB/s 85532 of 85532   100% in    0s  1557.88 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.BA45.thresh.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.BA45.thresh.label'  [38 of 243]
- 21613 of 21613   100% in    0s    22.43 MB/s 21613 of 21613   100% in    0s   458.94 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.BA4a.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.BA4a.label'  [39 of 243]
- 169256 of 169256   100% in    0s    70.95 MB/s 169256 of 169256   100% in    0s     6.98 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.BA4a.thresh.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.BA4a.thresh.label'  [40 of 243]
- 65371 of 65371   100% in    0s    43.35 MB/s 65371 of 65371   100% in    0s  1374.98 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.BA4p.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.BA4p.label'  [41 of 243]
- 112666 of 112666   100% in    0s    67.32 MB/s 112666 of 112666   100% in    0s   797.37 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.BA4p.thresh.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.BA4p.thresh.label'  [42 of 243]
- 46522 of 46522   100% in    0s    36.79 MB/s 46522 of 46522   100% in    0s  1389.01 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.BA6.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.BA6.label'  [43 of 243]
- 420791 of 420791   100% in    0s   100.15 MB/s 420791 of 420791   100% in    0s     8.28 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.BA6.thresh.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.BA6.thresh.label'  [44 of 243]
- 227977 of 227977   100% in    0s    85.87 MB/s 227977 of 227977   100% in    0s     4.79 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.MT.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.MT.label'  [45 of 243]
- 57641 of 57641   100% in    0s    46.62 MB/s 57641 of 57641   100% in    0s   797.90 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.MT.thresh.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.MT.thresh.label'  [46 of 243]
- 15105 of 15105   100% in    0s    15.15 MB/s 15105 of 15105   100% in    0s    78.55 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.V1.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.V1.label'  [47 of 243]
- 158929 of 158929   100% in    0s    65.98 MB/s 158929 of 158929   100% in    0s     3.13 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.V1.thresh.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.V1.thresh.label'  [48 of 243]
- 114227 of 114227   100% in    0s    55.49 MB/s 114227 of 114227   100% in    0s     4.02 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.V2.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.V2.label'  [49 of 243]
- 251597 of 251597   100% in    0s    88.47 MB/s 251597 of 251597   100% in    0s     5.72 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.V2.thresh.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.V2.thresh.label'  [50 of 243]
- 109800 of 109800   100% in    0s    63.69 MB/s 109800 of 109800   100% in    0s     5.64 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.aparc.a2009s.annot' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.aparc.a2009s.annot'  [51 of 243]
- 871652 of 871652   100% in    0s    98.67 MB/s 871652 of 871652   100% in    0s    13.53 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.aparc.annot' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.aparc.annot'  [52 of 243]
- 869842 of 869842   100% in    0s   106.16 MB/s 869842 of 869842   100% in    0s     7.35 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.cortex.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.cortex.label'  [53 of 243]
- 1048576 of 4478259    23% in    0s    48.05 MB/s 4478259 of 4478259   100% in    0s    30.11 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.perirhinal.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/lh.perirhinal.label'  [54 of 243]
- 42888 of 42888   100% in    0s    41.19 MB/s 42888 of 42888   100% in    0s   913.34 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.BA.annot' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.BA.annot'  [55 of 243]
- 841024 of 841024   100% in    0s   112.11 MB/s 841024 of 841024   100% in    0s    14.75 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.BA.thresh.annot' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.BA.thresh.annot'  [56 of 243]
- 841024 of 841024   100% in    0s   114.74 MB/s 841024 of 841024   100% in    0s    18.16 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.BA1.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.BA1.label'  [57 of 243]
- 93076 of 93076   100% in    0s    65.36 MB/s 93076 of 93076   100% in    0s   578.04 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.BA1.thresh.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.BA1.thresh.label'  [58 of 243]
- 21537 of 21537   100% in    0s    16.10 MB/s 21537 of 21537   100% in    0s   953.02 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.BA2.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.BA2.label'  [59 of 243]
- 154191 of 154191   100% in    0s    74.72 MB/s 154191 of 154191   100% in    0s     2.09 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.BA2.thresh.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.BA2.thresh.label'  [60 of 243]
- 58845 of 58845   100% in    0s    43.20 MB/s 58845 of 58845   100% in    0s     3.44 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.BA3a.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.BA3a.label'  [61 of 243]
- 104246 of 104246   100% in    0s    62.10 MB/s 104246 of 104246   100% in    0s     2.01 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.BA3a.thresh.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.BA3a.thresh.label'  [62 of 243]
- 42815 of 42815   100% in    0s    34.81 MB/s 42815 of 42815   100% in    0s   357.12 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.BA3b.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.BA3b.label'  [63 of 243]
- 109388 of 109388   100% in    0s    62.84 MB/s 109388 of 109388   100% in    0s     2.62 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.BA3b.thresh.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.BA3b.thresh.label'  [64 of 243]
- 52565 of 52565   100% in    0s    40.53 MB/s 52565 of 52565   100% in    0s  1359.06 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.BA44.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.BA44.label'  [65 of 243]
- 190210 of 190210   100% in    0s    73.41 MB/s 190210 of 190210   100% in    0s     4.95 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.BA44.thresh.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.BA44.thresh.label'  [66 of 243]
- 23409 of 23409   100% in    0s    22.21 MB/s 23409 of 23409   100% in    0s   750.78 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.BA45.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.BA45.label'  [67 of 243]
- 174031 of 174031   100% in    0s    77.41 MB/s 174031 of 174031   100% in    0s  1033.96 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.BA45.thresh.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.BA45.thresh.label'  [68 of 243]
- 42876 of 42876   100% in    0s    34.80 MB/s 42876 of 42876   100% in    0s   742.74 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.BA4a.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.BA4a.label'  [69 of 243]
- 130485 of 130485   100% in    0s    68.98 MB/s 130485 of 130485   100% in    0s     7.28 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.BA4a.thresh.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.BA4a.thresh.label'  [70 of 243]
- 32223 of 32223   100% in    0s    29.84 MB/s 32223 of 32223   100% in    0s   849.79 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.BA4p.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.BA4p.label'  [71 of 243]
- 115329 of 115329   100% in    0s    65.00 MB/s 115329 of 115329   100% in    0s     4.53 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.BA4p.thresh.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.BA4p.thresh.label'  [72 of 243]
- 46068 of 46068   100% in    0s    39.51 MB/s 46068 of 46068   100% in    0s   716.41 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.BA6.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.BA6.label'  [73 of 243]
- 220187 of 220187   100% in    0s    84.88 MB/s 220187 of 220187   100% in    0s     3.57 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.BA6.thresh.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.BA6.thresh.label'  [74 of 243]
- 117291 of 117291   100% in    0s    65.22 MB/s 117291 of 117291   100% in    0s  2003.74 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.MT.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.MT.label'  [75 of 243]
- 46276 of 46276   100% in    0s    37.02 MB/s 46276 of 46276   100% in    0s   594.32 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.MT.thresh.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.MT.thresh.label'  [76 of 243]
- 5335 of 5335   100% in    0s     5.86 MB/s 5335 of 5335   100% in    0s   300.10 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.V1.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.V1.label'  [77 of 243]
- 185945 of 185945   100% in    0s    80.83 MB/s 185945 of 185945   100% in    0s     2.92 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.V1.thresh.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.V1.thresh.label'  [78 of 243]
- 118113 of 118113   100% in    0s    69.62 MB/s 118113 of 118113   100% in    0s  1045.41 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.V2.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.V2.label'  [79 of 243]
- 232283 of 232283   100% in    0s    86.57 MB/s 232283 of 232283   100% in    0s     6.83 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.V2.thresh.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.V2.thresh.label'  [80 of 243]
- 123327 of 123327   100% in    0s    67.28 MB/s 123327 of 123327   100% in    0s     6.59 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.aparc.a2009s.annot' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.aparc.a2009s.annot'  [81 of 243]
- 843876 of 843876   100% in    0s   109.15 MB/s 843876 of 843876   100% in    0s    21.73 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.aparc.annot' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.aparc.annot'  [82 of 243]
- 842066 of 842066   100% in    0s   108.96 MB/s 842066 of 842066   100% in    0s    10.91 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.cortex.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.cortex.label'  [83 of 243]
- 1048576 of 4192785    25% in    0s    48.68 MB/s 4192785 of 4192785   100% in    0s    18.44 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.perirhinal.label' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/label/rh.perirhinal.label'  [84 of 243]
- 27699 of 27699   100% in    0s    24.90 MB/s 27699 of 27699   100% in    0s   752.91 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/001.mgz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/001.mgz'  [85 of 243]
- 1048576 of 1403278    74% in    0s    98.18 MB/s 1403278 of 1403278   100% in    0s    21.15 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/T1.mgz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/T1.mgz'  [86 of 243]
- 1048576 of 2319604    45% in    0s    73.93 MB/s 2319604 of 2319604   100% in    0s    20.72 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/aparc+aseg.mgz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/aparc+aseg.mgz'  [87 of 243]
- 341185 of 341185   100% in    0s    94.42 MB/s 341185 of 341185   100% in    0s    11.79 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/aparc.a2009s+aseg.mgz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/aparc.a2009s+aseg.mgz'  [88 of 243]
- 366040 of 366040   100% in    0s    96.83 MB/s 366040 of 366040   100% in    0s     8.71 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/aseg.mgz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/aseg.mgz'  [89 of 243]
- 217193 of 217193   100% in    0s    83.96 MB/s 217193 of 217193   100% in    0s     7.02 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/brain.AN.mgz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/brain.AN.mgz'  [90 of 243]
- 943658 of 943658   100% in    0s   104.32 MB/s 943658 of 943658   100% in    0s     7.21 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/brain.finalsurfs.mgz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/brain.finalsurfs.mgz'  [91 of 243]
- 1048576 of 1322153    79% in    0s   101.75 MB/s 1322153 of 1322153   100% in    0s    21.89 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/brain.mgz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/brain.mgz'  [92 of 243]
- 1048576 of 1350961    77% in    0s    85.64 MB/s 1350961 of 1350961   100% in    0s    17.32 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/filled.mgz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/filled.mgz'  [93 of 243]
- 126175 of 126175   100% in    0s    61.93 MB/s 126175 of 126175   100% in    0s     3.62 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/lh.ribbon.mgz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/lh.ribbon.mgz'  [94 of 243]
- 94056 of 94056   100% in    0s    58.40 MB/s 94056 of 94056   100% in    0s     4.06 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/norm.mgz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/norm.mgz'  [95 of 243]
- 1048576 of 5576025    18% in    0s    39.19 MB/s 5576025 of 5576025   100% in    0s    30.63 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/nu.mgz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/nu.mgz'  [96 of 243]
- 1048576 of 5662705    18% in    0s    39.84 MB/s 5662705 of 5662705   100% in    0s    25.06 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/rh.ribbon.mgz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/rh.ribbon.mgz'  [97 of 243]
- 91332 of 91332   100% in    0s    66.59 MB/s 91332 of 91332   100% in    0s     3.56 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/ribbon.mgz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/ribbon.mgz'  [98 of 243]
- 173506 of 173506   100% in    0s    88.30 MB/s 173506 of 173506   100% in    0s  1502.14 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/tmp.mri_nu_correct.mni.16177/0/nu0.mnc' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/tmp.mri_nu_correct.mni.16177/0/nu0.mnc'  [99 of 243]
- 1048576 of 1102268    95% in    0s   113.96 MB/s 1102268 of 1102268   100% in    0s     9.77 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/tmp.mri_nu_correct.mni.16177/0/nu1_corr.mnc' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/tmp.mri_nu_correct.mni.16177/0/nu1_corr.mnc'  [100 of 243]
- 1048576 of 1102240    95% in    0s   113.22 MB/s 1102240 of 1102240   100% in    0s    18.80 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/tmp.mri_nu_correct.mni.16177/0/nu1_est.mnc.temp' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/tmp.mri_nu_correct.mni.16177/0/nu1_est.mnc.temp'  [101 of 243]
- 1048576 of 1102512    95% in    0s   106.85 MB/s 1102512 of 1102512   100% in    0s     4.21 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/tmp.mri_nu_correct.mni.16177/0/nu1_field.mnc' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/tmp.mri_nu_correct.mni.16177/0/nu1_field.mnc'  [102 of 243]
-  1048576 of 67115892     1% in    0s     3.99 MB/s 67115892 of 67115892   100% in    0s    73.53 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/tmp.mri_nu_correct.mni.16177/0/nu1_log.mnc' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/tmp.mri_nu_correct.mni.16177/0/nu1_log.mnc'  [103 of 243]
- 1048576 of 1102248    95% in    0s   110.80 MB/s 1102248 of 1102248   100% in    0s    26.91 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/tmp.mri_nu_correct.mni.16177/0/nu1_mask.mnc' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/tmp.mri_nu_correct.mni.16177/0/nu1_mask.mnc'  [104 of 243]
- 553174 of 553174   100% in    0s   109.61 MB/s 553174 of 553174   100% in    0s     5.81 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/tmp.mri_nu_correct.mni.16177/0/nu1_temp.mnc' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/tmp.mri_nu_correct.mni.16177/0/nu1_temp.mnc'  [105 of 243]
- 1048576 of 1102492    95% in    0s   109.10 MB/s 1102492 of 1102492   100% in    0s    16.93 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/tmp.mri_nu_correct.mni.16177/0/template.mnc' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/tmp.mri_nu_correct.mni.16177/0/template.mnc'  [106 of 243]
- 1048576 of 2548324    41% in    0s    69.38 MB/s 2548324 of 2548324   100% in    0s    18.42 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/tmp.mri_nu_correct.mni.16177/nu1.imp' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/tmp.mri_nu_correct.mni.16177/nu1.imp'  [107 of 243]
- 19452 of 19452   100% in    0s    18.70 MB/s 19452 of 19452   100% in    0s   757.60 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/transforms/talairach.lta' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/transforms/talairach.lta'  [108 of 243]
- 1523 of 1523   100% in    0s  1776.95 KB/s 1523 of 1523   100% in    0s    28.83 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/wm.asegedit.mgz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/wm.asegedit.mgz'  [109 of 243]
- 134718 of 134718   100% in    0s    61.12 MB/s 134718 of 134718   100% in    0s     2.48 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/wm.mgz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/wm.mgz'  [110 of 243]
- 138760 of 138760   100% in    0s    75.15 MB/s 138760 of 138760   100% in    0s     3.88 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/wm.seg.mgz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/wm.seg.mgz'  [111 of 243]
- 127058 of 127058   100% in    0s    72.82 MB/s 127058 of 127058   100% in    0s     2.40 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/wmparc.mgz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/mri/wmparc.mgz'  [112 of 243]
- 389083 of 389083   100% in    0s    96.30 MB/s 389083 of 389083   100% in    0s    13.60 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/scripts/pctsurfcon.log' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/scripts/pctsurfcon.log'  [113 of 243]
- 406 of 406   100% in    0s   522.38 KB/s 406 of 406   100% in    0s     7.22 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/scripts/pctsurfcon.log.old' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/scripts/pctsurfcon.log.old'  [114 of 243]
- 406 of 406   100% in    0s   479.42 KB/s 406 of 406   100% in    0s     6.11 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/scripts/ponscc.cut.log' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/scripts/ponscc.cut.log'  [115 of 243]
- 208 of 208   100% in    0s   246.21 KB/s 208 of 208   100% in    0s  1242.63 B/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/scripts/recon-all-status.log' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/scripts/recon-all-status.log'  [116 of 243]
- 2285 of 2285   100% in    0s     2.59 MB/s 2285 of 2285   100% in    0s    67.80 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/scripts/recon-all.cmd' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/scripts/recon-all.cmd'  [117 of 243]
- 16371 of 16371   100% in    0s    16.30 MB/s 16371 of 16371   100% in    0s   126.07 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/scripts/recon-all.done' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/scripts/recon-all.done'  [118 of 243]
- 549 of 549   100% in    0s   493.68 KB/s 549 of 549   100% in    0s    20.70 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/scripts/recon-all.env' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/scripts/recon-all.env'  [119 of 243]
- 4217 of 4217   100% in    0s     3.57 MB/s 4217 of 4217   100% in    0s    70.38 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/scripts/recon-all.env.bak' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/scripts/recon-all.env.bak'  [120 of 243]
- 4169 of 4169   100% in    0s     4.64 MB/s 4169 of 4169   100% in    0s    94.77 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/scripts/recon-all.log' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/scripts/recon-all.log'  [121 of 243]
- 308776 of 308776   100% in    0s    87.61 MB/s 308776 of 308776   100% in    0s     5.45 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/stats/aseg.stats' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/stats/aseg.stats'  [122 of 243]
- 9343 of 9343   100% in    0s    10.79 MB/s 9343 of 9343   100% in    0s   202.67 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/stats/lh.BA.stats' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/stats/lh.BA.stats'  [123 of 243]
- 3462 of 3462   100% in    0s     3.18 MB/s 3462 of 3462   100% in    0s    99.78 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/stats/lh.BA.thresh.stats' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/stats/lh.BA.thresh.stats'  [124 of 243]
- 3380 of 3380   100% in    0s     3.98 MB/s 3380 of 3380   100% in    0s    60.12 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/stats/lh.aparc.a2009s.stats' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/stats/lh.aparc.a2009s.stats'  [125 of 243]
- 10333 of 10333   100% in    0s    10.94 MB/s 10333 of 10333   100% in    0s   285.47 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/stats/lh.aparc.stats' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/stats/lh.aparc.stats'  [126 of 243]
- 5905 of 5905   100% in    0s     6.41 MB/s 5905 of 5905   100% in    0s   196.24 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/stats/lh.w-g.pct.stats' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/stats/lh.w-g.pct.stats'  [127 of 243]
- 6337 of 6337   100% in    0s     6.88 MB/s 6337 of 6337   100% in    0s   144.77 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/stats/rh.BA.stats' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/stats/rh.BA.stats'  [128 of 243]
- 3462 of 3462   100% in    0s     3.95 MB/s 3462 of 3462   100% in    0s   155.43 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/stats/rh.BA.thresh.stats' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/stats/rh.BA.thresh.stats'  [129 of 243]
- 3380 of 3380   100% in    0s     3.78 MB/s 3380 of 3380   100% in    0s    54.32 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/stats/rh.aparc.a2009s.stats' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/stats/rh.aparc.a2009s.stats'  [130 of 243]
- 10332 of 10332   100% in    0s    10.73 MB/s 10332 of 10332   100% in    0s   239.56 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/stats/rh.aparc.stats' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/stats/rh.aparc.stats'  [131 of 243]
- 5904 of 5904   100% in    0s     6.40 MB/s 5904 of 5904   100% in    0s   138.36 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/stats/rh.w-g.pct.stats' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/stats/rh.w-g.pct.stats'  [132 of 243]
- 6338 of 6338   100% in    0s     6.89 MB/s 6338 of 6338   100% in    0s    68.15 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/stats/wmparc.stats' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/stats/wmparc.stats'  [133 of 243]
- 10813 of 10813   100% in    0s    11.23 MB/s 10813 of 10813   100% in    0s    90.70 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.area' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.area'  [134 of 243]
- 434179 of 434179   100% in    0s   101.51 MB/s 434179 of 434179   100% in    0s     5.43 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.area.mid' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.area.mid'  [135 of 243]
- 434179 of 434179   100% in    0s   101.16 MB/s 434179 of 434179   100% in    0s     5.78 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.area.pial' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.area.pial'  [136 of 243]
- 434179 of 434179   100% in    0s    95.19 MB/s 434179 of 434179   100% in    0s     8.44 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.avg_curv' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.avg_curv'  [137 of 243]
- 434179 of 434179   100% in    0s    94.97 MB/s 434179 of 434179   100% in    0s     2.89 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.curv' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.curv'  [138 of 243]
- 434179 of 434179   100% in    0s   101.54 MB/s 434179 of 434179   100% in    0s     8.53 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.curv.pial' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.curv.pial'  [139 of 243]
- 434179 of 434179   100% in    0s    94.90 MB/s 434179 of 434179   100% in    0s     5.74 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.defect_borders' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.defect_borders'  [140 of 243]
- 538319 of 538319   100% in    0s    99.88 MB/s 538319 of 538319   100% in    0s    12.64 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.defect_chull' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.defect_chull'  [141 of 243]
- 538319 of 538319   100% in    0s   106.38 MB/s 538319 of 538319   100% in    0s     9.92 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.defect_labels' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.defect_labels'  [142 of 243]
- 538319 of 538319   100% in    0s   100.27 MB/s 538319 of 538319   100% in    0s    13.31 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.inflated' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.inflated'  [143 of 243]
- 1048576 of 3909610    26% in    0s    49.96 MB/s 3909610 of 3909610   100% in    0s    22.71 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.inflated.H' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.inflated.H'  [144 of 243]
- 434179 of 434179   100% in    0s   108.31 MB/s 434179 of 434179   100% in    0s    11.02 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.inflated.K' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.inflated.K'  [145 of 243]
- 434179 of 434179   100% in    0s   108.34 MB/s 434179 of 434179   100% in    0s     4.45 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.inflated.nofix' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.inflated.nofix'  [146 of 243]
- 1048576 of 4853669    21% in    0s    43.70 MB/s 4853669 of 4853669   100% in    0s    22.80 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.jacobian_white' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.jacobian_white'  [147 of 243]
- 434179 of 434179   100% in    0s    94.64 MB/s 434179 of 434179   100% in    0s     4.48 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.orig' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.orig'  [148 of 243]
- 1048576 of 3908367    26% in    0s    51.49 MB/s 3908367 of 3908367   100% in    0s    28.07 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.orig.nofix' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.orig.nofix'  [149 of 243]
- 1048576 of 4852866    21% in    0s    44.13 MB/s 4852866 of 4852866   100% in    0s    30.89 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.pial' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.pial'  [150 of 243]
- 1048576 of 3908761    26% in    0s    53.83 MB/s 3908761 of 3908761   100% in    0s    23.98 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.qsphere.nofix' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.qsphere.nofix'  [151 of 243]
- 1048576 of 4854070    21% in    0s    44.31 MB/s 4854070 of 4854070   100% in    0s    24.66 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.smoothwm' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.smoothwm'  [152 of 243]
- 1048576 of 3909231    26% in    0s    52.25 MB/s 3909231 of 3909231   100% in    0s    18.26 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.smoothwm.nofix' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.smoothwm.nofix'  [153 of 243]
- 1048576 of 4853265    21% in    0s    44.15 MB/s 4853265 of 4853265   100% in    0s    29.03 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.sphere' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.sphere'  [154 of 243]
- 1048576 of 3909995    26% in    0s    50.12 MB/s 3909995 of 3909995   100% in    0s    25.52 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.sphere.reg' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.sphere.reg'  [155 of 243]
- 1048576 of 3910447    26% in    0s    51.00 MB/s 3910447 of 3910447   100% in    0s    30.01 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.sulc' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.sulc'  [156 of 243]
- 434179 of 434179   100% in    0s   102.82 MB/s 434179 of 434179   100% in    0s    18.88 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.thickness' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.thickness'  [157 of 243]
- 434179 of 434179   100% in    0s   101.69 MB/s 434179 of 434179   100% in    0s     6.96 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.volume' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.volume'  [158 of 243]
- 434179 of 434179   100% in    0s    96.97 MB/s 434179 of 434179   100% in    0s    16.66 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.w-g.pct.mgh' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.w-g.pct.mgh'  [159 of 243]
- 447831 of 447831   100% in    0s   103.44 MB/s 447831 of 447831   100% in    0s     5.39 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.white' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/lh.white'  [160 of 243]
- 1048576 of 3908766    26% in    0s    50.88 MB/s 3908766 of 3908766   100% in    0s    25.46 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.area' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.area'  [161 of 243]
- 420291 of 420291   100% in    0s   102.02 MB/s 420291 of 420291   100% in    0s     8.25 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.area.mid' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.area.mid'  [162 of 243]
- 420291 of 420291   100% in    0s   100.94 MB/s 420291 of 420291   100% in    0s     2.69 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.area.pial' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.area.pial'  [163 of 243]
- 420291 of 420291   100% in    0s    89.73 MB/s 420291 of 420291   100% in    0s     7.81 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.avg_curv' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.avg_curv'  [164 of 243]
- 420291 of 420291   100% in    0s   101.45 MB/s 420291 of 420291   100% in    0s     2.08 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.curv' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.curv'  [165 of 243]
- 420291 of 420291   100% in    0s    95.07 MB/s 420291 of 420291   100% in    0s     2.93 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.curv.pial' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.curv.pial'  [166 of 243]
- 420291 of 420291   100% in    0s    98.00 MB/s 420291 of 420291   100% in    0s    11.71 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.defect_borders' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.defect_borders'  [167 of 243]
- 560863 of 560863   100% in    0s   103.08 MB/s 560863 of 560863   100% in    0s    10.73 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.defect_chull' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.defect_chull'  [168 of 243]
- 560863 of 560863   100% in    0s   100.15 MB/s 560863 of 560863   100% in    0s    16.38 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.defect_labels' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.defect_labels'  [169 of 243]
- 560863 of 560863   100% in    0s    99.90 MB/s 560863 of 560863   100% in    0s     8.96 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.inflated' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.inflated'  [170 of 243]
- 1048576 of 3784618    27% in    0s    52.29 MB/s 3784618 of 3784618   100% in    0s    26.53 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.inflated.H' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.inflated.H'  [171 of 243]
- 420291 of 420291   100% in    0s   106.89 MB/s 420291 of 420291   100% in    0s     6.64 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.inflated.K' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.inflated.K'  [172 of 243]
- 420291 of 420291   100% in    0s   108.33 MB/s 420291 of 420291   100% in    0s    10.97 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.inflated.nofix' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.inflated.nofix'  [173 of 243]
- 1048576 of 5058581    20% in    0s    43.67 MB/s 5058581 of 5058581   100% in    0s    25.83 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.jacobian_white' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.jacobian_white'  [174 of 243]
- 420291 of 420291   100% in    0s    98.00 MB/s 420291 of 420291   100% in    0s     8.86 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.orig' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.orig'  [175 of 243]
- 1048576 of 3783375    27% in    0s    53.27 MB/s 3783375 of 3783375   100% in    0s    21.24 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.orig.nofix' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.orig.nofix'  [176 of 243]
- 1048576 of 5057778    20% in    0s    43.07 MB/s 5057778 of 5057778   100% in    0s    34.44 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.pial' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.pial'  [177 of 243]
- 1048576 of 3783769    27% in    0s    55.27 MB/s 3783769 of 3783769   100% in    0s    30.73 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.qsphere.nofix' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.qsphere.nofix'  [178 of 243]
- 1048576 of 5058982    20% in    0s    43.83 MB/s 5058982 of 5058982   100% in    0s    17.73 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.smoothwm' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.smoothwm'  [179 of 243]
- 1048576 of 3784239    27% in    0s    53.97 MB/s 3784239 of 3784239   100% in    0s    25.70 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.smoothwm.nofix' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.smoothwm.nofix'  [180 of 243]
- 1048576 of 5058177    20% in    0s    43.60 MB/s 5058177 of 5058177   100% in    0s    22.98 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.sphere' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.sphere'  [181 of 243]
- 1048576 of 3785003    27% in    0s    53.36 MB/s 3785003 of 3785003   100% in    0s    18.75 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.sphere.reg' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.sphere.reg'  [182 of 243]
- 1048576 of 3785455    27% in    0s    52.14 MB/s 3785455 of 3785455   100% in    0s    32.47 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.sulc' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.sulc'  [183 of 243]
- 420291 of 420291   100% in    0s   102.02 MB/s 420291 of 420291   100% in    0s     7.97 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.thickness' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.thickness'  [184 of 243]
- 420291 of 420291   100% in    0s   107.26 MB/s 420291 of 420291   100% in    0s     8.95 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.volume' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.volume'  [185 of 243]
- 420291 of 420291   100% in    0s   103.71 MB/s 420291 of 420291   100% in    0s     7.99 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.w-g.pct.mgh' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.w-g.pct.mgh'  [186 of 243]
- 433943 of 433943   100% in    0s   110.21 MB/s 433943 of 433943   100% in    0s     7.46 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.white' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754/surf/rh.white'  [187 of 243]
- 1048576 of 3783774    27% in    0s    54.23 MB/s 3783774 of 3783774   100% in    0s    21.04 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/001.mgz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/001.mgz'  [188 of 243]
- 984444 of 984444   100% in    0s   118.57 MB/s 984444 of 984444   100% in    0s    15.29 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/T1.mgz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/T1.mgz'  [189 of 243]
- 1048576 of 1653762    63% in    0s    88.57 MB/s 1653762 of 1653762   100% in    0s    19.77 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/aseg.mgz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/aseg.mgz'  [190 of 243]
- 217194 of 217194   100% in    0s    84.37 MB/s 217194 of 217194   100% in    0s     2.06 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/brain.mgz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/brain.mgz'  [191 of 243]
- 957855 of 957855   100% in    0s   110.34 MB/s 957855 of 957855   100% in    0s    12.30 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/norm.mgz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/norm.mgz'  [192 of 243]
- 1048576 of 5600643    18% in    0s    38.60 MB/s 5600643 of 5600643   100% in    0s    32.83 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/nu.mgz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/nu.mgz'  [193 of 243]
- 1048576 of 5565126    18% in    0s    40.31 MB/s 5565126 of 5565126   100% in    0s    27.16 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/tmp.mri_nu_correct.mni.16177/0/field_volume.mnc' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/tmp.mri_nu_correct.mni.16177/0/field_volume.mnc'  [194 of 243]
- 1048576 of 2546956    41% in    0s    72.41 MB/s 2546956 of 2546956   100% in    0s    25.83 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/tmp.mri_nu_correct.mni.16177/0/nu0.mnc' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/tmp.mri_nu_correct.mni.16177/0/nu0.mnc'  [195 of 243]
- 1048576 of 1102268    95% in    0s   121.97 MB/s 1102268 of 1102268   100% in    0s     9.86 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/tmp.mri_nu_correct.mni.16177/0/nu1_corr.mnc' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/tmp.mri_nu_correct.mni.16177/0/nu1_corr.mnc'  [196 of 243]
- 1048576 of 1102240    95% in    0s   120.66 MB/s 1102240 of 1102240   100% in    0s    17.87 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/tmp.mri_nu_correct.mni.16177/0/nu1_est.hist' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/tmp.mri_nu_correct.mni.16177/0/nu1_est.hist'  [197 of 243]
- 5488 of 5488   100% in    0s     7.21 MB/s 5488 of 5488   100% in    0s   156.17 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/tmp.mri_nu_correct.mni.16177/0/nu1_est.mnc' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/tmp.mri_nu_correct.mni.16177/0/nu1_est.mnc'  [198 of 243]
- 1048576 of 1101300    95% in    0s   120.28 MB/s 1101300 of 1101300   100% in    0s    12.95 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/tmp.mri_nu_correct.mni.16177/0/nu1_est.mnc.temp' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/tmp.mri_nu_correct.mni.16177/0/nu1_est.mnc.temp'  [199 of 243]
- 1048576 of 1102512    95% in    0s   113.64 MB/s 1102512 of 1102512   100% in    0s    13.35 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/tmp.mri_nu_correct.mni.16177/0/nu1_est.sharp' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/tmp.mri_nu_correct.mni.16177/0/nu1_est.sharp'  [200 of 243]
- 4400 of 4400   100% in    0s     5.51 MB/s 4400 of 4400   100% in    0s   211.10 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/tmp.mri_nu_correct.mni.16177/0/nu1_field.mnc' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/tmp.mri_nu_correct.mni.16177/0/nu1_field.mnc'  [201 of 243]
-  1048576 of 67115892     1% in    0s     4.00 MB/s 67115892 of 67115892   100% in    0s    77.94 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/tmp.mri_nu_correct.mni.16177/0/nu1_log.mnc' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/tmp.mri_nu_correct.mni.16177/0/nu1_log.mnc'  [202 of 243]
- 1048576 of 1102248    95% in    0s   112.91 MB/s 1102248 of 1102248   100% in    0s    12.94 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/tmp.mri_nu_correct.mni.16177/0/nu1_mask.mnc' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/tmp.mri_nu_correct.mni.16177/0/nu1_mask.mnc'  [203 of 243]
- 553174 of 553174   100% in    0s    97.98 MB/s 553174 of 553174   100% in    0s     8.26 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/tmp.mri_nu_correct.mni.16177/0/nu1_residue.mnc' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/tmp.mri_nu_correct.mni.16177/0/nu1_residue.mnc'  [204 of 243]
- 1048576 of 1101300    95% in    0s   107.79 MB/s 1101300 of 1101300   100% in    0s    18.42 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/tmp.mri_nu_correct.mni.16177/0/nu1_temp.mnc' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/tmp.mri_nu_correct.mni.16177/0/nu1_temp.mnc'  [205 of 243]
- 1048576 of 1102492    95% in    0s    93.13 MB/s 1102492 of 1102492   100% in    0s    11.40 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/tmp.mri_nu_correct.mni.16177/0/template.mnc' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/tmp.mri_nu_correct.mni.16177/0/template.mnc'  [206 of 243]
- 1048576 of 2548324    41% in    0s    66.86 MB/s 2548324 of 2548324   100% in    0s    33.80 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/tmp.mri_nu_correct.mni.16177/nu0.mnc' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/tmp.mri_nu_correct.mni.16177/nu0.mnc'  [207 of 243]
-  1048576 of 67111292     1% in    0s     3.98 MB/s 67111292 of 67111292   100% in    0s    73.05 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/tmp.mri_nu_correct.mni.16177/nu1.imp' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/tmp.mri_nu_correct.mni.16177/nu1.imp'  [208 of 243]
- 19452 of 19452   100% in    0s    18.19 MB/s 19452 of 19452   100% in    0s   694.17 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/tmp.mri_nu_correct.mni.16177/nu1.mnc' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/tmp.mri_nu_correct.mni.16177/nu1.mnc'  [209 of 243]
-  1048576 of 67115972     1% in    0s     3.99 MB/s 67115972 of 67115972   100% in    0s    70.45 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/transforms/talairach.lta' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/908754N/mri/transforms/talairach.lta'  [210 of 243]
- 1522 of 1522   100% in    0s  1571.17 KB/s 1522 of 1522   100% in    0s    21.59 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/ACPCAlignment/log.txt' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/ACPCAlignment/log.txt'  [211 of 243]
- 444 of 444   100% in    0s   397.06 KB/s 444 of 444   100% in    0s     2.77 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/BiasFieldCorrection_sqrtT1wXT1w/T1wmulT2w_brain_norm_modulate_mask.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/BiasFieldCorrection_sqrtT1wXT1w/T1wmulT2w_brain_norm_modulate_mask.nii.gz'  [212 of 243]
- 193198 of 193198   100% in    0s    82.40 MB/s 193198 of 193198   100% in    0s     4.53 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/BiasFieldCorrection_sqrtT1wXT1w/log.txt' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/BiasFieldCorrection_sqrtT1wXT1w/log.txt'  [213 of 243]
- 754 of 754   100% in    0s   886.07 KB/s 754 of 754   100% in    0s    14.12 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/Native/908754.L.white.native.surf.gii' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/Native/908754.L.white.native.surf.gii'  [214 of 243]
- 1048576 of 2670390    39% in    0s    66.64 MB/s 2670390 of 2670390   100% in    0s    29.73 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/T1wN_acpc.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/T1wN_acpc.nii.gz'  [215 of 243]
-  1048576 of 20638764     5% in    0s    12.31 MB/s 20638764 of 20638764   100% in    0s    61.11 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/T1wN_acpc_1mm.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/T1wN_acpc_1mm.nii.gz'  [216 of 243]
-  1048576 of 25018560     4% in    0s    10.51 MB/s 25018560 of 25018560   100% in    0s    52.27 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/T1wN_acpc_brain.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/T1wN_acpc_brain.nii.gz'  [217 of 243]
- 1048576 of 5495273    19% in    0s    39.09 MB/s 5495273 of 5495273   100% in    0s    22.01 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/T1wN_acpc_brain_1mm.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/T1wN_acpc_brain_1mm.nii.gz'  [218 of 243]
- 1048576 of 5495267    19% in    0s    39.49 MB/s 5495267 of 5495267   100% in    0s    41.01 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/T1w_acpc_dc_restore_CSF.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/T1w_acpc_dc_restore_CSF.nii.gz'  [219 of 243]
-  1048576 of 17830315     5% in    0s    14.23 MB/s 17830315 of 17830315   100% in    0s    46.40 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/T1w_acpc_dc_restore_CSF_AdultInt.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/T1w_acpc_dc_restore_CSF_AdultInt.nii.gz'  [220 of 243]
-  1048576 of 16114054     6% in    0s    15.72 MB/s 16114054 of 16114054   100% in    0s    44.44 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/T1w_acpc_dc_restore_GM.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/T1w_acpc_dc_restore_GM.nii.gz'  [221 of 243]
- 1048576 of 3482820    30% in    0s    56.29 MB/s 3482820 of 3482820   100% in    0s    26.53 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/T1w_acpc_dc_restore_GM_AdultInt.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/T1w_acpc_dc_restore_GM_AdultInt.nii.gz'  [222 of 243]
- 1048576 of 2942760    35% in    0s    66.36 MB/s 2942760 of 2942760   100% in    0s    30.35 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/T1w_acpc_dc_restore_WM.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/T1w_acpc_dc_restore_WM.nii.gz'  [223 of 243]
- 1048576 of 3422515    30% in    0s    57.84 MB/s 3422515 of 3422515   100% in    0s    36.56 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/T1w_acpc_dc_restore_WM_AdultInt.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/T1w_acpc_dc_restore_WM_AdultInt.nii.gz'  [224 of 243]
- 1048576 of 1935270    54% in    0s    86.56 MB/s 1935270 of 1935270   100% in    0s    20.37 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/aparc+aseg.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/aparc+aseg.nii.gz'  [225 of 243]
- 292050 of 292050   100% in    0s    99.90 MB/s 292050 of 292050   100% in    0s    12.55 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/aparc+aseg_1mm.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/aparc+aseg_1mm.nii.gz'  [226 of 243]
- 296738 of 296738   100% in    0s   101.54 MB/s 296738 of 296738   100% in    0s     3.73 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/aparc.a2009s+aseg.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/aparc.a2009s+aseg.nii.gz'  [227 of 243]
- 313052 of 313052   100% in    0s   100.45 MB/s 313052 of 313052   100% in    0s     2.17 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/aparc.a2009s+aseg_1mm.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/aparc.a2009s+aseg_1mm.nii.gz'  [228 of 243]
- 318000 of 318000   100% in    0s    94.33 MB/s 318000 of 318000   100% in    0s     5.15 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/aseg_acpc.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/aseg_acpc.nii.gz'  [229 of 243]
- 266067 of 266067   100% in    0s    95.46 MB/s 266067 of 266067   100% in    0s     7.50 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/aseg_acpc_1mm.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/aseg_acpc_1mm.nii.gz'  [230 of 243]
- 271662 of 271662   100% in    0s    98.62 MB/s 271662 of 271662   100% in    0s     5.56 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/brainmask_fs.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/brainmask_fs.nii.gz'  [231 of 243]
- 100069 of 100069   100% in    0s    67.78 MB/s 100069 of 100069   100% in    0s  1737.65 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/lwm_1mm.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/lwm_1mm.nii.gz'  [232 of 243]
- 89524 of 89524   100% in    0s    61.69 MB/s 89524 of 89524   100% in    0s     2.58 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/rwm_1mm.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/rwm_1mm.nii.gz'  [233 of 243]
- 91394 of 91394   100% in    0s    62.62 MB/s 91394 of 91394   100% in    0s   569.02 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/wm.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/wm.nii.gz'  [234 of 243]
- 150509 of 150509   100% in    0s    73.46 MB/s 150509 of 150509   100% in    0s     3.20 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/wmparc.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/wmparc.nii.gz'  [235 of 243]
- 338387 of 338387   100% in    0s    93.46 MB/s 338387 of 338387   100% in    0s     7.00 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/wmparc_1mm.nii.gz' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T1w/wmparc_1mm.nii.gz'  [236 of 243]
- 342751 of 342751   100% in    0s   100.18 MB/s 342751 of 342751   100% in    0s     8.28 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T2w/ACPCAlignment/log.txt' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T2w/ACPCAlignment/log.txt'  [237 of 243]
- 444 of 444   100% in    0s   603.89 KB/s 444 of 444   100% in    0s  2042.72 B/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T2w/BrainExtraction_ANTsbased/log.txt' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/files/T2w/BrainExtraction_ANTsbased/log.txt'  [238 of 243]
- 691 of 691   100% in    0s   802.38 KB/s 691 of 691   100% in    0s    31.60 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/logs/FreeSurfer/FreeSurfer.err' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/logs/FreeSurfer/FreeSurfer.err'  [239 of 243]
- 41510 of 41510   100% in    0s    34.63 MB/s 41510 of 41510   100% in    0s  1914.02 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/logs/FreeSurfer/FreeSurfer.out' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/logs/FreeSurfer/FreeSurfer.out'  [240 of 243]
- 343217 of 343217   100% in    0s    97.44 MB/s 343217 of 343217   100% in    0s     6.31 MB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/logs/PostFreeSurfer/PostFreeSurfer.out' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/logs/PostFreeSurfer/PostFreeSurfer.out'  [241 of 243]
- 2641 of 2641   100% in    0s     3.05 MB/s 2641 of 2641   100% in    0s    38.13 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/logs/PreFreeSurfer/PreFreeSurfer.err' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/logs/PreFreeSurfer/PreFreeSurfer.err'  [242 of 243]
- 24945 of 24945   100% in    0s    23.32 MB/s 24945 of 24945   100% in    0s   830.82 KB/s  done
-upload: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/logs/PreFreeSurfer/PreFreeSurfer.out' -> 's3://UNC_BCP/processed/dcan-infant-pipeline/sub-908754/ses-6mo/logs/PreFreeSurfer/PreFreeSurfer.out'  [243 of 243]
- 136830 of 136830   100% in    0s    69.97 MB/s 136830 of 136830   100% in    0s     2.34 MB/s  done
-remote copy: 'files/MNINonLinear/T1w.nii.gz' -> 'files/MNINonLinear/antswarpedT1w.nii.gz'  [1 of 17]
-remote copy: 'files/T1w/908754/mri/aseg.mgz' -> 'files/T1w/908754/mri/aseg.presurf.mgz'  [2 of 17]
-remote copy: 'files/T1w/908754/mri/T1.mgz' -> 'files/T1w/908754/mri/brainmask.mgz'  [3 of 17]
-remote copy: 'files/T1w/908754/mri/001.mgz' -> 'files/T1w/908754/mri/orig.mgz'  [4 of 17]
-remote copy: 'files/T1w/908754/mri/nu.mgz' -> 'files/T1w/908754/mri/orig_nu.mgz'  [5 of 17]
-remote copy: 'files/T1w/908754/mri/001.mgz' -> 'files/T1w/908754/mri/rawavg.mgz'  [6 of 17]
-remote copy: 'files/T1w/908754/surf/lh.white' -> 'files/T1w/908754/surf/lh.white.deformed'  [7 of 17]
-remote copy: 'files/T1w/908754/surf/lh.white' -> 'files/T1w/908754/surf/lh.white.noAN'  [8 of 17]
-remote copy: 'files/T1w/908754/surf/rh.white' -> 'files/T1w/908754/surf/rh.white.deformed'  [9 of 17]
-remote copy: 'files/T1w/908754/surf/rh.white' -> 'files/T1w/908754/surf/rh.white.noAN'  [10 of 17]
-remote copy: 'files/T1w/908754/mri/brain.AN.mgz' -> 'files/T1w/908754N/mri/brain.finalsurfs.mgz'  [11 of 17]
-remote copy: 'files/T1w/908754N/mri/T1.mgz' -> 'files/T1w/908754N/mri/brainmask.mgz'  [12 of 17]
-remote copy: 'files/T1w/908754N/mri/001.mgz' -> 'files/T1w/908754N/mri/orig.mgz'  [13 of 17]
-remote copy: 'files/T1w/908754N/mri/nu.mgz' -> 'files/T1w/908754N/mri/orig_nu.mgz'  [14 of 17]
-remote copy: 'files/T1w/908754N/mri/001.mgz' -> 'files/T1w/908754N/mri/rawavg.mgz'  [15 of 17]
-remote copy: 'files/T1w/T1wN_acpc.nii.gz' -> 'files/T1w/T1w_acpc_dc_restore_AdultInt.nii.gz'  [16 of 17]
-remote copy: 'files/T1w/brainmask_fs.nii.gz' -> 'files/T1w/brainmask_fs_1mm.nii.gz'  [17 of 17]
-Done. Uploaded 1110399708 bytes in 35.3 seconds, 30.01 MB/s.

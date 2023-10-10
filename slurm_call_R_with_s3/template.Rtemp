@@ -1,0 +1,28 @@
+#!/bin/bash
+
+
+data_dir=DATADIR
+data_bucket=BUCKET
+run_dir=RUNDIR
+temp_file=TEMPF
+
+cpu_usage=8
+Rscript=`which Rscript`
+
+HASH=`tr -cd '[:alnum:]' < /dev/urandom | fold -w8 | head -n1`
+
+# pull down needed data and files from S3 bucket
+if [ ! -d ${data_dir} ]; then
+	mkdir -p ${data_dir}/${HASH}/
+	s3cmd get ${data_bucket}/ ${data_dir}/${HASH}/ --recursive -v
+fi
+
+
+
+Rscript ${data_dir}/${HASH}/Converttemp.R ${data_dir}/${HASH}/${temp_file}
+
+s3cmd put ${data_dir}/${HASH} ${data_bucket}/ --recursive -v --delete-removed
+
+rm -r ${data_dir}/${HASH}/
+
+

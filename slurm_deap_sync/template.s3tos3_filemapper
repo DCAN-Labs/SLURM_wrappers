@@ -1,0 +1,49 @@
+#!/bin/bash
+
+subj_id=SUBJECTID
+ses_id=SESID
+data_dir=DATADIR
+data_bucket_in=BUCKET_IN
+data_bucket_out=BUCKET_OUT
+run_dir=RUNDIR
+cpu_usage=8
+singularity=`which singularity`
+
+# pull down needed data and files from BIDS bucket
+if [ ! -d ${data_dir}/${subj_id}/${ses_id} ]; then
+	mkdir -p ${data_dir}/${subj_id}/${ses_id}
+	s3cmd get ${data_bucket_in}/${subj_id}/${ses_id}/ ${data_dir}/${subj_id}/${ses_id}/ --recursive -v
+fi
+
+if [ ! -e ${data_dir}/dataset_description.json ]; then
+	cp ${run_dir}/dataset_description.json ${data_dir}
+fi
+#if [ ! -e ${data_dir}/participants.tsv ]; then
+#	s3cmd get ${data_bucket}/participants.tsv ${data_dir} -v 
+#fi
+
+
+if [ ! -d ${data_dir}/deap/derivatives ]; then
+	mkdir -p ${data_dir}/deap/derivatives
+fi
+
+justsubj_id=$( echo ${subj_id} | cut -d- -f 2 )
+justses_id=$( echo ${ses_id} | cut -d- -f 2 )
+
+# run file-mapper
+/home/faird/shared/code/internal/utilities/file-mapper/file_mapper_script.py ${run_dir}/deap_s3tos3_filemapper.json -a copy -sp  ${data_dir}/ -dp ${data_dir}/deap/derivatives -vb -o -t SUBJECT=${justsubj_id},SESSION=${justses_id}
+
+#remove .nii.gz files
+#rm -r ${data_dir}/sub-${subj_id}/ses-${ses_id}/*/*.nii.gz
+
+
+#push processed outputs to bucket
+s3cmd sync -F --recursive --no-delete-removed -v -c ~/.s3cfg-LIBR2 ${data_dir}/deap/derivatives/${subj_id}/${ses_id} ${data_bucket_out}/${subj_id}/
+
+
+
+
+
+
+
+

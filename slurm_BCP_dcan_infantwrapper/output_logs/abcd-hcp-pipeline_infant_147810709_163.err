@@ -1,0 +1,19 @@
+INFO: Retrieving list of remote files for s3://UNC_BCP/sub-439967/ses-55m ...
+INFO: Summary: 50 remote files to download
+INFO: Creating directory: /tmp/UNC_BCP/sub-439967/ses-55m/anat
+INFO: Creating directory: /tmp/UNC_BCP/sub-439967/ses-55mo/anat
+INFO: Creating directory: /tmp/UNC_BCP/sub-439967/ses-55mo/dwi
+INFO: Creating directory: /tmp/UNC_BCP/sub-439967/ses-55mo/fmap
+INFO: Creating directory: /tmp/UNC_BCP/sub-439967/ses-55mo/func
+INFO: Summary: 1 remote files to download
+run163: line 49: [: : integer expression expected
+run163: line 52: [: : integer expression expected
+run163: line 54: [: : integer expression expected
+run163: line 56: [: : integer expression expected
+run163: line 58: [: : integer expression expected
+run163: line 60: [: : integer expression expected
+run163: line 62: [: : integer expression expected
+run163: line 64: [: : integer expression expected
+run163: line 66: [: : integer expression expected
+run163: line 68: [: : integer expression expected
+run163: line 70: [: : integer expression expected

@@ -1,0 +1,82 @@
+download: 's3://UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-6shells_dir-AP_run-06_dwi.bval' -> '/tmp/UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-6shells_dir-AP_run-06_dwi.bval'  [1 of 37]
+ 718 of 718   100% in    0s     5.07 KB/s 718 of 718   100% in    0s     5.06 KB/s  done
+download: 's3://UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-6shells_dir-AP_run-06_dwi.bvec' -> '/tmp/UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-6shells_dir-AP_run-06_dwi.bvec'  [2 of 37]
+ 9003 of 9003   100% in    0s   199.90 KB/s 9003 of 9003   100% in    0s   199.32 KB/s  done
+download: 's3://UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-6shells_dir-AP_run-06_dwi.json' -> '/tmp/UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-6shells_dir-AP_run-06_dwi.json'  [3 of 37]
+ 3238 of 3238   100% in    0s    24.76 KB/s 3238 of 3238   100% in    0s    24.73 KB/s  done
+download: 's3://UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-6shells_dir-AP_run-06_dwi.nii.gz' -> '/tmp/UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-6shells_dir-AP_run-06_dwi.nii.gz'  [4 of 37]
+   1048576 of 260878666     0% in    0s     6.78 MB/s 166723584 of 260878666    63% in    1s   138.47 MB/s 260878666 of 260878666   100% in    1s   143.79 MB/s  done
+download: 's3://UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-6shells_dir-PA_run-07_dwi.bval' -> '/tmp/UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-6shells_dir-PA_run-07_dwi.bval'  [5 of 37]
+ 718 of 718   100% in    0s    11.12 KB/s 718 of 718   100% in    0s    11.10 KB/s  done
+download: 's3://UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-6shells_dir-PA_run-07_dwi.bvec' -> '/tmp/UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-6shells_dir-PA_run-07_dwi.bvec'  [6 of 37]
+ 9003 of 9003   100% in    0s   125.44 KB/s 9003 of 9003   100% in    0s   125.24 KB/s  done
+download: 's3://UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-6shells_dir-PA_run-07_dwi.json' -> '/tmp/UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-6shells_dir-PA_run-07_dwi.json'  [7 of 37]
+ 3252 of 3252   100% in    0s    36.21 KB/s 3252 of 3252   100% in    0s    36.15 KB/s  done
+download: 's3://UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-6shells_dir-PA_run-07_dwi.nii.gz' -> '/tmp/UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-6shells_dir-PA_run-07_dwi.nii.gz'  [8 of 37]
+   1048576 of 263540998     0% in    0s    10.19 MB/s 185597952 of 263540998    70% in    1s   160.51 MB/s 263540998 of 263540998   100% in    1s   157.10 MB/s  done
+download: 's3://UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-dir79_dir-AP_run-01_dwi.bval' -> '/tmp/UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-dir79_dir-AP_run-01_dwi.bval'  [9 of 37]
+ 382 of 382   100% in    0s     5.63 KB/s 382 of 382   100% in    0s     5.62 KB/s  done
+download: 's3://UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-dir79_dir-AP_run-01_dwi.bvec' -> '/tmp/UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-dir79_dir-AP_run-01_dwi.bvec'  [10 of 37]
+ 4789 of 4789   100% in    0s   205.75 KB/s 4789 of 4789   100% in    0s   204.85 KB/s  done
+download: 's3://UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-dir79_dir-AP_run-01_dwi.json' -> '/tmp/UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-dir79_dir-AP_run-01_dwi.json'  [11 of 37]
+ 3255 of 3255   100% in    0s    35.37 KB/s 3255 of 3255   100% in    0s    35.28 KB/s  done
+download: 's3://UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-dir79_dir-AP_run-01_dwi.nii.gz' -> '/tmp/UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-dir79_dir-AP_run-01_dwi.nii.gz'  [12 of 37]
+   1048576 of 137278935     0% in    0s    13.28 MB/s 137278935 of 137278935   100% in    0s   159.19 MB/s  done
+download: 's3://UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-dir79_dir-AP_run-02_dwi.bval' -> '/tmp/UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-dir79_dir-AP_run-02_dwi.bval'  [13 of 37]
+ 158 of 158   100% in    0s  1780.40 B/s 158 of 158   100% in    0s  1777.98 B/s  done
+download: 's3://UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-dir79_dir-AP_run-02_dwi.bvec' -> '/tmp/UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-dir79_dir-AP_run-02_dwi.bvec'  [14 of 37]
+ 2038 of 2038   100% in    0s    31.96 KB/s 2038 of 2038   100% in    0s    31.89 KB/s  done
+download: 's3://UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-dir79_dir-AP_run-02_dwi.json' -> '/tmp/UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-dir79_dir-AP_run-02_dwi.json'  [15 of 37]
+ 3252 of 3252   100% in    0s    51.84 KB/s 3252 of 3252   100% in    0s    51.73 KB/s  done
+download: 's3://UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-dir79_dir-AP_run-02_dwi.nii.gz' -> '/tmp/UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-dir79_dir-AP_run-02_dwi.nii.gz'  [16 of 37]
+  1048576 of 58273746     1% in    0s    13.96 MB/s 58273746 of 58273746   100% in    0s   103.38 MB/s  done
+download: 's3://UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-dir79_dir-AP_run-03_dwi.bval' -> '/tmp/UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-dir79_dir-AP_run-03_dwi.bval'  [17 of 37]
+ 382 of 382   100% in    0s     4.46 KB/s 382 of 382   100% in    0s     4.45 KB/s  done
+download: 's3://UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-dir79_dir-AP_run-03_dwi.bvec' -> '/tmp/UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-dir79_dir-AP_run-03_dwi.bvec'  [18 of 37]
+ 4789 of 4789   100% in    0s    79.77 KB/s 4789 of 4789   100% in    0s    79.62 KB/s  done
+download: 's3://UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-dir79_dir-AP_run-03_dwi.json' -> '/tmp/UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-dir79_dir-AP_run-03_dwi.json'  [19 of 37]
+ 3248 of 3248   100% in    0s    36.82 KB/s 3248 of 3248   100% in    0s    36.65 KB/s  done
+download: 's3://UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-dir79_dir-AP_run-03_dwi.nii.gz' -> '/tmp/UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-dir79_dir-AP_run-03_dwi.nii.gz'  [20 of 37]
+   1048576 of 137163876     0% in    0s    14.02 MB/s 137163876 of 137163876   100% in    0s   149.88 MB/s  done
+download: 's3://UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-dir79_dir-PA_run-04_dwi.bval' -> '/tmp/UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-dir79_dir-PA_run-04_dwi.bval'  [21 of 37]
+ 382 of 382   100% in    0s     5.94 KB/s 382 of 382   100% in    0s     5.93 KB/s  done
+download: 's3://UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-dir79_dir-PA_run-04_dwi.bvec' -> '/tmp/UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-dir79_dir-PA_run-04_dwi.bvec'  [22 of 37]
+ 4789 of 4789   100% in    0s   186.40 KB/s 4789 of 4789   100% in    0s   185.65 KB/s  done
+download: 's3://UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-dir79_dir-PA_run-04_dwi.json' -> '/tmp/UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-dir79_dir-PA_run-04_dwi.json'  [23 of 37]
+ 3263 of 3263   100% in    0s    14.39 KB/s 3263 of 3263   100% in    0s    14.38 KB/s  done
+download: 's3://UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-dir79_dir-PA_run-04_dwi.nii.gz' -> '/tmp/UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-dir79_dir-PA_run-04_dwi.nii.gz'  [24 of 37]
+   1048576 of 138277988     0% in    0s    11.27 MB/s 138277988 of 138277988   100% in    0s   139.31 MB/s  done
+download: 's3://UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-dir79_dir-PA_run-05_dwi.bval' -> '/tmp/UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-dir79_dir-PA_run-05_dwi.bval'  [25 of 37]
+ 382 of 382   100% in    0s  1993.73 B/s 382 of 382   100% in    0s  1992.22 B/s  done
+download: 's3://UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-dir79_dir-PA_run-05_dwi.bvec' -> '/tmp/UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-dir79_dir-PA_run-05_dwi.bvec'  [26 of 37]
+ 4789 of 4789   100% in    0s    33.38 KB/s 4789 of 4789   100% in    0s    33.35 KB/s  done
+download: 's3://UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-dir79_dir-PA_run-05_dwi.json' -> '/tmp/UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-dir79_dir-PA_run-05_dwi.json'  [27 of 37]
+ 3262 of 3262   100% in    0s    30.08 KB/s 3262 of 3262   100% in    0s    30.03 KB/s  done
+download: 's3://UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-dir79_dir-PA_run-05_dwi.nii.gz' -> '/tmp/UNC_BCP/sub-106436/ses-2wk/dwi/sub-106436_ses-2wk_acq-dir79_dir-PA_run-05_dwi.nii.gz'  [28 of 37]
+   1048576 of 138094721     0% in    0s     6.40 MB/s 138094721 of 138094721   100% in    1s   129.13 MB/s  done
+download: 's3://UNC_BCP/sub-106436/ses-2wk/fmap/sub-106436_ses-2wk_dir-AP_run-01_epi.json' -> '/tmp/UNC_BCP/sub-106436/ses-2wk/fmap/sub-106436_ses-2wk_dir-AP_run-01_epi.json'  [29 of 37]
+ 4478 of 4478   100% in    0s   115.04 KB/s 4478 of 4478   100% in    0s   114.74 KB/s  done
+download: 's3://UNC_BCP/sub-106436/ses-2wk/fmap/sub-106436_ses-2wk_dir-AP_run-01_epi.nii.gz' -> '/tmp/UNC_BCP/sub-106436/ses-2wk/fmap/sub-106436_ses-2wk_dir-AP_run-01_epi.nii.gz'  [30 of 37]
+ 1048576 of 2210869    47% in    0s    24.18 MB/s 2210869 of 2210869   100% in    0s    44.40 MB/s  done
+download: 's3://UNC_BCP/sub-106436/ses-2wk/fmap/sub-106436_ses-2wk_dir-PA_run-02_epi.json' -> '/tmp/UNC_BCP/sub-106436/ses-2wk/fmap/sub-106436_ses-2wk_dir-PA_run-02_epi.json'  [31 of 37]
+ 4478 of 4478   100% in    0s   115.99 KB/s 4478 of 4478   100% in    0s   115.68 KB/s  done
+download: 's3://UNC_BCP/sub-106436/ses-2wk/fmap/sub-106436_ses-2wk_dir-PA_run-02_epi.nii.gz' -> '/tmp/UNC_BCP/sub-106436/ses-2wk/fmap/sub-106436_ses-2wk_dir-PA_run-02_epi.nii.gz'  [32 of 37]
+ 1048576 of 2210829    47% in    0s     9.82 MB/s 2210829 of 2210829   100% in    0s    19.53 MB/s  done
+download: 's3://UNC_BCP/sub-106436/ses-2wk/func/sub-106436_ses-2wk_task-rest_acq-AP_run-01_bold.json' -> '/tmp/UNC_BCP/sub-106436/ses-2wk/func/sub-106436_ses-2wk_task-rest_acq-AP_run-01_bold.json'  [33 of 37]
+ 3623 of 3623   100% in    0s    49.69 KB/s 3623 of 3623   100% in    0s    49.59 KB/s  done
+download: 's3://UNC_BCP/sub-106436/ses-2wk/func/sub-106436_ses-2wk_task-rest_acq-AP_run-01_bold.nii.gz' -> '/tmp/UNC_BCP/sub-106436/ses-2wk/func/sub-106436_ses-2wk_task-rest_acq-AP_run-01_bold.nii.gz'  [34 of 37]
+   1048576 of 153996096     0% in    0s     9.99 MB/s 153996096 of 153996096   100% in    1s   136.39 MB/s  done
+download: 's3://UNC_BCP/sub-106436/ses-2wk/func/sub-106436_ses-2wk_task-rest_acq-PA_run-02_bold.json' -> '/tmp/UNC_BCP/sub-106436/ses-2wk/func/sub-106436_ses-2wk_task-rest_acq-PA_run-02_bold.json'  [35 of 37]
+ 3805 of 3805   100% in    0s    54.04 KB/s 3805 of 3805   100% in    0s    53.94 KB/s  done
+download: 's3://UNC_BCP/sub-106436/ses-2wk/func/sub-106436_ses-2wk_task-rest_acq-PA_run-02_bold.nii.gz' -> '/tmp/UNC_BCP/sub-106436/ses-2wk/func/sub-106436_ses-2wk_task-rest_acq-PA_run-02_bold.nii.gz'  [36 of 37]
+   1048576 of 157947884     0% in    0s     8.90 MB/s 157947884 of 157947884   100% in    1s   148.37 MB/s  done
+download: 's3://UNC_BCP/sub-106436/ses-2wk/sub-106436_ses-2wk_scans.tsv' -> '/tmp/UNC_BCP/sub-106436/ses-2wk/sub-106436_ses-2wk_scans.tsv'  [37 of 37]
+ 866 of 866   100% in    0s    14.67 KB/s 866 of 866   100% in    0s    14.64 KB/s  done
+download: 's3://UNC_BCP/participants.tsv' -> '/tmp/UNC_BCP/participants.tsv'  [1 of 1]
+ 8517 of 8517   100% in    0s  1321.27 KB/s 8517 of 8517   100% in    0s  1297.56 KB/s  done
+/home/feczk001/shared/code/internal/pipelines/DCAN-infant-BIDS/infant-abcd-bids-pipeline_dbp-hotfix-03172022.sif
+DEBUG:
+these must be the same:
+first: /opt/freesurfer/license.txt
+second: /opt/freesurfer/license.txt
+No T1w data was found for this subject.

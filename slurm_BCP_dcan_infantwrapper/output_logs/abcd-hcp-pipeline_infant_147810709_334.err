@@ -1,0 +1,22 @@
+INFO: Retrieving list of remote files for s3://UNC_BCP/sub-960758/ses-2mo ...
+INFO: Summary: 13 remote files to download
+INFO: Creating directory: /tmp/UNC_BCP/sub-960758/ses-2mo/anat
+INFO: Creating directory: /tmp/UNC_BCP/sub-960758/ses-2mo/fmap
+INFO: Creating directory: /tmp/UNC_BCP/sub-960758/ses-2mo/func
+INFO: Summary: 1 remote files to download
+/home/miran045/hough129/.local/lib/python3.6/site-packages/bids/layout/validation.py:46: UserWarning: The ability to pass arguments to BIDSLayout that control indexing is likely to be removed in future; possibly as early as PyBIDS 0.14. This includes the `config_filename`, `ignore`, `force_index`, and `index_metadata` arguments. The recommended usage pattern is to initialize a new BIDSLayoutIndexer with these arguments, and pass it to the BIDSLayout via the `indexer` argument.
+  warnings.warn("The ability to pass arguments to BIDSLayout that control "
+INFO: No cache file found, creating it.
+INFO: Compiling list of local files...
+INFO: Running stat() and reading/calculating MD5 values on 7190 files, this may take some time...
+INFO: [1000/7190]
+INFO: [2000/7190]
+INFO: [3000/7190]
+INFO: [4000/7190]
+INFO: [5000/7190]
+INFO: [6000/7190]
+INFO: [7000/7190]
+INFO: Retrieving list of remote files for s3://UNC_BCP/processed/dcan-infant-pipeline/sub-960758/ses-2mo/ ...
+INFO: Found 7190 local files, 7190 remote files
+INFO: Verifying attributes...
+INFO: Summary: 3532 local files to upload, 61 files to remote copy, 0 remote files to delete

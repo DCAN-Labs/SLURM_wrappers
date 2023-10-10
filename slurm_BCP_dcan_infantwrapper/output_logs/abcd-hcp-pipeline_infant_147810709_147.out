@@ -1,0 +1,103 @@
+download: 's3://UNC_BCP/sub-412584/ses-13mo/anat/sub-412584_ses-13mo_run-001_T1w.json' -> '/tmp/UNC_BCP/sub-412584/ses-13mo/anat/sub-412584_ses-13mo_run-001_T1w.json'  [1 of 23]
+ 1975 of 1975   100% in    0s    21.02 KB/s 1975 of 1975   100% in    0s    20.99 KB/s  done
+download: 's3://UNC_BCP/sub-412584/ses-13mo/anat/sub-412584_ses-13mo_run-001_T1w.nii.gz' -> '/tmp/UNC_BCP/sub-412584/ses-13mo/anat/sub-412584_ses-13mo_run-001_T1w.nii.gz'  [2 of 23]
+  1048576 of 15356060     6% in    0s     9.61 MB/s 15356060 of 15356060   100% in    0s    62.75 MB/s  done
+download: 's3://UNC_BCP/sub-412584/ses-13mo/anat/sub-412584_ses-13mo_run-001_T2w.json' -> '/tmp/UNC_BCP/sub-412584/ses-13mo/anat/sub-412584_ses-13mo_run-001_T2w.json'  [3 of 23]
+ 1999 of 1999   100% in    0s    30.65 KB/s 1999 of 1999   100% in    0s    30.60 KB/s  done
+download: 's3://UNC_BCP/sub-412584/ses-13mo/anat/sub-412584_ses-13mo_run-001_T2w.nii.gz' -> '/tmp/UNC_BCP/sub-412584/ses-13mo/anat/sub-412584_ses-13mo_run-001_T2w.nii.gz'  [4 of 23]
+  1048576 of 11891811     8% in    0s     5.12 MB/s 11891811 of 11891811   100% in    0s    35.84 MB/s  done
+download: 's3://UNC_BCP/sub-412584/ses-13mo/dwi/sub-412584_ses-13mo_acq-6shells_dir-AP_run-01_dwi.bval' -> '/tmp/UNC_BCP/sub-412584/ses-13mo/dwi/sub-412584_ses-13mo_acq-6shells_dir-AP_run-01_dwi.bval'  [5 of 23]
+ 719 of 719   100% in    0s    10.60 KB/s 719 of 719   100% in    0s    10.58 KB/s  done
+download: 's3://UNC_BCP/sub-412584/ses-13mo/dwi/sub-412584_ses-13mo_acq-6shells_dir-AP_run-01_dwi.bvec' -> '/tmp/UNC_BCP/sub-412584/ses-13mo/dwi/sub-412584_ses-13mo_acq-6shells_dir-AP_run-01_dwi.bvec'  [6 of 23]
+ 9008 of 9008   100% in    0s   157.32 KB/s 9008 of 9008   100% in    0s   157.03 KB/s  done
+download: 's3://UNC_BCP/sub-412584/ses-13mo/dwi/sub-412584_ses-13mo_acq-6shells_dir-AP_run-01_dwi.json' -> '/tmp/UNC_BCP/sub-412584/ses-13mo/dwi/sub-412584_ses-13mo_acq-6shells_dir-AP_run-01_dwi.json'  [7 of 23]
+ 3226 of 3226   100% in    0s    31.30 KB/s 3226 of 3226   100% in    0s    31.25 KB/s  done
+download: 's3://UNC_BCP/sub-412584/ses-13mo/dwi/sub-412584_ses-13mo_acq-6shells_dir-AP_run-01_dwi.nii.gz' -> '/tmp/UNC_BCP/sub-412584/ses-13mo/dwi/sub-412584_ses-13mo_acq-6shells_dir-AP_run-01_dwi.nii.gz'  [8 of 23]
+   1048576 of 298697109     0% in    0s    14.27 MB/s 164626432 of 298697109    55% in    1s   145.90 MB/s 298697109 of 298697109   100% in    1s   156.32 MB/s  done
+download: 's3://UNC_BCP/sub-412584/ses-13mo/dwi/sub-412584_ses-13mo_acq-6shells_dir-PA_run-02_dwi.bval' -> '/tmp/UNC_BCP/sub-412584/ses-13mo/dwi/sub-412584_ses-13mo_acq-6shells_dir-PA_run-02_dwi.bval'  [9 of 23]
+ 36 of 36   100% in    0s   361.39 B/s 36 of 36   100% in    0s   360.97 B/s  done
+download: 's3://UNC_BCP/sub-412584/ses-13mo/dwi/sub-412584_ses-13mo_acq-6shells_dir-PA_run-02_dwi.bvec' -> '/tmp/UNC_BCP/sub-412584/ses-13mo/dwi/sub-412584_ses-13mo_acq-6shells_dir-PA_run-02_dwi.bvec'  [10 of 23]
+ 597 of 597   100% in    0s     5.91 KB/s 597 of 597   100% in    0s     5.90 KB/s  done
+download: 's3://UNC_BCP/sub-412584/ses-13mo/dwi/sub-412584_ses-13mo_acq-6shells_dir-PA_run-02_dwi.json' -> '/tmp/UNC_BCP/sub-412584/ses-13mo/dwi/sub-412584_ses-13mo_acq-6shells_dir-PA_run-02_dwi.json'  [11 of 23]
+ 3210 of 3210   100% in    0s    39.71 KB/s 3210 of 3210   100% in    0s    39.65 KB/s  done
+download: 's3://UNC_BCP/sub-412584/ses-13mo/dwi/sub-412584_ses-13mo_acq-6shells_dir-PA_run-02_dwi.nii.gz' -> '/tmp/UNC_BCP/sub-412584/ses-13mo/dwi/sub-412584_ses-13mo_acq-6shells_dir-PA_run-02_dwi.nii.gz'  [12 of 23]
+  1048576 of 20142476     5% in    0s     9.47 MB/s 20142476 of 20142476   100% in    0s    78.25 MB/s  done
+download: 's3://UNC_BCP/sub-412584/ses-13mo/fmap/sub-412584_ses-13mo_dir-AP_run-01_epi.json' -> '/tmp/UNC_BCP/sub-412584/ses-13mo/fmap/sub-412584_ses-13mo_dir-AP_run-01_epi.json'  [13 of 23]
+ 4165 of 4165   100% in    0s    68.71 KB/s 4165 of 4165   100% in    0s    68.59 KB/s  done
+download: 's3://UNC_BCP/sub-412584/ses-13mo/fmap/sub-412584_ses-13mo_dir-AP_run-01_epi.nii.gz' -> '/tmp/UNC_BCP/sub-412584/ses-13mo/fmap/sub-412584_ses-13mo_dir-AP_run-01_epi.nii.gz'  [14 of 23]
+ 1048576 of 2322720    45% in    0s    14.52 MB/s 2322720 of 2322720   100% in    0s    28.77 MB/s  done
+download: 's3://UNC_BCP/sub-412584/ses-13mo/fmap/sub-412584_ses-13mo_dir-PA_run-02_epi.json' -> '/tmp/UNC_BCP/sub-412584/ses-13mo/fmap/sub-412584_ses-13mo_dir-PA_run-02_epi.json'  [15 of 23]
+ 4161 of 4161   100% in    0s   179.35 KB/s 4161 of 4161   100% in    0s   178.58 KB/s  done
+download: 's3://UNC_BCP/sub-412584/ses-13mo/fmap/sub-412584_ses-13mo_dir-PA_run-02_epi.nii.gz' -> '/tmp/UNC_BCP/sub-412584/ses-13mo/fmap/sub-412584_ses-13mo_dir-PA_run-02_epi.nii.gz'  [16 of 23]
+ 1048576 of 2302386    45% in    0s    18.56 MB/s 2302386 of 2302386   100% in    0s    35.55 MB/s  done
+download: 's3://UNC_BCP/sub-412584/ses-13mo/func/sub-412584_ses-13mo_task-rest_acq-AP_run-01_bold.json' -> '/tmp/UNC_BCP/sub-412584/ses-13mo/func/sub-412584_ses-13mo_task-rest_acq-AP_run-01_bold.json'  [17 of 23]
+ 3582 of 3582   100% in    0s    51.13 KB/s 3582 of 3582   100% in    0s    50.97 KB/s  done
+download: 's3://UNC_BCP/sub-412584/ses-13mo/func/sub-412584_ses-13mo_task-rest_acq-AP_run-01_bold.nii.gz' -> '/tmp/UNC_BCP/sub-412584/ses-13mo/func/sub-412584_ses-13mo_task-rest_acq-AP_run-01_bold.nii.gz'  [18 of 23]
+   1048576 of 228164069     0% in    0s    13.84 MB/s 106954752 of 228164069    46% in    1s    94.58 MB/s 228164069 of 228164069   100% in    1s   122.20 MB/s  done
+download: 's3://UNC_BCP/sub-412584/ses-13mo/func/sub-412584_ses-13mo_task-rest_acq-PA_run-02_bold.json' -> '/tmp/UNC_BCP/sub-412584/ses-13mo/func/sub-412584_ses-13mo_task-rest_acq-PA_run-02_bold.json'  [19 of 23]
+ 3791 of 3791   100% in    0s    50.85 KB/s 3791 of 3791   100% in    0s    50.76 KB/s  done
+download: 's3://UNC_BCP/sub-412584/ses-13mo/func/sub-412584_ses-13mo_task-rest_acq-PA_run-02_bold.nii.gz' -> '/tmp/UNC_BCP/sub-412584/ses-13mo/func/sub-412584_ses-13mo_task-rest_acq-PA_run-02_bold.nii.gz'  [20 of 23]
+   1048576 of 227951512     0% in    0s    19.05 MB/s 175112192 of 227951512    76% in    1s   158.31 MB/s 227951512 of 227951512   100% in    1s   159.55 MB/s  done
+download: 's3://UNC_BCP/sub-412584/ses-13mo/func/sub-412584_ses-13mo_task-rest_acq-PA_run-03_bold.json' -> '/tmp/UNC_BCP/sub-412584/ses-13mo/func/sub-412584_ses-13mo_task-rest_acq-PA_run-03_bold.json'  [21 of 23]
+ 3788 of 3788   100% in    0s    54.09 KB/s 3788 of 3788   100% in    0s    54.00 KB/s  done
+download: 's3://UNC_BCP/sub-412584/ses-13mo/func/sub-412584_ses-13mo_task-rest_acq-PA_run-03_bold.nii.gz' -> '/tmp/UNC_BCP/sub-412584/ses-13mo/func/sub-412584_ses-13mo_task-rest_acq-PA_run-03_bold.nii.gz'  [22 of 23]
+   1048576 of 228303410     0% in    0s    19.30 MB/s 159383552 of 228303410    69% in    1s   144.38 MB/s 228303410 of 228303410   100% in    1s   151.09 MB/s  done
+download: 's3://UNC_BCP/sub-412584/ses-13mo/sub-412584_ses-13mo_scans.tsv' -> '/tmp/UNC_BCP/sub-412584/ses-13mo/sub-412584_ses-13mo_scans.tsv'  [23 of 23]
+ 819 of 819   100% in    0s    12.41 KB/s 819 of 819   100% in    0s    12.38 KB/s  done
+download: 's3://UNC_BCP/participants.tsv' -> '/tmp/UNC_BCP/participants.tsv'  [1 of 1]
+ 8517 of 8517   100% in    0s   300.94 KB/s 8517 of 8517   100% in    0s   299.74 KB/s  done
+/home/feczk001/shared/code/internal/pipelines/DCAN-infant-BIDS/infant-abcd-bids-pipeline_dbp-hotfix-03172022.sif
+DEBUG:
+these must be the same:
+first: /opt/freesurfer/license.txt
+second: /opt/freesurfer/license.txt
+running PreFreeSurfer
+/opt/pipeline/PreFreeSurfer/PreFreeSurferPipeline.sh \
+    --path=/output/sub-412584/ses-13mo/files \
+    --t1=/bids_input/sub-412584/ses-13mo/anat/sub-412584_ses-13mo_run-001_T1w.nii.gz \
+    --t2=/bids_input/sub-412584/ses-13mo/anat/sub-412584_ses-13mo_run-001_T2w.nii.gz \
+    --t1template=/opt/pipeline/global/templates/INFANT_MNI_T1_1mm.nii.gz \
+    --t1templatebrain=/opt/pipeline/global/templates/INFANT_MNI_T1_1mm_brain.nii.gz \
+    --t1template2mm=/opt/pipeline/global/templates/INFANT_MNI_T1_2mm.nii.gz \
+    --t2template=/opt/pipeline/global/templates/INFANT_MNI_T2_1mm.nii.gz \
+    --t2templatebrain=/opt/pipeline/global/templates/INFANT_MNI_T2_1mm_brain.nii.gz \
+    --t2template2mm=/opt/pipeline/global/templates/INFANT_MNI_T2_2mm.nii.gz \
+    --templatemask=/opt/pipeline/global/templates/INFANT_MNI_T1_1mm_brain_mask.nii.gz \
+    --template2mmmask=/opt/pipeline/global/templates/INFANT_MNI_T1_2mm_brain_mask_dil.nii.gz \
+    --brainsize=120 \
+    --fnirtconfig=/opt/pipeline/global/config/T1_2_MNI152_2mm.cnf \
+    --fmapmag=NONE \
+    --fmapphase=NONE \
+    --fmapgeneralelectric=NONE \
+    --echodiff=NONE \
+    --SEPhaseNeg=NONE \
+    --SEPhasePos=NONE \
+    --echospacing=0.000580009 \
+    --seunwarpdir=y- \
+    --t1samplespacing=0.000007937 \
+    --t2samplespacing=0.000002237 \
+    --unwarpdir=z- \
+    --gdcoeffs=NONE \
+    --avgrdcmethod=NONE \
+    --topupconfig=/opt/pipeline/global/config/b02b0.cnf \
+    --useT2=true \
+    --t1n=true \
+    --printcom= \
+    --multitemplatedir=/opt/pipeline/global/templates/JLF_templates \
+    --multimaskingdir=/opt/pipeline/global/templates/DCAN_neo_JLF_heads \
+    --t1studytemplate=NONE \
+    --t1studytemplatebrain=NONE \
+    --t2studytemplate=/opt/pipeline/global/templates/temp_nih_T2w_atl.nii.gz \
+    --t2studytemplatebrain=/opt/pipeline/global/templates/temp_nih_T2w_atl_brain.nii.gz \
+    --atroposmaskmethod=NONE \
+    --atroposlabelmin=4 \
+    --atroposlabelmax=5 \
+    --jlfmethod=T1W \
+    --t1brainmask=NONE \
+    --crop=True \
+    --aseg=DEFAULT
+Templates information follows:
+	JLF_templates:
+	/home/groups/brainmri/infant/TEMPLATES_FOLDERS/JLF_templates/08-24
+	Contains DCAN_neo_JLF_brains, which were run through JLF using ABCD subjects. Formerly known as babyCouncil.
+	

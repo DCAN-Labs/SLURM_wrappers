@@ -1,0 +1,6 @@
+INFO: Retrieving list of remote files for s3://UNC_BCP/sub-364820/ses-69mo ...
+INFO: Summary: 29 remote files to download
+INFO: Creating directory: /tmp/UNC_BCP/sub-364820/ses-69mo/anat
+INFO: Creating directory: /tmp/UNC_BCP/sub-364820/ses-69mo/fmap
+INFO: Creating directory: /tmp/UNC_BCP/sub-364820/ses-69mo/func
+INFO: Summary: 1 remote files to download

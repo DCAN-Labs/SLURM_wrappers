@@ -1,0 +1,36 @@
+download: 's3://UNC_BCP/sub-197622/ses-3mo/anat/sub-197622_ses-3mo_run-002_T1w.json' -> '/tmp/UNC_BCP/sub-197622/ses-3mo/anat/sub-197622_ses-3mo_run-002_T1w.json'  [1 of 13]
+ 1966 of 1966   100% in    0s    28.90 KB/s 1966 of 1966   100% in    0s    28.82 KB/s  done
+download: 's3://UNC_BCP/sub-197622/ses-3mo/anat/sub-197622_ses-3mo_run-002_T1w.nii.gz' -> '/tmp/UNC_BCP/sub-197622/ses-3mo/anat/sub-197622_ses-3mo_run-002_T1w.nii.gz'  [2 of 13]
+  1048576 of 20500240     5% in    0s     9.94 MB/s 20500240 of 20500240   100% in    0s    72.82 MB/s  done
+download: 's3://UNC_BCP/sub-197622/ses-3mo/anat/sub-197622_ses-3mo_run-004_T1w.json' -> '/tmp/UNC_BCP/sub-197622/ses-3mo/anat/sub-197622_ses-3mo_run-004_T1w.json'  [3 of 13]
+ 1969 of 1969   100% in    0s    31.52 KB/s 1969 of 1969   100% in    0s    31.43 KB/s  done
+download: 's3://UNC_BCP/sub-197622/ses-3mo/anat/sub-197622_ses-3mo_run-004_T1w.nii.gz' -> '/tmp/UNC_BCP/sub-197622/ses-3mo/anat/sub-197622_ses-3mo_run-004_T1w.nii.gz'  [4 of 13]
+  1048576 of 21083491     4% in    0s    10.16 MB/s 21083491 of 21083491   100% in    0s    95.38 MB/s  done
+download: 's3://UNC_BCP/sub-197622/ses-3mo/fmap/sub-197622_ses-3mo_dir-AP_run-01_epi.json' -> '/tmp/UNC_BCP/sub-197622/ses-3mo/fmap/sub-197622_ses-3mo_dir-AP_run-01_epi.json'  [5 of 13]
+ 3929 of 3929   100% in    0s    61.52 KB/s 3929 of 3929   100% in    0s    61.32 KB/s  done
+download: 's3://UNC_BCP/sub-197622/ses-3mo/fmap/sub-197622_ses-3mo_dir-AP_run-01_epi.nii.gz' -> '/tmp/UNC_BCP/sub-197622/ses-3mo/fmap/sub-197622_ses-3mo_dir-AP_run-01_epi.nii.gz'  [6 of 13]
+ 1048576 of 2346463    44% in    0s    14.14 MB/s 2346463 of 2346463   100% in    0s    29.00 MB/s  done
+download: 's3://UNC_BCP/sub-197622/ses-3mo/fmap/sub-197622_ses-3mo_dir-PA_run-02_epi.json' -> '/tmp/UNC_BCP/sub-197622/ses-3mo/fmap/sub-197622_ses-3mo_dir-PA_run-02_epi.json'  [7 of 13]
+ 3929 of 3929   100% in    0s    47.64 KB/s 3929 of 3929   100% in    0s    47.55 KB/s  done
+download: 's3://UNC_BCP/sub-197622/ses-3mo/fmap/sub-197622_ses-3mo_dir-PA_run-02_epi.nii.gz' -> '/tmp/UNC_BCP/sub-197622/ses-3mo/fmap/sub-197622_ses-3mo_dir-PA_run-02_epi.nii.gz'  [8 of 13]
+ 1048576 of 2316206    45% in    0s    24.99 MB/s 2316206 of 2316206   100% in    0s    47.37 MB/s  done
+download: 's3://UNC_BCP/sub-197622/ses-3mo/func/sub-197622_ses-3mo_task-rest_acq-AP_run-01_bold.json' -> '/tmp/UNC_BCP/sub-197622/ses-3mo/func/sub-197622_ses-3mo_task-rest_acq-AP_run-01_bold.json'  [9 of 13]
+ 3600 of 3600   100% in    0s    45.45 KB/s 3600 of 3600   100% in    0s    45.36 KB/s  done
+download: 's3://UNC_BCP/sub-197622/ses-3mo/func/sub-197622_ses-3mo_task-rest_acq-AP_run-01_bold.nii.gz' -> '/tmp/UNC_BCP/sub-197622/ses-3mo/func/sub-197622_ses-3mo_task-rest_acq-AP_run-01_bold.nii.gz'  [10 of 13]
+   1048576 of 181563789     0% in    0s    12.51 MB/s 181563789 of 181563789   100% in    1s   163.86 MB/s  done
+download: 's3://UNC_BCP/sub-197622/ses-3mo/func/sub-197622_ses-3mo_task-rest_acq-PA_run-02_bold.json' -> '/tmp/UNC_BCP/sub-197622/ses-3mo/func/sub-197622_ses-3mo_task-rest_acq-PA_run-02_bold.json'  [11 of 13]
+ 3783 of 3783   100% in    0s    44.63 KB/s 3783 of 3783   100% in    0s    44.56 KB/s  done
+download: 's3://UNC_BCP/sub-197622/ses-3mo/func/sub-197622_ses-3mo_task-rest_acq-PA_run-02_bold.nii.gz' -> '/tmp/UNC_BCP/sub-197622/ses-3mo/func/sub-197622_ses-3mo_task-rest_acq-PA_run-02_bold.nii.gz'  [12 of 13]
+   1048576 of 182161070     0% in    0s    11.31 MB/s 169869312 of 182161070    93% in    1s   148.68 MB/s 182161070 of 182161070   100% in    1s   151.30 MB/s  done
+download: 's3://UNC_BCP/sub-197622/ses-3mo/sub-197622_ses-3mo_scans.tsv' -> '/tmp/UNC_BCP/sub-197622/ses-3mo/sub-197622_ses-3mo_scans.tsv'  [13 of 13]
+ 568 of 568   100% in    0s     9.37 KB/s 568 of 568   100% in    0s     9.33 KB/s  done
+download: 's3://UNC_BCP/participants.tsv' -> '/tmp/UNC_BCP/participants.tsv'  [1 of 1]
+ 8517 of 8517   100% in    0s  1409.25 KB/s 8517 of 8517   100% in    0s  1380.02 KB/s  done
+/home/feczk001/shared/code/internal/pipelines/DCAN-infant-BIDS/infant-abcd-bids-pipeline_dbp-hotfix-03172022.sif
+DEBUG:
+these must be the same:
+first: /opt/freesurfer/license.txt
+second: /opt/freesurfer/license.txt
+
+ERROR: The infant pipeline is not able to run without T2w data.
+

@@ -1,0 +1,8 @@
+INFO: Retrieving list of remote files for s3://UNC_BCP/sub-868724/ses-38mo ...
+INFO: Summary: 51 remote files to download
+INFO: Creating directory: /tmp/UNC_BCP/sub-868724/ses-38mo/anat
+INFO: Creating directory: /tmp/UNC_BCP/sub-868724/ses-38mo/dwi
+INFO: Creating directory: /tmp/UNC_BCP/sub-868724/ses-38mo/fmap
+INFO: Creating directory: /tmp/UNC_BCP/sub-868724/ses-38mo/func
+INFO: Summary: 1 remote files to download
+slurmstepd: error: *** JOB 147949542 ON cn0038 CANCELLED AT 2022-07-17T22:45:47 DUE TO TIME LIMIT ***

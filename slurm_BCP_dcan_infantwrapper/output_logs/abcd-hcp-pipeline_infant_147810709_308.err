@@ -1,0 +1,44 @@
+INFO: Retrieving list of remote files for s3://UNC_BCP/sub-868724/ses-14mo ...
+INFO: Summary: 51 remote files to download
+INFO: Creating directory: /tmp/UNC_BCP/sub-868724/ses-14mo/anat
+INFO: Creating directory: /tmp/UNC_BCP/sub-868724/ses-14mo/dwi
+INFO: Creating directory: /tmp/UNC_BCP/sub-868724/ses-14mo/fmap
+INFO: Creating directory: /tmp/UNC_BCP/sub-868724/ses-14mo/func
+INFO: Summary: 1 remote files to download
+/home/miran045/hough129/.local/lib/python3.6/site-packages/bids/layout/validation.py:46: UserWarning: The ability to pass arguments to BIDSLayout that control indexing is likely to be removed in future; possibly as early as PyBIDS 0.14. This includes the `config_filename`, `ignore`, `force_index`, and `index_metadata` arguments. The recommended usage pattern is to initialize a new BIDSLayoutIndexer with these arguments, and pass it to the BIDSLayout via the `indexer` argument.
+  warnings.warn("The ability to pass arguments to BIDSLayout that control "
+Traceback (most recent call last):
+  File "/app/run.py", line 585, in <module>
+    _cli()
+  File "/app/run.py", line 80, in _cli
+    return interface(**kwargs)
+  File "/app/run.py", line 581, in interface
+    stage.run(ncpus)
+  File "/app/pipelines.py", line 707, in run
+    self.teardown(result)
+  File "/app/pipelines.py", line 647, in teardown
+    self.__class__.__name__)
+Exception: error caught during stage: FMRISurface
+INFO: No cache file found, creating it.
+INFO: Compiling list of local files...
+INFO: Running stat() and reading/calculating MD5 values on 16511 files, this may take some time...
+INFO: [1000/16511]
+INFO: [2000/16511]
+INFO: [3000/16511]
+INFO: [4000/16511]
+INFO: [5000/16511]
+INFO: [6000/16511]
+INFO: [7000/16511]
+INFO: [8000/16511]
+INFO: [9000/16511]
+INFO: [10000/16511]
+INFO: [11000/16511]
+INFO: [12000/16511]
+INFO: [13000/16511]
+INFO: [14000/16511]
+INFO: [15000/16511]
+INFO: [16000/16511]
+INFO: Retrieving list of remote files for s3://UNC_BCP/processed/dcan-infant-pipeline/sub-868724/ses-14mo/ ...
+INFO: Found 16511 local files, 16511 remote files
+INFO: Verifying attributes...
+INFO: Summary: 7365 local files to upload, 269 files to remote copy, 0 remote files to delete

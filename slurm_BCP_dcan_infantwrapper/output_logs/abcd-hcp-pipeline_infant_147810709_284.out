@@ -1,0 +1,64 @@
+download: 's3://UNC_BCP/sub-791621/ses-56mo/anat/sub-791621_ses-56mo_run-002_T1w.json' -> '/tmp/UNC_BCP/sub-791621/ses-56mo/anat/sub-791621_ses-56mo_run-002_T1w.json'  [1 of 27]
+ 1965 of 1965   100% in    0s    23.26 KB/s 1965 of 1965   100% in    0s    23.22 KB/s  done
+download: 's3://UNC_BCP/sub-791621/ses-56mo/anat/sub-791621_ses-56mo_run-002_T1w.nii.gz' -> '/tmp/UNC_BCP/sub-791621/ses-56mo/anat/sub-791621_ses-56mo_run-002_T1w.nii.gz'  [2 of 27]
+  1048576 of 15681521     6% in    0s    10.30 MB/s 15681521 of 15681521   100% in    0s    54.99 MB/s  done
+download: 's3://UNC_BCP/sub-791621/ses-56mo/fmap/sub-791621_ses-56mo_dir-AP_run-01_epi.json' -> '/tmp/UNC_BCP/sub-791621/ses-56mo/fmap/sub-791621_ses-56mo_dir-AP_run-01_epi.json'  [3 of 27]
+ 4075 of 4075   100% in    0s   117.33 KB/s 4075 of 4075   100% in    0s   116.86 KB/s  done
+download: 's3://UNC_BCP/sub-791621/ses-56mo/fmap/sub-791621_ses-56mo_dir-AP_run-01_epi.nii.gz' -> '/tmp/UNC_BCP/sub-791621/ses-56mo/fmap/sub-791621_ses-56mo_dir-AP_run-01_epi.nii.gz'  [4 of 27]
+ 1048576 of 2468843    42% in    0s    16.44 MB/s 2468843 of 2468843   100% in    0s    34.14 MB/s  done
+download: 's3://UNC_BCP/sub-791621/ses-56mo/fmap/sub-791621_ses-56mo_dir-AP_run-02_epi.json' -> '/tmp/UNC_BCP/sub-791621/ses-56mo/fmap/sub-791621_ses-56mo_dir-AP_run-02_epi.json'  [5 of 27]
+ 4073 of 4073   100% in    0s   113.32 KB/s 4073 of 4073   100% in    0s   112.85 KB/s  done
+download: 's3://UNC_BCP/sub-791621/ses-56mo/fmap/sub-791621_ses-56mo_dir-AP_run-02_epi.nii.gz' -> '/tmp/UNC_BCP/sub-791621/ses-56mo/fmap/sub-791621_ses-56mo_dir-AP_run-02_epi.nii.gz'  [6 of 27]
+ 1048576 of 2467387    42% in    0s    22.04 MB/s 2467387 of 2467387   100% in    0s    44.10 MB/s  done
+download: 's3://UNC_BCP/sub-791621/ses-56mo/fmap/sub-791621_ses-56mo_dir-PA_run-03_epi.json' -> '/tmp/UNC_BCP/sub-791621/ses-56mo/fmap/sub-791621_ses-56mo_dir-PA_run-03_epi.json'  [7 of 27]
+ 4074 of 4074   100% in    0s   107.45 KB/s 4074 of 4074   100% in    0s   107.07 KB/s  done
+download: 's3://UNC_BCP/sub-791621/ses-56mo/fmap/sub-791621_ses-56mo_dir-PA_run-03_epi.nii.gz' -> '/tmp/UNC_BCP/sub-791621/ses-56mo/fmap/sub-791621_ses-56mo_dir-PA_run-03_epi.nii.gz'  [8 of 27]
+ 1048576 of 2447039    42% in    0s    20.03 MB/s 2447039 of 2447039   100% in    0s    40.53 MB/s  done
+download: 's3://UNC_BCP/sub-791621/ses-56mo/fmap/sub-791621_ses-56mo_dir-PA_run-04_epi.json' -> '/tmp/UNC_BCP/sub-791621/ses-56mo/fmap/sub-791621_ses-56mo_dir-PA_run-04_epi.json'  [9 of 27]
+ 4071 of 4071   100% in    0s    82.66 KB/s 4071 of 4071   100% in    0s    82.41 KB/s  done
+download: 's3://UNC_BCP/sub-791621/ses-56mo/fmap/sub-791621_ses-56mo_dir-PA_run-04_epi.nii.gz' -> '/tmp/UNC_BCP/sub-791621/ses-56mo/fmap/sub-791621_ses-56mo_dir-PA_run-04_epi.nii.gz'  [10 of 27]
+ 1048576 of 2444405    42% in    0s     7.80 MB/s 2444405 of 2444405   100% in    0s    17.15 MB/s  done
+download: 's3://UNC_BCP/sub-791621/ses-56mo/func/sub-791621_ses-56mo_task-rest_acq-AP_run-01_bold.json' -> '/tmp/UNC_BCP/sub-791621/ses-56mo/func/sub-791621_ses-56mo_task-rest_acq-AP_run-01_bold.json'  [11 of 27]
+ 3781 of 3781   100% in    0s    39.04 KB/s 3781 of 3781   100% in    0s    38.97 KB/s  done
+download: 's3://UNC_BCP/sub-791621/ses-56mo/func/sub-791621_ses-56mo_task-rest_acq-AP_run-01_bold.nii.gz' -> '/tmp/UNC_BCP/sub-791621/ses-56mo/func/sub-791621_ses-56mo_task-rest_acq-AP_run-01_bold.nii.gz'  [12 of 27]
+   1048576 of 469675451     0% in    0s    17.54 MB/s 167772160 of 469675451    35% in    1s   151.07 MB/s 364904448 of 469675451    77% in    2s   168.69 MB/s 469675451 of 469675451   100% in    2s   173.79 MB/s  done
+download: 's3://UNC_BCP/sub-791621/ses-56mo/func/sub-791621_ses-56mo_task-rest_acq-AP_run-02_bold.json' -> '/tmp/UNC_BCP/sub-791621/ses-56mo/func/sub-791621_ses-56mo_task-rest_acq-AP_run-02_bold.json'  [13 of 27]
+ 3757 of 3757   100% in    0s    63.96 KB/s 3757 of 3757   100% in    0s    63.75 KB/s  done
+download: 's3://UNC_BCP/sub-791621/ses-56mo/func/sub-791621_ses-56mo_task-rest_acq-AP_run-02_bold.nii.gz' -> '/tmp/UNC_BCP/sub-791621/ses-56mo/func/sub-791621_ses-56mo_task-rest_acq-AP_run-02_bold.nii.gz'  [14 of 27]
+   1048576 of 470125473     0% in    0s    18.27 MB/s 190840832 of 470125473    40% in    1s   172.33 MB/s 386924544 of 470125473    82% in    2s   170.40 MB/s 470125473 of 470125473   100% in    2s   172.84 MB/s  done
+download: 's3://UNC_BCP/sub-791621/ses-56mo/func/sub-791621_ses-56mo_task-rest_acq-AP_run-05_sbref.json' -> '/tmp/UNC_BCP/sub-791621/ses-56mo/func/sub-791621_ses-56mo_task-rest_acq-AP_run-05_sbref.json'  [15 of 27]
+ 2951 of 2951   100% in    0s    41.83 KB/s 2951 of 2951   100% in    0s    41.76 KB/s  done
+download: 's3://UNC_BCP/sub-791621/ses-56mo/func/sub-791621_ses-56mo_task-rest_acq-AP_run-05_sbref.nii.gz' -> '/tmp/UNC_BCP/sub-791621/ses-56mo/func/sub-791621_ses-56mo_task-rest_acq-AP_run-05_sbref.nii.gz'  [16 of 27]
+ 1048576 of 1225730    85% in    0s    27.19 MB/s 1225730 of 1225730   100% in    0s    30.83 MB/s  done
+download: 's3://UNC_BCP/sub-791621/ses-56mo/func/sub-791621_ses-56mo_task-rest_acq-AP_run-06_sbref.json' -> '/tmp/UNC_BCP/sub-791621/ses-56mo/func/sub-791621_ses-56mo_task-rest_acq-AP_run-06_sbref.json'  [17 of 27]
+ 2973 of 2973   100% in    0s    26.54 KB/s 2973 of 2973   100% in    0s    26.49 KB/s  done
+download: 's3://UNC_BCP/sub-791621/ses-56mo/func/sub-791621_ses-56mo_task-rest_acq-AP_run-06_sbref.nii.gz' -> '/tmp/UNC_BCP/sub-791621/ses-56mo/func/sub-791621_ses-56mo_task-rest_acq-AP_run-06_sbref.nii.gz'  [18 of 27]
+ 1048576 of 1226407    85% in    0s    14.38 MB/s 1226407 of 1226407   100% in    0s    16.53 MB/s  done
+download: 's3://UNC_BCP/sub-791621/ses-56mo/func/sub-791621_ses-56mo_task-rest_acq-PA_run-03_bold.json' -> '/tmp/UNC_BCP/sub-791621/ses-56mo/func/sub-791621_ses-56mo_task-rest_acq-PA_run-03_bold.json'  [19 of 27]
+ 3780 of 3780   100% in    0s    58.98 KB/s 3780 of 3780   100% in    0s    58.80 KB/s  done
+download: 's3://UNC_BCP/sub-791621/ses-56mo/func/sub-791621_ses-56mo_task-rest_acq-PA_run-03_bold.nii.gz' -> '/tmp/UNC_BCP/sub-791621/ses-56mo/func/sub-791621_ses-56mo_task-rest_acq-PA_run-03_bold.nii.gz'  [20 of 27]
+   1048576 of 462058352     0% in    0s    15.96 MB/s 186646528 of 462058352    40% in    1s   167.19 MB/s 356515840 of 462058352    77% in    2s   164.43 MB/s 462058352 of 462058352   100% in    2s   170.82 MB/s  done
+download: 's3://UNC_BCP/sub-791621/ses-56mo/func/sub-791621_ses-56mo_task-rest_acq-PA_run-04_bold.json' -> '/tmp/UNC_BCP/sub-791621/ses-56mo/func/sub-791621_ses-56mo_task-rest_acq-PA_run-04_bold.json'  [21 of 27]
+ 3757 of 3757   100% in    0s    54.23 KB/s 3757 of 3757   100% in    0s    54.13 KB/s  done
+download: 's3://UNC_BCP/sub-791621/ses-56mo/func/sub-791621_ses-56mo_task-rest_acq-PA_run-04_bold.nii.gz' -> '/tmp/UNC_BCP/sub-791621/ses-56mo/func/sub-791621_ses-56mo_task-rest_acq-PA_run-04_bold.nii.gz'  [22 of 27]
+   1048576 of 462384897     0% in    0s    14.95 MB/s 190840832 of 462384897    41% in    1s   170.46 MB/s 387973120 of 462384897    83% in    2s   178.60 MB/s 462384897 of 462384897   100% in    2s   181.23 MB/s  done
+download: 's3://UNC_BCP/sub-791621/ses-56mo/func/sub-791621_ses-56mo_task-rest_acq-PA_run-07_sbref.json' -> '/tmp/UNC_BCP/sub-791621/ses-56mo/func/sub-791621_ses-56mo_task-rest_acq-PA_run-07_sbref.json'  [23 of 27]
+ 2947 of 2947   100% in    0s    38.07 KB/s 2947 of 2947   100% in    0s    37.95 KB/s  done
+download: 's3://UNC_BCP/sub-791621/ses-56mo/func/sub-791621_ses-56mo_task-rest_acq-PA_run-07_sbref.nii.gz' -> '/tmp/UNC_BCP/sub-791621/ses-56mo/func/sub-791621_ses-56mo_task-rest_acq-PA_run-07_sbref.nii.gz'  [24 of 27]
+ 1048576 of 1210805    86% in    0s    14.44 MB/s 1210805 of 1210805   100% in    0s    16.44 MB/s  done
+download: 's3://UNC_BCP/sub-791621/ses-56mo/func/sub-791621_ses-56mo_task-rest_acq-PA_run-08_sbref.json' -> '/tmp/UNC_BCP/sub-791621/ses-56mo/func/sub-791621_ses-56mo_task-rest_acq-PA_run-08_sbref.json'  [25 of 27]
+ 2941 of 2941   100% in    0s    27.26 KB/s 2941 of 2941   100% in    0s    27.22 KB/s  done
+download: 's3://UNC_BCP/sub-791621/ses-56mo/func/sub-791621_ses-56mo_task-rest_acq-PA_run-08_sbref.nii.gz' -> '/tmp/UNC_BCP/sub-791621/ses-56mo/func/sub-791621_ses-56mo_task-rest_acq-PA_run-08_sbref.nii.gz'  [26 of 27]
+ 1048576 of 1209596    86% in    0s    19.36 MB/s 1209596 of 1209596   100% in    0s    21.86 MB/s  done
+download: 's3://UNC_BCP/sub-791621/ses-56mo/sub-791621_ses-56mo_scans.tsv' -> '/tmp/UNC_BCP/sub-791621/ses-56mo/sub-791621_ses-56mo_scans.tsv'  [27 of 27]
+ 1078 of 1078   100% in    0s    11.12 KB/s 1078 of 1078   100% in    0s    11.10 KB/s  done
+download: 's3://UNC_BCP/participants.tsv' -> '/tmp/UNC_BCP/participants.tsv'  [1 of 1]
+ 8517 of 8517   100% in    0s  1351.98 KB/s 8517 of 8517   100% in    0s  1325.90 KB/s  done
+/home/feczk001/shared/code/internal/pipelines/DCAN-infant-BIDS/infant-abcd-bids-pipeline_dbp-hotfix-03172022.sif
+DEBUG:
+these must be the same:
+first: /opt/freesurfer/license.txt
+second: /opt/freesurfer/license.txt
+
+ERROR: The infant pipeline is not able to run without T2w data.
+

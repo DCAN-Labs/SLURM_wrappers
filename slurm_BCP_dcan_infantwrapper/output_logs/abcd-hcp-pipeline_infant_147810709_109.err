@@ -1,0 +1,20 @@
+INFO: Retrieving list of remote files for s3://UNC_BCP/sub-314462/ses-9mo ...
+INFO: Summary: 25 remote files to download
+INFO: Creating directory: /tmp/UNC_BCP/sub-314462/ses-9mo/anat
+INFO: Creating directory: /tmp/UNC_BCP/sub-314462/ses-9mo/dwi
+INFO: Creating directory: /tmp/UNC_BCP/sub-314462/ses-9mo/fmap
+INFO: Creating directory: /tmp/UNC_BCP/sub-314462/ses-9mo/func
+INFO: Summary: 1 remote files to download
+/home/miran045/hough129/.local/lib/python3.6/site-packages/bids/layout/validation.py:46: UserWarning: The ability to pass arguments to BIDSLayout that control indexing is likely to be removed in future; possibly as early as PyBIDS 0.14. This includes the `config_filename`, `ignore`, `force_index`, and `index_metadata` arguments. The recommended usage pattern is to initialize a new BIDSLayoutIndexer with these arguments, and pass it to the BIDSLayout via the `indexer` argument.
+  warnings.warn("The ability to pass arguments to BIDSLayout that control "
+Traceback (most recent call last):
+  File "/app/run.py", line 585, in <module>
+    _cli()
+  File "/app/run.py", line 80, in _cli
+    return interface(**kwargs)
+  File "/app/run.py", line 440, in interface
+    validate_config(session, anat_only)
+  File "/app/helpers.py", line 328, in validate_config
+    assert ('bold' in modes) or anat_only, 'Must provide functional data or specify --ignore-func or --anat-only.'
+AssertionError: Must provide functional data or specify --ignore-func or --anat-only.
+ERROR: Parameter problem: Invalid source: '/tmp/UNC_BCP/processed/dcan-infant-pipeline/sub-314462/ses-9mo/' is not an existing file or directory

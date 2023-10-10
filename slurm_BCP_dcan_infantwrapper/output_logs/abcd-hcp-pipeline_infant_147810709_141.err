@@ -1,0 +1,40 @@
+INFO: Retrieving list of remote files for s3://UNC_BCP/sub-404835/ses-52mo ...
+INFO: Summary: 23 remote files to download
+INFO: Creating directory: /tmp/UNC_BCP/sub-404835/ses-52mo/anat
+INFO: Creating directory: /tmp/UNC_BCP/sub-404835/ses-52mo/fmap
+INFO: Creating directory: /tmp/UNC_BCP/sub-404835/ses-52mo/func
+INFO: Summary: 1 remote files to download
+/home/miran045/hough129/.local/lib/python3.6/site-packages/bids/layout/validation.py:46: UserWarning: The ability to pass arguments to BIDSLayout that control indexing is likely to be removed in future; possibly as early as PyBIDS 0.14. This includes the `config_filename`, `ignore`, `force_index`, and `index_metadata` arguments. The recommended usage pattern is to initialize a new BIDSLayoutIndexer with these arguments, and pass it to the BIDSLayout via the `indexer` argument.
+  warnings.warn("The ability to pass arguments to BIDSLayout that control "
+Traceback (most recent call last):
+  File "/app/run.py", line 585, in <module>
+    _cli()
+  File "/app/run.py", line 80, in _cli
+    return interface(**kwargs)
+  File "/app/run.py", line 581, in interface
+    stage.run(ncpus)
+  File "/app/pipelines.py", line 707, in run
+    self.teardown(result)
+  File "/app/pipelines.py", line 647, in teardown
+    self.__class__.__name__)
+Exception: error caught during stage: FMRISurface
+INFO: No cache file found, creating it.
+INFO: Compiling list of local files...
+INFO: Running stat() and reading/calculating MD5 values on 13598 files, this may take some time...
+INFO: [1000/13598]
+INFO: [2000/13598]
+INFO: [3000/13598]
+INFO: [4000/13598]
+INFO: [5000/13598]
+INFO: [6000/13598]
+INFO: [7000/13598]
+INFO: [8000/13598]
+INFO: [9000/13598]
+INFO: [10000/13598]
+INFO: [11000/13598]
+INFO: [12000/13598]
+INFO: [13000/13598]
+INFO: Retrieving list of remote files for s3://UNC_BCP/processed/dcan-infant-pipeline/sub-404835/ses-52mo/ ...
+INFO: Found 13598 local files, 13599 remote files
+INFO: Verifying attributes...
+INFO: Summary: 6143 local files to upload, 247 files to remote copy, 1 remote files to delete

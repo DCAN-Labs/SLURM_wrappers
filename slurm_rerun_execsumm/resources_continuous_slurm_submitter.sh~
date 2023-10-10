@@ -1,0 +1,17 @@
+#!/bin/bash -l
+#SBATCH -J continuous_slurm_submitter
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=3
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=6gb
+#SBATCH -t 120:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=lundq163@umn.edu
+#SBATCH -p max
+#SBATCH -o continuous_slurm_submitter_%A.out
+#SBATCH -e continuous_slurm_submitter_%A.err
+#SBATCH -A rando149
+
+source /home/umii/hendr522/SW/miniconda3/etc/profile.d/conda.sh
+
+python continuous_slurm_submitter.py --partition small,amdsmall --job-name abcd-hcp-pipeline_full --log-dir cont_slurm_submitter_logs --run_folder /home/rando149/shared/projects/ABCC_year2_derivatives_reprocessing/slurm_abcd-hcp-pipeline_rerun/run_files.abcd-hcp-pipeline_full/ --n_cpus 8 --time_limit 48:00:00 --total_memory 20 --tmp_storage 100 --array-size 1500 --submission-interval 300 --account_name rando149 

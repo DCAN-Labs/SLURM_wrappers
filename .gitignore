@@ -1,1 +1,5 @@
 /.idea/
+/slurm_CustomClean_scripts/run_files.custom_clean/
+/slurm_CustomClean_scripts/dataset_description.json
+/slurm_CustomClean_scripts/license.txt
+/slurm_CustomClean_scripts/participants.tsv

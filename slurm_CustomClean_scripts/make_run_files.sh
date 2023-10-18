@@ -14,10 +14,8 @@ group=`groups|cut -d" " -f1`
 # if processing run folders (sMRI, fMRI,) exist delete them and recreate
 if [ -d "${custom_clean_folder}" ]; then
 	rm -rf "${custom_clean_folder}"
-	mkdir "${custom_clean_folder}"
-else
-	mkdir "${custom_clean_folder}"
 fi
+mkdir "${custom_clean_folder}"
 
 # counter to create run numbers
 k=0

@@ -51,6 +51,7 @@ parser.add_argument('--array-size', '--array_size', help='Desired number of jobs
 parser.add_argument('--submission-interval','--submission_internval', help='How often should continuous batches be submitted, in minutes?',default=10,type=int)
 parser.add_argument('--account_name',nargs='+',help='What account name to charge job too. If using MSI, you can discover group by typing `id -nG`. Default is primary group (`id -ng`.). Can select multiple accounts with a space separated list',required=True)
 parser.add_argument('--high-priority','--high_priority',help='Run jobs with a higher priority. Note, you need special permission to run this',action='store_true')
+parser.add_argument('--emailed_user',help='What user to e-mail when jobs begin, end, or fail. If not specified, default is the @umn.edu for the submitting user.')
 
 # Parse and gather arguments
 args = parser.parse_args()
@@ -58,12 +59,10 @@ print(args)
 script_path=os.path.dirname(__file__)
 # validate integrity of inputted arguments
 user_name = run(command='whoami')
-#if not args.account_name:
-#    account_name = run(command='id -ng')
-#else:
-#    account_name = args.account_name
-#    all_account_names = run(command='id -nG')
-#    assert account_name in all_account_names, 'You are not a member of the account you specified: ' + account_name + '. Exiting.'
+if not args.emailed_user:
+    user_email=user_name+"@umn.edu"
+else:
+    user_email=args.emailed_user
 if not os.path.isdir(args.log_dir):
     os.system("mkdir -p {log_dir}".format(log_dir=args.log_dir)) # make folder based on provided account
     os.system("chmod 777 {log_dir}".format(log_dir=args.log_dir)) # make folder based on provided account
@@ -84,7 +83,7 @@ else:
     priority_text = ''
 # at MSI verify if on mesabi or mangi
 dns_name = run(command="dnsdomainname")
-assert dns_name.split('.')[0]=='mesabi' or dns_name.split('.')[0]=='mangi', 'Must be on mesabi or mangi in order to submit jobs.' 
+assert dns_name.split('.')[0]=='mesabi' or dns_name.split('.')[0]=='mangi' or dns_name.split('.')[0]=='agate', 'Must be on mesabi or mangi in order to submit jobs.' 
 
 total_run_files_length = 0 
 for run_folder in args.run_folder:
@@ -106,7 +105,8 @@ while True:
     jobs_to_submit = args.array_size - jobs_in_queue
     fairshares=list()
     for account in args.account_name.split(','):
-        fairshare=float(run(command="sshare --account="+account+" | grep " + user_name + " | awk '{print $NF}'"))
+        
+        fairshare=float(run(command="sshare --account="+account+" | grep -m 1 " + user_name + " | awk '{print $NF}'"))
         fairshares.append(fairshare)
     jobs_to_submit_by_account=[round((fairshare/sum(fairshares)) * jobs_to_submit) for fairshare in fairshares]
     job_count = 0 # keep track of number of jobs
@@ -153,10 +153,10 @@ while True:
                         account_run_file_list=run_file_list[start:end]
                         account_run_file_list=','.join([str(elem) for elem in account_run_file_list])
                         parsed_account_run_file_list = run(command='bash '+ script_path+'/job_array_modifier.sh ' + account_run_file_list)
-                        print("sbatch --array={array} -A {account_name} -J {job_name} -o {log_dir}/{job_name}_%A_%a.out -e {log_dir}/{job_name}_%A_%a.err -p {partition} --cpus-per-task {n_cpus} --mem={memory}gb {priority} --tmp={tmp_storage}gb -t {time} {path}/continuous_array_submitter.sh {run_folder}".format(
-                            array=parsed_account_run_file_list,account_name=account_name,partition=args.partition,log_dir=args.log_dir,job_name=job_name,n_cpus=str(args.n_cpus),memory=str(args.total_memory),priority=priority_text,tmp_storage=args.tmp_storage, time=args.time_limit,run_folder=run_folder,path=script_path))
-                        os.system("sbatch --array={array} -A {account_name} -J {job_name} -o {log_dir}/{job_name}_%A_%a.out -e {log_dir}/{job_name}_%A_%a.err -p {partition} --cpus-per-task {n_cpus} --mem={memory}gb {priority} --tmp={tmp_storage}gb -t {time} {path}/continuous_array_submitter.sh {run_folder}".format(
-                            array=parsed_account_run_file_list,account_name=account_name,log_dir=args.log_dir,partition=args.partition,job_name=job_name,n_cpus=str(args.n_cpus),memory=str(args.total_memory),priority=priority_text,tmp_storage=args.tmp_storage,time=args.time_limit,run_folder=run_folder,path=script_path))
+                        print("sbatch --array={array} -A {account_name} --mail-user={user_email} --mail-type=ALL -J {job_name} -o {log_dir}/{job_name}_%A_%a.out -e {log_dir}/{job_name}_%A_%a.err -p {partition} --cpus-per-task {n_cpus} --mem={memory}gb {priority} --tmp={tmp_storage}gb -t {time} {path}/continuous_array_submitter.sh {run_folder}".format(
+                            array=parsed_account_run_file_list,account_name=account_name,user_email=user_email,partition=args.partition,log_dir=args.log_dir,job_name=job_name,n_cpus=str(args.n_cpus),memory=str(args.total_memory),priority=priority_text,tmp_storage=args.tmp_storage, time=args.time_limit,run_folder=run_folder,path=script_path))
+                        os.system("sbatch --array={array} -A {account_name} --mail-user={user_email} --mail-type=ALL -J {job_name} -o {log_dir}/{job_name}_%A_%a.out -e {log_dir}/{job_name}_%A_%a.err -p {partition} --cpus-per-task {n_cpus} --mem={memory}gb {priority} --tmp={tmp_storage}gb -t {time} {path}/continuous_array_submitter.sh {run_folder}".format(
+                            array=parsed_account_run_file_list,account_name=account_name,user_email=user_email,log_dir=args.log_dir,partition=args.partition,job_name=job_name,n_cpus=str(args.n_cpus),memory=str(args.total_memory),priority=priority_text,tmp_storage=args.tmp_storage,time=args.time_limit,run_folder=run_folder,path=script_path))
                         start=end
                     else:
                         start=end

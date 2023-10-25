@@ -1,0 +1,62 @@
+#!/bin/bash
+subj_id=SUBJECTID
+ses_id=SESID
+data_dir=DATADIR
+data_bucket=BUCKET
+run_dir=RUNDIR
+
+
+anat_path=${data_dir}/derivatives/abcd-hcp-pipeline-v0.1.3/sub-${subj_id}/ses-${ses_id}/anat
+matlab_compiler=/home/feczk001/shared/code/external/utilities/MATLAB_MCR/v91/
+cifti_conn_wrapper=/home/faird/shared/code/internal/utilities/cifti_connectivity/cifti_conn_wrapper.py
+wb_command=/home/feczk001/shared/code/external/utilities/workbench/1.4.2/workbench/bin_rh_linux64/wb_command
+func_path=${data_dir}/derivatives/abcd-hcp-pipeline-v0.1.3/sub-${subj_id}/ses-${ses_id}/func
+labelfile=/home/feczk001/shared/ROI_sets/Surface_schemes/Human/Gordon/fsLR/Gordon.32k_fs_LR.dlabel.nii
+
+# pull down needed data and files from BIDS bucket
+if [ ! -d ${data_dir}/sub-${subj_id}/ses-${ses_id} ]; then
+	mkdir -p ${data_dir}/derivatives/abcd-hcp-pipeline-v0.1.3/sub-${subj_id}/ses-${ses_id}
+	s3cmd get ${data_bucket}/derivatives/abcd-hcp-pipeline-v0.1.3/sub-${subj_id}/ses-${ses_id}/ ${data_dir}/derivatives/abcd-hcp-pipeline-v0.1.3/sub-${subj_id}/ses-${ses_id}/ --recursive -v
+fi
+
+
+#AREA
+#pushd ${anat_path}
+for file in ${anat_path}/*MNI*fsLR32k_midthickness.surf.gii; do 
+  extension='.surf.gii'
+  fileroot=`echo ${file%$extension*}`
+  ${wb_command} -surface-vertex-areas ${file} ${fileroot}-vertexarea.func.gii
+done
+#popd
+
+#popd
+
+#gordon pconn
+#pushd ${func_path}
+dtseries_filename=$( ls ${func_path}/*task-rest*filtered*dtseries.nii )
+ptseries_filename=$( ls ${func_path}/*task-rest*Gordon*ptseries.nii )
+motion_filename=$( ls ${func_path}/*task-rest*filtered_motion*.mat )
+
+#grabbing the TR to ensure that its accurate
+TR=`${wb_command} -file-information ${dtseries_filename} | grep 'Map Interval Step' | awk '{print $4}'`
+echo $TR
+
+${cifti_conn_wrapper} -mre ${matlab_compiler} -wb ${wb_command} -outliers --dtseries ${dtseries_filename} --motion ${motion_filename} -min 10 -fd 0.2 ${ptseries_filename} ${TR} ${func_path}/ matrix
+
+${cifti_conn_wrapper} -mre ${matlab_compiler} -wb ${wb_command} -outliers --dtseries ${dtseries_filename} --motion ${motion_filename} -min 5 -fd 0.2 ${ptseries_filename} ${TR} ${func_path}/ matrix
+
+#popd
+
+#parcellator
+
+#pushd ${anat_path}
+for file in ${anat_path}/*.dscalar.nii; do 
+  extension='.dscalar.nii'
+  fileroot=`echo ${file%$extension*}`
+   ${wb_command} -cifti-parcellate ${file} ${labelfile} COLUMN ${fileroot}.pscalar.nii
+   
+done
+#popd
+
+#sync at subject / ses dir
+s3cmd sync -F --recursive -v ${data_dir}/derivatives/abcd-hcp-pipeline-v0.1.3/sub-${subj_id}/ses-${ses_id} ${data_bucket}/derivatives/abcd-hcp-pipeline-v0.1.3/sub-${subj_id}/

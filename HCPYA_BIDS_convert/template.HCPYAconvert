@@ -1,0 +1,20 @@
+#!/bin/bash
+subj_id=SUBJECTID
+ses_id=SESID
+data_dir=DATADIR
+data_bucket=BUCKET
+run_dir=RUNDIR
+
+
+# pull down needed data and files from BIDS bucket
+if [ ! -d ${data_dir}/sub-${subj_id}/ses-${ses_id} ]; then
+	mkdir -p ${data_dir}/sub-${subj_id}
+	s3cmd get ${data_bucket}/nonBIDS_NIFTIs/sub-${subj_id}/ses-${ses_id} ${data_dir}/sub-${subj_id} --recursive -v
+fi
+
+mkdir -p /tmp/output
+
+python3 BIDS_Conversion_v24_Audrey.py
+
+#sync at subject / ses dir
+s3cmd sync -F --recursive -v --delete-removed /tmp/output/sub-${subj_id}/ses-${ses_id} ${data_bucket}/sorted/sub-${subj_id}/ses-${ses_id}

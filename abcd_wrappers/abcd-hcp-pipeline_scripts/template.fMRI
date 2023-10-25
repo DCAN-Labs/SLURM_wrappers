@@ -1,0 +1,18 @@
+#!/bin/bash
+
+subj_id=SUBJECTID
+data_dir=DATADIR
+run_dir=RUNDIR
+cpu_usage=6
+singularity=`which singularity`
+
+env -i ${singularity} run \
+-B ${data_dir}:/bids_dir \
+-B ${data_dir}/derivatives/abcd-hcp-pipeline:/output_dir \
+-B ${run_dir}/license.txt:/opt/freesurfer/license.txt \
+/home/umii/public/hendr522/singularity_images/abcd-hcp-pipeline_v0.0.3.sif \
+/bids_dir /output_dir \
+--freesurfer-license=/opt/freesurfer/license.txt \
+--participant-label ${subj_id} \
+--stages="FMRIVolume:ExecutiveSummary" \
+--ncpus ${cpu_usage}

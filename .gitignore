@@ -3,3 +3,8 @@
 /slurm_CustomClean_scripts/dataset_description.json
 /slurm_CustomClean_scripts/license.txt
 /slurm_CustomClean_scripts/participants.tsv
+# Ignore output logs
+**/output_logs/*.err
+**/output_logs/*.out
+# Ignore run files
+**/run_files*/run*

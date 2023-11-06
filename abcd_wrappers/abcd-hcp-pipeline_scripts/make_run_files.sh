@@ -40,6 +40,6 @@ done
 
 chmod +x -R ${sMRI_folder} ${fMRI_folder}
 
-sed -e "s:GROUP:${group}:g" -e "s:EMAIL:${email}:g" -i ${run_folder}/slurm_sMRI.sh 
-sed -e "s:GROUP:${group}:g" -e "s:EMAIL:${email}:g" -i ${run_folder}/slurm_fMRI.sh 
+sed -e "s:GROUP:${group}:g" -e "s:EMAIL:${email}:g" -i ${run_folder}/resources_sMRI.sh 
+sed -e "s:GROUP:${group}:g" -e "s:EMAIL:${email}:g" -i ${run_folder}/resources_fMRI.sh 
 

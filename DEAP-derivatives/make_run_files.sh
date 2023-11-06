@@ -59,4 +59,4 @@ done
 
 chmod 775 -R ${DEAPderiv_folder}
 
-sed -e "s|GROUP|${group}|g" -e "s|EMAIL|${email}|g" -i ${run_folder}/slurm_DEAPderiv.sh 
+sed -e "s|GROUP|${group}|g" -e "s|EMAIL|${email}|g" -i ${run_folder}/resources_DEAPderiv.sh 

@@ -32,4 +32,3 @@ flock -x ${output_csv} cat ${one_subject_csv} | tail -n +2 >> ${output_csv}
 
 rm -r ${data_dir}/${HASH}/
 
-

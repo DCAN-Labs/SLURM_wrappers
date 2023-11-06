@@ -31,5 +31,5 @@ done
 
 chmod +x -R ${dicom2bids_folder} 
 
-sed -e "s:GROUP:${group}:g" -e "s:EMAIL:${email}:g" -i ${run_folder}/slurm_dicom2bids.sh 
+sed -e "s:GROUP:${group}:g" -e "s:EMAIL:${email}:g" -i ${run_folder}/resources_dicom2bids.sh 
 

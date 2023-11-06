@@ -59,4 +59,4 @@ done
 
 chmod 775 -R ${dua_folder}
 
-sed -e "s|GROUP|${group}|g" -e "s|EMAIL|${email}|g" -i ${run_folder}/slurm_dua.sh 
+sed -e "s|GROUP|${group}|g" -e "s|EMAIL|${email}|g" -i ${run_folder}/resources_dua.sh 

@@ -5,7 +5,7 @@ import os
 # determine data directory, run folders, and run templates
 data_dir="/tmp/year1_move_buckets" # where to output data
 bucket_name="s3://abcd_reprocessing" # bucket that BIDS data will be pulled from and processed outputs will be pushed to
-run_folder="/home/faird/lundq163/projects/slurm_move_subjects/"
+run_folder=os.getcwd()
 # ses_id="2YearFollowUpYArm1" #comment out if using csv
 move_subjects_folder="{run_folder}/run_files.move_subjects".format(run_folder=run_folder)
 move_subjects_template="template.move_subjects"

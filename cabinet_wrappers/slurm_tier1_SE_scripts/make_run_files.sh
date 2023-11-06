@@ -30,5 +30,5 @@ done
 
 chmod +x -R ${cabinet_folder} 
 
-sed -e "s:GROUP:${group}:g" -e "s:EMAIL:${email}:g" -i ${run_folder}/slurm_cabinet.sh 
+sed -e "s:GROUP:${group}:g" -e "s:EMAIL:${email}:g" -i ${run_folder}/resources_cabinet.sh 
 

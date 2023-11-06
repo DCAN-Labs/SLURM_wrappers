@@ -3,7 +3,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH -c 120
-#SBATCH --mem=960G
+#SBATCH --mem=1920G
 #SBATCH -t 48:00:00
 #SBATCH -p ag2tb
 #SBATCH --mail-type=ALL

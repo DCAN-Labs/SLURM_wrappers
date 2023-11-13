@@ -6,7 +6,7 @@
 #SBATCH --mem=80gb
 #SBATCH -t 2:00:00
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=lundq163@umn.edu
+#SBATCH --mail-user=<YOUR-EMAIL>@email.com
 #SBATCH -p v100
 #SBATCH -o output_logs/cabinet_%A_%a.out
 #SBATCH -e output_logs/cabinet_%A_%a.err

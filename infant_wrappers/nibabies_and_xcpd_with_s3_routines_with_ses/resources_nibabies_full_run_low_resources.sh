@@ -8,7 +8,7 @@
 #SBATCH -e output_logs/nibabies_low_%A_%a.err
 #SBATCH -A rando149
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=USER@umn.edu
+#SBATCH --mail-user=<YOUR-EMAIL>@email.com
 
 cd run_files.nibabies_full
 

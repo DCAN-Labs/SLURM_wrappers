@@ -3,7 +3,7 @@
 #SBATCH --mem=60gb
 #SBATCH --tmp=100gb
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=hough129@umn.edu
+#SBATCH --mail-user=<YOUR-EMAIL>@email.com
 #SBATCH -o output_logs/abcd-hcp-pipeline_infant_%A_%a.out
 #SBATCH -e output_logs/abcd-hcp-pipeline_infant_%A_%a.err
 #SBATCH -A elisonj

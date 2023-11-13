@@ -7,7 +7,7 @@
 #SBATCH --tmp=20gb
 #SBATCH -t 00:30:00
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=fayzu001@umn.edu
+#SBATCH --mail-user=<YOUR-EMAIL>@email.com
 #SBATCH -p amdsmall,amdlarge,amd512,amd2tb,small,large,ram256g,ram1t
 #SBATCH -o output_logs/s3tos3_filemapper_%A_%a.out
 #SBATCH -e output_logs/s3tos3_filemapper_%A_%a.err

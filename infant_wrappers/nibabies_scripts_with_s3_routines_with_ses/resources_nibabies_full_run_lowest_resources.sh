@@ -6,6 +6,8 @@
 #SBATCH --mem=240G
 #SBATCH -t 8:00:00
 #SBATCH -p msismall
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=<YOUR-EMAIL>@email.com
 #SBATCH -o output_logs/nibabies_full_lowest%A_%a.out
 #SBATCH -e output_logs/nibabies_full_lowest%A_%a.err
 #SBATCH -A rando149

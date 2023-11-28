@@ -3,21 +3,21 @@
 set +x 
 # determine data directory, run folders, and run templates
 data_dir="/tmp" # where to output data
-data_bucket="s3://WashU_data_sharing/eLABE/BIDS" # bucket that BIDS data will be pulled from and processed outputs will be pushed to
+data_bucket="s3://" # bucket that BIDS data will be pulled from and processed outputs will be pushed to
 run_folder=`pwd`
 
-cabinet_folder="${run_folder}/run_files.cabinet_full"
-cabinet_template="template.cabinet_full_run"
+bibsnet_folder="${run_folder}/run_files.bibsnet_full"
+bibsnet_template="template.bibsnet_full_run"
 
 email=`echo $USER@umn.edu`
 group=`groups|cut -d" " -f1`
 
 # if processing run folders exist delete them and recreate
-if [ -d "${cabinet_folder}" ]; then
-	rm -rf "${cabinet_folder}"
-	mkdir -p "${cabinet_folder}/logs"
+if [ -d "${bibsnet_folder}" ]; then
+	rm -rf "${bibsnet_folder}"
+	mkdir -p "${bibsnet_folder}/logs"
 else
-	mkdir -p "${cabinet_folder}/logs"
+	mkdir -p "${bibsnet_folder}/logs"
 fi
 
 # counter to create run numbers
@@ -33,14 +33,14 @@ for i in `s3cmd ls ${data_bucket}/ | awk '{print $2}'`; do
 			if [ "ses" = "${ses_text}" ]; then
 				ses_id=`echo ${j} | awk -F"/" '{print $(NF-1)}' | awk  -F"-" '{print $2}'` # CHANGE THIS?
 				# I think this sed statement needs to be changed
-				sed -e "s|SUBJECTID|${subj_id}|g" -e "s|SESID|${ses_id}|g" -e "s|DATADIR|${data_dir}|g" -e "s|BUCKET|${data_bucket}|g" -e "s|RUNDIR|${run_folder}|g" ${run_folder}/${cabinet_template} > ${cabinet_folder}/run${k}
+				sed -e "s|SUBJECTID|${subj_id}|g" -e "s|SESID|${ses_id}|g" -e "s|DATADIR|${data_dir}|g" -e "s|BUCKET|${data_bucket}|g" -e "s|RUNDIR|${run_folder}|g" ${run_folder}/${bibsnet_template} > ${bibsnet_folder}/run${k}
 				k=$((k+1))
 			fi
 		done
 	fi
 done
 
-chmod 775 -R ${cabinet_folder}
+chmod 775 -R ${bibsnet_folder}
 
-sed -e "s|GROUP|${group}|g" -e "s|EMAIL|${email}|g" -i ${run_folder}/resources_cabinet_full_run.sh 
+sed -e "s|GROUP|${group}|g" -e "s|EMAIL|${email}|g" -i ${run_folder}/resources_bibsnet_full_run.sh 
 

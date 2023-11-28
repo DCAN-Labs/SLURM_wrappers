@@ -17,9 +17,9 @@ else
       echo "Submitting the following jobs for cabinet processing now: $array"
       echo ""
 
-      cabinet=$(sbatch --parsable -a $array slurm_cabinet.sh)
+      bibsnet=$(sbatch --parsable -a $array slurm_cabinet.sh)
       
-      echo "cabinet JOB ID: $cabinet"
+      echo "bibsnet JOB ID: $bibsnet"
 
       echo ""
       echo "Output logs will appear in output_logs folder. Use 'squeue -al --me' to monitor jobs."

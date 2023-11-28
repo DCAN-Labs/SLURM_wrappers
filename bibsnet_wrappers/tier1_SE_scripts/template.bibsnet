@@ -13,6 +13,6 @@ fi
 env -i ${singularity} run \
 -B ${data_dir}:/input \
 -B ${data_dir}/derivatives/:/output \
-/home/faird/shared/code/internal/pipelines/cabinet_container/cabinet_latest.sif \
+/home/faird/shared/code/internal/pipelines/bibsnet_container/bibsnet_v3.0.2.sif \
 /input /output participant -jargs /home/cabinet/parameter-file-container.json -start prebibsnet -end postbibsnet -v
 

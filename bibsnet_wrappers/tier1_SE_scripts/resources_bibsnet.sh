@@ -8,8 +8,8 @@
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=<YOUR-EMAIL>@email.com
 #SBATCH -p v100
-#SBATCH -o output_logs/cabinet_%A_%a.out
-#SBATCH -e output_logs/cabinet_%A_%a.err
+#SBATCH -o output_logs/bibsnet_%A_%a.out
+#SBATCH -e output_logs/bibsnet_%A_%a.err
 #SBATCH -A miran045
 
 cd run_files.cabinet

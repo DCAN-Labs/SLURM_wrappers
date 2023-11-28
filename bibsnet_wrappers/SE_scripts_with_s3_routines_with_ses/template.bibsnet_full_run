@@ -30,7 +30,7 @@ env -i ${singularity} run \
 -B ${data_dir}:/input \
 -B ${data_dir}/processed/cabinet:/output \
 -B ${run_dir}/license.txt:/opt/freesurfer/license.txt \
-/home/faird/shared/code/internal/pipelines/cabinet_container/cabinet_v2-4-0.sif \
+/home/faird/shared/code/internal/pipelines/bibsnet_container/bibsnet_v3.0.2.sif \
 /input /output participant -jargs /home/cabinet/parameter-file-container.json -start prebibsnet -end postbibsnet -v 
 
 #push processed outputs to bucket

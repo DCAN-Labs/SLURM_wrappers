@@ -1,0 +1,25 @@
+#!/bin/bash 
+
+sub_id=SUBJECTID
+data_dir=DATADIR
+bucket_name=BUCKET
+run_folder=RUNDIR
+
+
+#sync processed outputs
+if [ ! -d ${data_dir}/processed/abcd-hcp-pipeline-v0.1.3/sub-${sub_id}/ses-2YearFollowUpYArm1 ]; then
+	mkdir -p ${data_dir}/processed/abcd-hcp-pipeline-v0.1.3/sub-${sub_id}
+	s3cmd get ${bucket_name}/sub-${sub_id}/ses-2YearFollowUpYArm1 ${data_dir}/processed/abcd-hcp-pipeline-v0.1.3/sub-${sub_id} --recursive -v
+fi
+# make derivatives dir in tmp space
+if [ -d ${data_dir}/derivatives/abcd-hcp-pipeline-v0.1.3 ]; then
+	rm -rf ${data_dir}/derivatives/abcd-hcp-pipeline-v0.1.3
+else
+	mkdir -p ${data_dir}/derivatives/abcd-hcp-pipeline-v0.1.3
+fi
+#rerun file-mapper
+/home/faird/shared/code/internal/utilities/file-mapper/file_mapper_script.py ${run_folder}/UKB-filemapper_abcd-hcp-pipeline-v0.1.3.json -a copy -sp  ${data_dir}  -dp ${data_dir}/derivatives/abcd-hcp-pipeline-v0.1.3/ -vb -o -t SUBJECT=${sub_id},SESSION=2YearFollowUpYArm1,PIPELINE=abcd-hcp-pipeline-v0.1.3
+#resync to derivatives bucket on s3
+s3cmd sync -F --recursive -v ${data_dir}/derivatives/abcd-hcp-pipeline-v0.1.3/sub-${sub_id}/ses-2YearFollowUpYArm1/ s3://ABCC_year2_derivatives/derivatives/abcd-hcp-pipeline-v0.1.3/sub-${sub_id}/ses-2YearFollowUpYArm1/
+#remove processed inputs and derivatives
+rm -r ${data_dir}

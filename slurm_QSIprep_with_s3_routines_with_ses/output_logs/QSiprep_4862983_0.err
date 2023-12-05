@@ -1,9 +1,0 @@
-INFO: Retrieving list of remote files for s3://HCP-Dv2_BIDS/sub-0001305/ses-V1 ...
-INFO: Summary: 80 remote files to download
-INFO: Creating directory: /tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/anat
-INFO: Creating directory: /tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi
-INFO: Creating directory: /tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/fmap
-INFO: Creating directory: /tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/func
-INFO: Summary: 1 remote files to download
-FATAL:   container creation failed: mount /spaces/ngdr/workspaces/hendr522/ABCD_workspace/code/HPC_processing/QSIprep->/mnt error: while mounting /spaces/ngdr/workspaces/hendr522/ABCD_workspace/code/HPC_processing/QSIprep: mount source /spaces/ngdr/workspaces/hendr522/ABCD_workspace/code/HPC_processing/QSIprep doesn't exist
-ERROR: Parameter problem: Invalid source: '/tmp/HCP-Dv2_BIDS/derivatives/QSIprep-v0.12.2/sub-0001305/ses-V1/' is not an existing file or directory

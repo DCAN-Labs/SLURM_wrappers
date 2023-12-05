@@ -10,7 +10,7 @@
 #SBATCH --mail-user=<YOUR-EMAIL>@email.com
 #SBATCH -o output_logs/fmriprep_full_%A_%a.out
 #SBATCH -e output_logs/fmriprep_full_%A_%a.err
-#SBATCH -A znahas
+#SBATCH -A faird
 
 cd run_files.fmriprep_full
 

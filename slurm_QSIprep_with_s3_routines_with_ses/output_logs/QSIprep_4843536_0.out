@@ -1,162 +1,0 @@
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/anat/sub-0001305_ses-V1_T1w.json' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/anat/sub-0001305_ses-V1_T1w.json'  [1 of 80]
- 1903 of 1903   100% in    0s    43.55 KB/s 1903 of 1903   100% in    0s    43.29 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/anat/sub-0001305_ses-V1_T1w.nii.gz' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/anat/sub-0001305_ses-V1_T1w.nii.gz'  [2 of 80]
-  1048576 of 34011302     3% in    0s    13.68 MB/s 34011302 of 34011302   100% in    0s    95.29 MB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/anat/sub-0001305_ses-V1_T2w.json' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/anat/sub-0001305_ses-V1_T2w.json'  [3 of 80]
- 1905 of 1905   100% in    0s    30.15 KB/s 1905 of 1905   100% in    0s    30.02 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/anat/sub-0001305_ses-V1_T2w.nii.gz' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/anat/sub-0001305_ses-V1_T2w.nii.gz'  [4 of 80]
-  1048576 of 22224332     4% in    0s     8.82 MB/s 22224332 of 22224332   100% in    0s    80.38 MB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir98_dir-AP_run-01_dwi.bval' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir98_dir-AP_run-01_dwi.bval'  [5 of 80]
- 474 of 474   100% in    0s     6.10 KB/s 474 of 474   100% in    0s     6.08 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir98_dir-AP_run-01_dwi.bvec' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir98_dir-AP_run-01_dwi.bvec'  [6 of 80]
- 2817 of 2817   100% in    0s    35.37 KB/s 2817 of 2817   100% in    0s    35.26 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir98_dir-AP_run-01_dwi.json' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir98_dir-AP_run-01_dwi.json'  [7 of 80]
- 3294 of 3294   100% in    0s    40.24 KB/s 3294 of 3294   100% in    0s    40.11 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir98_dir-AP_run-01_dwi.nii.gz' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir98_dir-AP_run-01_dwi.nii.gz'  [8 of 80]
-   1048576 of 236916424     0% in    0s    19.98 MB/s 165675008 of 236916424    69% in    1s   150.27 MB/s 236916424 of 236916424   100% in    1s   161.83 MB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir98_dir-AP_run-01_sbref.json' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir98_dir-AP_run-01_sbref.json'  [9 of 80]
- 3265 of 3265   100% in    0s    52.15 KB/s 3265 of 3265   100% in    0s    52.05 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir98_dir-AP_run-01_sbref.nii.gz' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir98_dir-AP_run-01_sbref.nii.gz'  [10 of 80]
- 1048576 of 2903472    36% in    0s    10.96 MB/s 2903472 of 2903472   100% in    0s    27.52 MB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir98_dir-PA_run-02_dwi.bval' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir98_dir-PA_run-02_dwi.bval'  [11 of 80]
- 474 of 474   100% in    0s     7.94 KB/s 474 of 474   100% in    0s     7.91 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir98_dir-PA_run-02_dwi.bvec' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir98_dir-PA_run-02_dwi.bvec'  [12 of 80]
- 2817 of 2817   100% in    0s    19.44 KB/s 2817 of 2817   100% in    0s    19.41 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir98_dir-PA_run-02_dwi.json' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir98_dir-PA_run-02_dwi.json'  [13 of 80]
- 3293 of 3293   100% in    0s    30.06 KB/s 3293 of 3293   100% in    0s    30.02 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir98_dir-PA_run-02_dwi.nii.gz' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir98_dir-PA_run-02_dwi.nii.gz'  [14 of 80]
-   1048576 of 234081947     0% in    0s    11.68 MB/s 192937984 of 234081947    82% in    1s   168.82 MB/s 234081947 of 234081947   100% in    1s   130.80 MB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir98_dir-PA_run-02_sbref.json' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir98_dir-PA_run-02_sbref.json'  [15 of 80]
- 3264 of 3264   100% in    0s    34.72 KB/s 3264 of 3264   100% in    0s    34.62 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir98_dir-PA_run-02_sbref.nii.gz' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir98_dir-PA_run-02_sbref.nii.gz'  [16 of 80]
- 1048576 of 2863752    36% in    0s    10.08 MB/s 2863752 of 2863752   100% in    0s    25.32 MB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir99_dir-AP_run-03_dwi.bval' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir99_dir-AP_run-03_dwi.bval'  [17 of 80]
- 479 of 479   100% in    0s     5.27 KB/s 479 of 479   100% in    0s     5.26 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir99_dir-AP_run-03_dwi.bvec' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir99_dir-AP_run-03_dwi.bvec'  [18 of 80]
- 2852 of 2852   100% in    0s    19.50 KB/s 2852 of 2852   100% in    0s    19.47 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir99_dir-AP_run-03_dwi.json' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir99_dir-AP_run-03_dwi.json'  [19 of 80]
- 3294 of 3294   100% in    0s    21.92 KB/s 3294 of 3294   100% in    0s    21.88 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir99_dir-AP_run-03_dwi.nii.gz' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir99_dir-AP_run-03_dwi.nii.gz'  [20 of 80]
-   1048576 of 239023461     0% in    0s    10.15 MB/s 157286400 of 239023461    65% in    1s   135.99 MB/s 239023461 of 239023461   100% in    2s   113.58 MB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir99_dir-AP_run-03_sbref.json' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir99_dir-AP_run-03_sbref.json'  [21 of 80]
- 3267 of 3267   100% in    0s    38.18 KB/s 3267 of 3267   100% in    0s    38.06 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir99_dir-AP_run-03_sbref.nii.gz' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir99_dir-AP_run-03_sbref.nii.gz'  [22 of 80]
- 1048576 of 2903607    36% in    0s    15.17 MB/s 2903607 of 2903607   100% in    0s    35.92 MB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir99_dir-PA_run-04_dwi.bval' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir99_dir-PA_run-04_dwi.bval'  [23 of 80]
- 479 of 479   100% in    0s     4.39 KB/s 479 of 479   100% in    0s     4.38 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir99_dir-PA_run-04_dwi.bvec' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir99_dir-PA_run-04_dwi.bvec'  [24 of 80]
- 2852 of 2852   100% in    0s    42.87 KB/s 2852 of 2852   100% in    0s    42.69 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir99_dir-PA_run-04_dwi.json' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir99_dir-PA_run-04_dwi.json'  [25 of 80]
- 3292 of 3292   100% in    0s    42.48 KB/s 3292 of 3292   100% in    0s    42.32 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir99_dir-PA_run-04_dwi.nii.gz' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir99_dir-PA_run-04_dwi.nii.gz'  [26 of 80]
-   1048576 of 236357607     0% in    0s    10.69 MB/s 168820736 of 236357607    71% in    1s   143.56 MB/s 236357607 of 236357607   100% in    1s   155.54 MB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir99_dir-PA_run-04_sbref.json' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir99_dir-PA_run-04_sbref.json'  [27 of 80]
- 3266 of 3266   100% in    0s    42.09 KB/s 3266 of 3266   100% in    0s    41.92 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir99_dir-PA_run-04_sbref.nii.gz' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/dwi/sub-0001305_ses-V1_acq-dir99_dir-PA_run-04_sbref.nii.gz'  [28 of 80]
- 1048576 of 2867154    36% in    0s    21.38 MB/s 2867154 of 2867154   100% in    0s    48.05 MB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/fmap/sub-0001305_ses-V1_dir-AP_run-01_epi.json' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/fmap/sub-0001305_ses-V1_dir-AP_run-01_epi.json'  [29 of 80]
- 2877 of 2877   100% in    0s    28.90 KB/s 2877 of 2877   100% in    0s    28.84 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/fmap/sub-0001305_ses-V1_dir-AP_run-01_epi.nii.gz' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/fmap/sub-0001305_ses-V1_dir-AP_run-01_epi.nii.gz'  [30 of 80]
- 1048576 of 1285151    81% in    0s    18.96 MB/s 1285151 of 1285151   100% in    0s    22.39 MB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/fmap/sub-0001305_ses-V1_dir-AP_run-02_epi.json' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/fmap/sub-0001305_ses-V1_dir-AP_run-02_epi.json'  [31 of 80]
- 3197 of 3197   100% in    0s    34.87 KB/s 3197 of 3197   100% in    0s    34.75 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/fmap/sub-0001305_ses-V1_dir-AP_run-02_epi.nii.gz' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/fmap/sub-0001305_ses-V1_dir-AP_run-02_epi.nii.gz'  [32 of 80]
- 1048576 of 1285051    81% in    0s    28.71 MB/s 1285051 of 1285051   100% in    0s    33.36 MB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/fmap/sub-0001305_ses-V1_dir-AP_run-03_epi.json' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/fmap/sub-0001305_ses-V1_dir-AP_run-03_epi.json'  [33 of 80]
- 2787 of 2787   100% in    0s    38.18 KB/s 2787 of 2787   100% in    0s    38.01 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/fmap/sub-0001305_ses-V1_dir-AP_run-03_epi.nii.gz' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/fmap/sub-0001305_ses-V1_dir-AP_run-03_epi.nii.gz'  [34 of 80]
- 1048576 of 1284350    81% in    0s    21.22 MB/s 1284350 of 1284350   100% in    0s    25.22 MB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/fmap/sub-0001305_ses-V1_dir-AP_run-04_epi.json' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/fmap/sub-0001305_ses-V1_dir-AP_run-04_epi.json'  [35 of 80]
- 3018 of 3018   100% in    0s    45.88 KB/s 3018 of 3018   100% in    0s    45.71 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/fmap/sub-0001305_ses-V1_dir-AP_run-04_epi.nii.gz' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/fmap/sub-0001305_ses-V1_dir-AP_run-04_epi.nii.gz'  [36 of 80]
- 1048576 of 1284894    81% in    0s    15.76 MB/s 1284894 of 1284894   100% in    0s    18.89 MB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/fmap/sub-0001305_ses-V1_dir-PA_run-01_epi.json' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/fmap/sub-0001305_ses-V1_dir-PA_run-01_epi.json'  [37 of 80]
- 2876 of 2876   100% in    0s    36.27 KB/s 2876 of 2876   100% in    0s    36.09 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/fmap/sub-0001305_ses-V1_dir-PA_run-01_epi.nii.gz' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/fmap/sub-0001305_ses-V1_dir-PA_run-01_epi.nii.gz'  [38 of 80]
- 1048576 of 1269990    82% in    0s    24.06 MB/s 1269990 of 1269990   100% in    0s    28.20 MB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/fmap/sub-0001305_ses-V1_dir-PA_run-02_epi.json' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/fmap/sub-0001305_ses-V1_dir-PA_run-02_epi.json'  [39 of 80]
- 3196 of 3196   100% in    0s    30.17 KB/s 3196 of 3196   100% in    0s    30.09 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/fmap/sub-0001305_ses-V1_dir-PA_run-02_epi.nii.gz' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/fmap/sub-0001305_ses-V1_dir-PA_run-02_epi.nii.gz'  [40 of 80]
- 1048576 of 1272015    82% in    0s    15.08 MB/s 1272015 of 1272015   100% in    0s    17.70 MB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/fmap/sub-0001305_ses-V1_dir-PA_run-03_epi.json' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/fmap/sub-0001305_ses-V1_dir-PA_run-03_epi.json'  [41 of 80]
- 2785 of 2785   100% in    0s    37.21 KB/s 2785 of 2785   100% in    0s    37.07 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/fmap/sub-0001305_ses-V1_dir-PA_run-03_epi.nii.gz' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/fmap/sub-0001305_ses-V1_dir-PA_run-03_epi.nii.gz'  [42 of 80]
- 1048576 of 1267269    82% in    0s    19.75 MB/s 1267269 of 1267269   100% in    0s    23.26 MB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/fmap/sub-0001305_ses-V1_dir-PA_run-04_epi.json' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/fmap/sub-0001305_ses-V1_dir-PA_run-04_epi.json'  [43 of 80]
- 3017 of 3017   100% in    0s    47.61 KB/s 3017 of 3017   100% in    0s    47.42 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/fmap/sub-0001305_ses-V1_dir-PA_run-04_epi.nii.gz' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/fmap/sub-0001305_ses-V1_dir-PA_run-04_epi.nii.gz'  [44 of 80]
- 1048576 of 1267054    82% in    0s    22.10 MB/s 1267054 of 1267054   100% in    0s    25.85 MB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-carit_dir-AP_run-01_bold.json' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-carit_dir-AP_run-01_bold.json'  [45 of 80]
- 3013 of 3013   100% in    0s    32.21 KB/s 3013 of 3013   100% in    0s    32.09 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-carit_dir-AP_run-01_bold.nii.gz' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-carit_dir-AP_run-01_bold.nii.gz'  [46 of 80]
-   1048576 of 342378718     0% in    0s    18.11 MB/s 181403648 of 342378718    52% in    1s   163.33 MB/s 342378718 of 342378718   100% in    1s   180.72 MB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-carit_dir-AP_run-01_sbref.json' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-carit_dir-AP_run-01_sbref.json'  [47 of 80]
- 2991 of 2991   100% in    0s    42.96 KB/s 2991 of 2991   100% in    0s    42.83 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-carit_dir-AP_run-01_sbref.nii.gz' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-carit_dir-AP_run-01_sbref.nii.gz'  [48 of 80]
- 1048576 of 1263902    82% in    0s    24.06 MB/s 1263902 of 1263902   100% in    0s    28.17 MB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-carit_dir-PA_run-02_bold.json' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-carit_dir-PA_run-02_bold.json'  [49 of 80]
- 3012 of 3012   100% in    0s    35.61 KB/s 3012 of 3012   100% in    0s    35.51 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-carit_dir-PA_run-02_bold.nii.gz' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-carit_dir-PA_run-02_bold.nii.gz'  [50 of 80]
-   1048576 of 340956876     0% in    0s     9.89 MB/s 181403648 of 340956876    53% in    1s   155.29 MB/s 340956876 of 340956876   100% in    1s   168.74 MB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-carit_dir-PA_run-02_sbref.json' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-carit_dir-PA_run-02_sbref.json'  [51 of 80]
- 3018 of 3018   100% in    0s    48.32 KB/s 3018 of 3018   100% in    0s    48.13 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-carit_dir-PA_run-02_sbref.nii.gz' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-carit_dir-PA_run-02_sbref.nii.gz'  [52 of 80]
- 1048576 of 1254955    83% in    0s    13.62 MB/s 1254955 of 1254955   100% in    0s    15.97 MB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-emotion_dir-PA_run-02_bold.json' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-emotion_dir-PA_run-02_bold.json'  [53 of 80]
- 3014 of 3014   100% in    0s    45.79 KB/s 3014 of 3014   100% in    0s    45.61 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-emotion_dir-PA_run-02_bold.nii.gz' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-emotion_dir-PA_run-02_bold.nii.gz'  [54 of 80]
-   1048576 of 197193186     0% in    0s    14.54 MB/s 183500800 of 197193186    93% in    1s   163.46 MB/s 197193186 of 197193186   100% in    1s   163.32 MB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-emotion_dir-PA_run-02_sbref.json' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-emotion_dir-PA_run-02_sbref.json'  [55 of 80]
- 3012 of 3012   100% in    0s    18.20 KB/s 3012 of 3012   100% in    0s    18.17 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-emotion_dir-PA_run-02_sbref.nii.gz' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-emotion_dir-PA_run-02_sbref.nii.gz'  [56 of 80]
- 1048576 of 1254344    83% in    0s    17.74 MB/s 1254344 of 1254344   100% in    0s    20.61 MB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-guessing_dir-AP_run-01_bold.json' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-guessing_dir-AP_run-01_bold.json'  [57 of 80]
- 3019 of 3019   100% in    0s    47.74 KB/s 3019 of 3019   100% in    0s    47.56 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-guessing_dir-AP_run-01_bold.nii.gz' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-guessing_dir-AP_run-01_bold.nii.gz'  [58 of 80]
-   1048576 of 318779373     0% in    0s    16.45 MB/s 162529280 of 318779373    50% in    1s   145.74 MB/s 318779373 of 318779373   100% in    1s   165.41 MB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-guessing_dir-AP_run-01_sbref.json' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-guessing_dir-AP_run-01_sbref.json'  [59 of 80]
- 3039 of 3039   100% in    0s    45.96 KB/s 3039 of 3039   100% in    0s    45.64 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-guessing_dir-AP_run-01_sbref.nii.gz' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-guessing_dir-AP_run-01_sbref.nii.gz'  [60 of 80]
- 1048576 of 1266013    82% in    0s    13.00 MB/s 1266013 of 1266013   100% in    0s    15.32 MB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-guessing_dir-PA_run-02_bold.json' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-guessing_dir-PA_run-02_bold.json'  [61 of 80]
- 3018 of 3018   100% in    0s    35.50 KB/s 3018 of 3018   100% in    0s    35.39 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-guessing_dir-PA_run-02_bold.nii.gz' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-guessing_dir-PA_run-02_bold.nii.gz'  [62 of 80]
-   1048576 of 317049765     0% in    0s    15.51 MB/s 130023424 of 317049765    41% in    1s   116.03 MB/s 317049765 of 317049765   100% in    2s   149.39 MB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-guessing_dir-PA_run-02_sbref.json' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-guessing_dir-PA_run-02_sbref.json'  [63 of 80]
- 2996 of 2996   100% in    0s    45.83 KB/s 2996 of 2996   100% in    0s    45.75 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-guessing_dir-PA_run-02_sbref.nii.gz' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-guessing_dir-PA_run-02_sbref.nii.gz'  [64 of 80]
- 1048576 of 1254129    83% in    0s     9.80 MB/s 1254129 of 1254129   100% in    0s    11.58 MB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-rest_acq-REST1_dir-AP_run-01_bold.json' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-rest_acq-REST1_dir-AP_run-01_bold.json'  [65 of 80]
- 3035 of 3035   100% in    0s    36.00 KB/s 3035 of 3035   100% in    0s    35.94 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-rest_acq-REST1_dir-AP_run-01_bold.nii.gz' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-rest_acq-REST1_dir-AP_run-01_bold.nii.gz'  [66 of 80]
-   1048576 of 564114299     0% in    0s    16.57 MB/s 178257920 of 564114299    31% in    1s   160.09 MB/s 348127232 of 564114299    61% in    2s   160.86 MB/s 502267904 of 564114299    89% in    3s   156.17 MB/s 504365056 of 564114299    89% in    6s    70.94 MB/s 564114299 of 564114299   100% in    7s    75.97 MB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-rest_acq-REST1_dir-AP_run-01_sbref.json' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-rest_acq-REST1_dir-AP_run-01_sbref.json'  [67 of 80]
- 3012 of 3012   100% in    0s    38.60 KB/s 3012 of 3012   100% in    0s    38.47 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-rest_acq-REST1_dir-AP_run-01_sbref.nii.gz' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-rest_acq-REST1_dir-AP_run-01_sbref.nii.gz'  [68 of 80]
- 1048576 of 1264856    82% in    0s    17.31 MB/s 1264856 of 1264856   100% in    0s    20.42 MB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-rest_acq-REST1_dir-PA_run-02_bold.json' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-rest_acq-REST1_dir-PA_run-02_bold.json'  [69 of 80]
- 3010 of 3010   100% in    0s    49.77 KB/s 3010 of 3010   100% in    0s    49.57 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-rest_acq-REST1_dir-PA_run-02_bold.nii.gz' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-rest_acq-REST1_dir-PA_run-02_bold.nii.gz'  [70 of 80]
-   1048576 of 560703729     0% in    0s     9.64 MB/s 143654912 of 560703729    25% in    2s    49.84 MB/s 351272960 of 560703729    62% in    3s    89.28 MB/s 551550976 of 560703729    98% in    4s   110.68 MB/s 560703729 of 560703729   100% in    4s   111.50 MB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-rest_acq-REST1_dir-PA_run-02_sbref.json' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-rest_acq-REST1_dir-PA_run-02_sbref.json'  [71 of 80]
- 3027 of 3027   100% in    0s    42.94 KB/s 3027 of 3027   100% in    0s    42.79 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-rest_acq-REST1_dir-PA_run-02_sbref.nii.gz' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-rest_acq-REST1_dir-PA_run-02_sbref.nii.gz'  [72 of 80]
- 1048576 of 1252412    83% in    0s    24.28 MB/s 1252412 of 1252412   100% in    0s    28.15 MB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-rest_acq-REST2_dir-AP_run-03_bold.json' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-rest_acq-REST2_dir-AP_run-03_bold.json'  [73 of 80]
- 3011 of 3011   100% in    0s    53.09 KB/s 3011 of 3011   100% in    0s    52.87 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-rest_acq-REST2_dir-AP_run-03_bold.nii.gz' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-rest_acq-REST2_dir-AP_run-03_bold.nii.gz'  [74 of 80]
-   1048576 of 564386223     0% in    0s    14.47 MB/s 178257920 of 564386223    31% in    1s   158.62 MB/s 368050176 of 564386223    65% in    2s   169.05 MB/s 545259520 of 564386223    96% in    3s   168.97 MB/s 564386223 of 564386223   100% in    3s   169.08 MB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-rest_acq-REST2_dir-AP_run-03_sbref.json' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-rest_acq-REST2_dir-AP_run-03_sbref.json'  [75 of 80]
- 2992 of 2992   100% in    0s    47.96 KB/s 2992 of 2992   100% in    0s    47.77 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-rest_acq-REST2_dir-AP_run-03_sbref.nii.gz' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-rest_acq-REST2_dir-AP_run-03_sbref.nii.gz'  [76 of 80]
- 1048576 of 1265315    82% in    0s    28.18 MB/s 1265315 of 1265315   100% in    0s    32.54 MB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-rest_acq-REST2_dir-PA_run-04_bold.json' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-rest_acq-REST2_dir-PA_run-04_bold.json'  [77 of 80]
- 3010 of 3010   100% in    0s    54.32 KB/s 3010 of 3010   100% in    0s    54.07 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-rest_acq-REST2_dir-PA_run-04_bold.nii.gz' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-rest_acq-REST2_dir-PA_run-04_bold.nii.gz'  [78 of 80]
-   1048576 of 558031986     0% in    0s    11.33 MB/s 135266304 of 558031986    24% in    1s   116.47 MB/s 335544320 of 558031986    60% in    2s   151.49 MB/s 500170752 of 558031986    89% in    3s   153.26 MB/s 558031986 of 558031986   100% in    3s   155.87 MB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-rest_acq-REST2_dir-PA_run-04_sbref.json' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-rest_acq-REST2_dir-PA_run-04_sbref.json'  [79 of 80]
- 3007 of 3007   100% in    0s    40.02 KB/s 3007 of 3007   100% in    0s    39.89 KB/s  done
-download: 's3://HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-rest_acq-REST2_dir-PA_run-04_sbref.nii.gz' -> '/tmp/HCP-Dv2_BIDS/sub-0001305/ses-V1/func/sub-0001305_ses-V1_task-rest_acq-REST2_dir-PA_run-04_sbref.nii.gz'  [80 of 80]
- 1048576 of 1248424    83% in    0s     7.29 MB/s 1248424 of 1248424   100% in    0s     8.60 MB/s  done
-download: 's3://HCP-Dv2_BIDS/participants.tsv' -> '/tmp/HCP-Dv2_BIDS/participants.tsv'  [1 of 1]
- 13718 of 13718   100% in    0s   503.23 KB/s 13718 of 13718   100% in    0s   501.07 KB/s  done

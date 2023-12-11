@@ -1,0 +1,103 @@
+#!/bin/sh
+
+#Hermosillo R. 4/19/2022
+#This code first syncs the data from the s3 to the temporary space within slurm
+
+#Hermosillo R. 4/19/2019
+#this code runs template matching starting from a dtseries.  Several parameters are hardcoded into the corresponding matlab code.
+subject=SUBJECTID
+session=SESID
+data_bucket_path=S3BIDSPATH
+output_dir=OUTPUT_DIR
+tmp_path=/tmp
+
+#additinal TM parameters
+outputname=_TMinfant
+
+if [ ! -d ${output_dir} ]; then
+	mkdir -p ${output_dir} 
+fi
+
+echo ${subject}
+echo ${session} #e.g. 
+echo ${data_bucket_path}
+echo ${tmp_path}
+
+#processed_path=${data_bucket_path}/processed/abcd-hcp-pipeline/
+#Note.  For the K2H dataset, I noticed some of the files don't have the subject ID in thefile name but instead start with ''ses-'.  -RH
+
+dtseries_suffix=task-rest_bold_timeseries_surface.dtseries.nii
+motion_suffix=task-rest_motion_mask.mat
+L_surf_suffix=hemi-L_space-MNI_mesh-fsLR32k_midthickness.surf.gii
+R_surf_suffix=hemi-L_space-MNI_mesh-fsLR32k_midthickness.surf.gii
+#slum_tmp_paths
+
+#####################################
+
+#sync data:
+tmp_dtseries_path=${tmp_path}/sub-${subject}_ses-${session}_${dtseries_suffix} 
+tmp_motion_path=${tmp_path}/sub-${subject}_ses-${session}_${motion_suffix}
+tmp_Lsurf_path=${tmp_path}/sub-${subject}_ses-${session}_${L_surf_suffix}
+tmp_Rsurf_path=${tmp_path}/sub-${subject}_ses-${session}_${R_surf_suffix}
+
+s3cmd sync ${data_bucket_path}/sub-${subject}/ses-${session}/func/sub-${subject}_ses-${session}_${dtseries_suffix} ${tmp_dtseries_path}
+s3cmd sync ${data_bucket_path}/sub-${subject}/ses-${session}/func/sub-${subject}_ses-${session}_${motion_suffix} ${tmp_motion_path}
+s3cmd sync ${data_bucket_path}/sub-${subject}/ses-${session}/anat/sub-${subject}_ses-${session}_${L_surf_suffix} ${tmp_Lsurf_path}
+s3cmd sync ${data_bucket_path}/sub-${subject}/ses-${session}/anat/sub-${subject}_ses-${session}_${R_surf_suffix} ${tmp_Rsurf_path}
+
+whole_mask_file=/home/feczk001/shared/projects/FEZ_USERS/lmoore/template_matching/masks/EXITO/sub-${subject}_whole.txt
+
+# if whole mask file exists then use it otherwise set to none
+if [ -f "${whole_mask_file}" ]; then
+  mask="${whole_mask_file}"
+else
+  mask="none"
+fi
+
+echo "Mask path is: ${mask}"
+echo "New dtseries path is: ${tmp_dtseries_path}"
+echo "New motion path is: ${tmp_motion_path}"
+echo "New Left midthickness surface path is: ${tmp_Lsurf_path}"
+echo "New right midthickness surface path is: ${tmp_Rsurf_path}"
+
+
+X="addpath('/home/faird/shared/code/internal/analytics/compare_matrices_to_assign_networks'); twins_mapping_wrapper_infant('${tmp_dtseries_path}', '${tmp_motion_path}', '${tmp_Lsurf_path}','${tmp_Rsurf_path}', '${subjectID}_${session}${outputname}', '${output_dir}', '${tmp_path}', '${mask}')"
+
+#twins_mapping_wrapper_infant(
+#'${tmp_dtseries_path}', 
+#'${tmp_motion_path}', 
+#'${tmp_Lsurf_path}',
+#'${tmp_Rsurf_path}', 
+#'${subjectID}_${session}${outputname}', 
+#'${output_dir}',
+#'${tmp_path}', 
+#'${additional_mask}')"
+
+
+###########################################################################################
+matlab_exec=/panfs/roc/msisoft/matlab/R2019a/bin/matlab
+
+RandomHash=`cat /dev/urandom | tr -cd 'a-f0-9' | head -c 16`
+Tempmatlabcommand="matlab_command""$RandomHash"".m"
+
+if [ -f "matlab_command""$RandomHash"".m" ]
+then
+	#echo "matlab_command.m found removing â¦"
+	rm -fR "matlab_command""$RandomHash"".m"
+fi
+
+#echo ${X} 
+echo ${X} > "matlab_command""$RandomHash"".m"
+cat "matlab_command""$RandomHash"".m"
+${matlab_exec} -nodisplay -nosplash < "matlab_command""$RandomHash"".m"
+rm -f "matlab_command""$RandomHash"".m"
+
+#remove synced files
+rm -f $tmp_dtseries_path
+rm -f $tmp_motion_path
+rm -f $tmp_Lsurf_path
+rm -f $tmp_Rsurf_path
+
+#move dconn to tier1
+#dconn_path=${tmp_path}/sub-${subject}_ses-${session}_task-rest_bold_timeseries_surface_SMOOTHED_2.25.dtseries.nii_all_frames_at_FD_0.3.dconn.nii
+#mv ${dconn_path} ${output_dir}

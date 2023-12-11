@@ -6,7 +6,7 @@
 #SBATCH --mem=15gb
 #SBATCH -t 12:00:00
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=hough129@umn.edu
+#SBATCH --mail-user=<YOUR-EMAIL>@email.com
 #SBATCH -p small,amdsmall
 #SBATCH -o output_logs/fMRI_%A_%a.out
 #SBATCH -e output_logs/fMRI_%A_%a.err

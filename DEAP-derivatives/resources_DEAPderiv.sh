@@ -6,7 +6,7 @@
 #SBATCH --output=output_logs/DEAPderiv_%A_%a.out
 #SBATCH --error=output_logs/DEAPderiv_%A_%a.err
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=hough129@umn.edu
+#SBATCH --mail-user=<YOUR-EMAIL>@email.com
 #SBATCH -A feczk001
 #SBATCH -p ag2tb
 

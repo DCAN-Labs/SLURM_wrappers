@@ -7,7 +7,7 @@
 #SBATCH --tmp=200gb
 #SBATCH -t 8:00:00
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=lundq163@umn.edu
+#SBATCH --mail-user=<YOUR-EMAIL>@email.com
 #SBATCH -p msismall
 #SBATCH -o output_logs/abcd-hcp-pipeline_full_%A_%a.out
 #SBATCH -e output_logs/abcd-hcp-pipeline_full_%A_%a.err

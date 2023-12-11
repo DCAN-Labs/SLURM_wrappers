@@ -7,7 +7,7 @@
 #SBATCH -t 48:00:00
 #SBATCH -p ag2tb
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=EMAIL
+#SBATCH --mail-user=<YOUR-EMAIL>@email.com
 #SBATCH -o output_logs/nibabies_full_%A_%a.out
 #SBATCH -e output_logs/nibabies_full_%A_%a.err
 #SBATCH -A GROUP

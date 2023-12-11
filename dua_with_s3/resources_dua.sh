@@ -6,7 +6,7 @@
 #SBATCH --output=output_logs/ABCCdua_%A_%a.out
 #SBATCH --error=output_logs/ABCCdua_%A_%a.err
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=hough129@umn.edu
+#SBATCH --mail-user=<YOUR-EMAIL>@email.com
 #SBATCH -A smnelson
 #SBATCH -p small,amdsmall,amd512,ram256g
 

@@ -22,6 +22,7 @@ fi
 # counter to create run numbers
 k=0
 
+## SPECIFY SUBJECT LIST HERE
 cat year_2_sub_list.txt | while read line; do
 	echo ${line} > ${dicom2bids_subjects}/sub-${line}.txt
 	sed -e "s:SUBJECTID:${line}:g" -e "s:SUBJECTDIR:${dicom2bids_subjects}:g" ${run_folder}/template.dicom2bids > ${dicom2bids_folder}/run${k}
@@ -31,5 +32,5 @@ done
 
 chmod +x -R ${dicom2bids_folder} 
 
-sed -e "s:GROUP:${group}:g" -e "s:EMAIL:${email}:g" -i ${run_folder}/slurm_dicom2bids.sh 
+sed -e "s:GROUP:${group}:g" -e "s:EMAIL:${email}:g" -i ${run_folder}/resources_dicom2bids.sh 
 

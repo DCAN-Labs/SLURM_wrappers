@@ -5,7 +5,7 @@ import os
 # determine data directory, run folders, and run templates
 data_dir="/tmp/ABCC_year2" # where to output data
 data_bucket="s3://ABCC_year2" # bucket that BIDS data will be pulled from and processed outputs will be pushed to
-run_folder="/home/rando149/shared/code/internal/utilities/slurm_pipeline_wrappers/slurm_abcd-hcp-pipeline_rerun"
+run_folder=os.getcwd()
 # ses_id="2YearFollowUpYArm1" #comment out if using csv
 abcd_hcp_pipeline_folder="{run_folder}/run_files.abcd-hcp-pipeline_full".format(run_folder=run_folder)
 abcd_hcp_pipeline_template="template.abcd-hcp-pipeline_customclean"

@@ -6,7 +6,7 @@
 #SBATCH --mem=6gb
 #SBATCH -t 168:00:00
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=hendr522@umn.edu
+#SBATCH --mail-user=<YOUR-EMAIL>@email.com
 #SBATCH -p max
 #SBATCH -o continuous_slurm_submitter_%A.out
 #SBATCH -e continuous_slurm_submitter_%A.err

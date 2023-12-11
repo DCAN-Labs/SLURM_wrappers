@@ -2,7 +2,7 @@
 #SBATCH -J customclean
 #SBATCH --mem=60gb
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=reine097@umn.edu
+#SBATCH --mail-user=<YOUR-EMAIL>@email.com
 #SBATCH -o output_logs/customclean_%A_%a.out
 #SBATCH -e output_logs/customclean_%A_%a.err
 #SBATCH -A faird

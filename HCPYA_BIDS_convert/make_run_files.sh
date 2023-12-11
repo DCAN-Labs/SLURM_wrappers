@@ -42,4 +42,4 @@ done
 
 chmod 775 -R ${HCPYAconvert_folder}
 
-sed -e "s|GROUP|${group}|g" -e "s|EMAIL|${email}|g" -i ${run_folder}/slurm_HCPYAconvert.sh 
+sed -e "s|GROUP|${group}|g" -e "s|EMAIL|${email}|g" -i ${run_folder}/resources_HCPYAconvert.sh 

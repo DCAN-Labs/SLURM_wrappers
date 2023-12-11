@@ -7,7 +7,7 @@
 #SBATCH --tmp=10gb
 #SBATCH -t 00:20:00
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=hough129@umn.edu
+#SBATCH --mail-user=<YOUR-EMAIL>@email.com
 #SBATCH -o output_logs/cubids_%A_%a.out
 #SBATCH -e output_logs/cubids_%A_%a.err
 #SBATCH -A miran045

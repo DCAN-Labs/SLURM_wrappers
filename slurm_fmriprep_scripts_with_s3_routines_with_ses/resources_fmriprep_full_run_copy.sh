@@ -4,13 +4,13 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH -c 120
 #SBATCH --mem=960G
-#SBATCH -t 24:00:00
+#SBATCH -t 16:00:00
 #SBATCH -p ag2tb
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=<YOUR-EMAIL>@email.com
 #SBATCH -o output_logs/fmriprep_full_%A_%a.out
 #SBATCH -e output_logs/fmriprep_full_%A_%a.err
-#SBATCH -A faird
+#SBATCH -A znahas
 
 cd run_files.fmriprep_full
 

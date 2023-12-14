@@ -1,0 +1,35 @@
+#!/bin/bash -l
+
+subj_id=SUBJECTID
+ses_id=SESID
+data_dir=DATADIR
+BIDS_folder=BIDSFOLDER
+run_dir=RUNDIR
+cpu_usage=8
+singularity=`which singularity`
+
+# pull down needed data and files from BIDS folder
+if [ ! -d ${data_dir}/sub-${subj_id}/ses-${ses_id} ]; then
+	mkdir -p ${data_dir}/sub-${subj_id}
+	cp ${BIDS_folder}/sub-${subj_id}/ses-${ses_id} ${data_dir}/sub-${subj_id} --recursive -v
+fi
+if [ ! -e ${data_dir}/dataset_description.json ]; then
+	cp ${run_dir}/dataset_description.json ${data_dir}
+fi
+if [ ! -e ${data_dir}/participants.tsv ]; then
+	cp ${BIDS_folder}/participants.tsv ${data_dir} -v #testing
+fi
+
+# create processed and derivatives folders if they do not exist
+if [ ! -d ${data_dir}/processed/cabinet ]; then
+	mkdir -p ${data_dir}/processed/cabinet
+fi
+
+module load singularity
+module load python
+
+singularity=`which singularity`
+
+# conda activate /home/support/public/pytorch_1.11.0_agate
+
+/home/rando149/shared/projects/rae_testing/CBAW_MVP-testing/CBAW/run.py ${run_dir}/json_files.cabinet_full/${subj_id}.json

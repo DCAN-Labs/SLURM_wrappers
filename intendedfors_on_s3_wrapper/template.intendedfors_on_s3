@@ -21,9 +21,10 @@ fi
 
 #run intendedfor script
 source /home/faird/shared/code/external/envs/miniconda3/load_miniconda3.sh
-conda activate abcd-dicom2bids
-module load python
-python /home/faird/shared/code/internal/utilities/intended-fors/intended_for.py ${data_dir}/ closest
+#conda activate abcd-dicom2bids
+#module load python
+#python /home/faird/shared/code/internal/utilities/intended-fors/intended_for.py ${data_dir}/ closest
+python /home/feczk001/shared/projects/cabinet_paper_results/intendedfors_on_s3_wrapper/IntendedFor.py --ses ${data_dir}/sub-${sub_id}/ses-${ses_id}/
 #resync to bucket on s3
 s3cmd sync -F --recursive -v ${data_dir}/sub-${sub_id}/ses-${ses_id}/ ${bucket_name}/sub-${sub_id}/ses-${ses_id}/
 #remove processed inputs and derivatives

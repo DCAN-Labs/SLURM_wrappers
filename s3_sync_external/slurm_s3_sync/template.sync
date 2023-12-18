@@ -1,0 +1,37 @@
+#!/bin/bash
+
+subj_id=SUBJECTID
+ses_id=SESID
+data_dir=DATADIR
+data_bucket_in=BUCKET_IN
+data_bucket_out=BUCKET_OUT
+run_dir=RUNDIR
+cpu_usage=8
+singularity=`which singularity`
+
+# pull down needed data and files from BIDS bucket
+if [ ! -d ${data_dir}/sub-${subj_id}/ses-${ses_id} ]; then
+	mkdir -p ${data_dir}/sub-${subj_id}
+	s3cmd get ${data_bucket_in}/sorted/sub-${subj_id}/ses-${ses_id} ${data_dir}/sub-${subj_id} --recursive -v
+fi
+if [ ! -e ${data_dir}/dataset_description.json ]; then
+	cp ${run_dir}/dataset_description.json ${data_dir}
+fi
+if [ ! -e ${data_dir}/participants.tsv ]; then
+	s3cmd get ${data_bucket_in}/sorted/participants.tsv ${data_dir} -v 
+fi
+
+#remove .nii.gz files
+
+rm -r ${data_dir}/sub-${subj_id}/ses-${ses_id}/*/*.nii.gz
+
+
+#push inputs to new s3 bucket
+s3cmd sync -F --recursive -c ~/.s3cfg-INDI -v ${data_dir}/sub-${subj_id}/ses-${ses_id}/ ${data_bucket_out}sub-${subj_id}/ses-${ses_id}/
+
+
+
+
+
+
+

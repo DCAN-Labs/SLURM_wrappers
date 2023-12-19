@@ -1,0 +1,11 @@
+{
+    "genpaths":[
+        "/home/faird/shared/code/internal/utilities/community_detection/fair/distribute_readwrite_cifti",
+        "/home/faird/shared/code/internal/utilities/community_detection/fair/supporting_scripts/"
+        ],
+    "codepaths":[
+        "/home/faird/shared/code/internal/utilities/community_detection/fair/supporting_files/EUGEODistancematrix_XYZ_255interhem_unit8.mat",
+        "/home/faird/shared/code/internal/utilities/community_detection/demeter/Step_Three_Run_Infomap_RH.py -o /",
+        "/home/faird/shared/code/internal/utilities/community_detection/demeter/Step_Four_Brain_Pics.py -o /"
+        ]
+}

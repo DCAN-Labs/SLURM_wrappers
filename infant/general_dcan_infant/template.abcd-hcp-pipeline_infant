@@ -1,0 +1,61 @@
+#!/bin/bash
+
+subj_id=SUBJECTID
+ses_id=SESID
+data_dir=DATADIR
+data_bucket=BUCKET
+run_dir=RUNDIR
+singularity=`which singularity`
+
+BIDS_DIR=${data_dir}/sub-${subj_id}
+OUTPUT_DIR=${data_dir}/processed/dcan-infant-pipeline
+
+# pull down needed data and files from BIDS bucket
+if [ ! -d ${data_dir}/sub-${subj_id}/ses-${ses_id} ]; then
+	mkdir -p ${BIDS_DIR}
+	s3cmd get ${data_bucket}/sub-${subj_id}/ses-${ses_id} ${BIDS_DIR} --recursive -v
+fi
+if [ ! -e ${data_dir}/dataset_description.json ]; then
+	cp ${run_dir}/dataset_description.json ${data_dir}
+fi
+if [ ! -e ${data_dir}/participants.tsv ]; then
+	s3cmd get ${data_bucket}/participants.tsv ${data_dir} -v 
+fi
+
+# create processed and derivatives folders if they do not exist
+if [ ! -d ${data_dir}/processed/dcan-infant-pipeline ]; then
+	mkdir ${data_dir}/processed/
+	mkdir ${data_dir}/processed/dcan-infant-pipeline/
+fi
+
+fez_internal_pl=/home/feczk001/shared/code/internal/pipelines
+infant_abcd_bids_pipeline=${fez_internal_pl}/DCAN-infant-BIDS/infant-abcd-bids-pipeline_dbp-hotfix-03172022.sif
+echo ${infant_abcd_bids_pipeline}
+===
+FS_LICENSE=/home/faird/shared/code/external/utilities/freesurfer-_license
+HNM=ROI_IPS
+TEMPLATE_BIND=/home/elisonj/shared/BCP/lib/templates/00-02
+NCPUS=12
+
+lic_loc=/opt/freesurfer/license.txt
+
+singularity run --cleanenv \
+-e \
+-B ${data_dir}:/bids_input \
+-B ${OUTPUT_DIR}:/output \
+-B ${FS_LICENSE}/license.txt:${lic_loc} \
+-B ${TEMPLATE_BIND}:/opt/pipeline/global/templates \
+${infant_abcd_bids_pipeline} \
+--freesurfer-license ${lic_loc} \
+--participant-label ${subj_id} \
+--session-id ${ses_id} \
+--hyper-normalization-method ${HNM} \
+--ncpus ${NCPUS} \
+/bids_input \
+/output
+
+#push processed outputs to bucket
+s3cmd sync -F --recursive -v --delete-removed ${OUTPUT_DIR}/sub-${subj_id}/ses-${ses_id}/ \
+${data_bucket}/processed/dcan-infant-pipeline/sub-${subj_id}/ses-${ses_id}/
+
+# run filemapper

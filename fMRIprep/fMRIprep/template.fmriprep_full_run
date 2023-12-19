@@ -1,0 +1,118 @@
+#!/bin/bash
+
+subj_id=SUBJECTID
+ses_id=SESID
+s3_bids_path=S3BIDSPATH
+s3_upload_path=S3UPLOADPATH
+fmriprep_dir=FMRIPREPDIR
+xcpd_dir=XCPDDIR
+run_dir=RUNDIR
+singularity=`which singularity`
+bsmin=BSMIN
+bsmax=BSMAX
+skip_fmriprep=SKIPFMRI
+skip_xcpd=SKIPXCPD
+fmriprep_clean_workdir=FMRICLEAN
+xcpd_clean_workdir=XCPDCLEAN
+fmriclean_string=""
+xcpdclean_string=""
+motion_filter_string=""
+
+module load matlab/R2019a
+
+if [[ "$fmriprep_clean_workdir" = true ]] ; then
+  fmriclean_string="--clean-workdir"
+fi
+
+if [[ "$xcpd_clean_workdir" = true ]] ; then
+  xcpdclean_string="--clean-workdir"
+fi
+
+if [[ ! -z "$bsmin" ]] ; then
+  motion_filter_string="--motion-filter-type notch --band-stop-min $bsmin --band-stop-max $bsmax"
+fi
+
+# pull down needed data and files from BIDS bucket
+if [ ! -d ${fmriprep_dir}/bids_dir/sub-${subj_id}_ses-${ses_id}/sub-${subj_id}/ses-${ses_id} ]; then
+	mkdir -p ${fmriprep_dir}/bids_dir/sub-${subj_id}_ses-${ses_id}/sub-${subj_id}
+	s3cmd get ${s3_bids_path}/sub-${subj_id}/ses-${ses_id} ${fmriprep_dir}/bids_dir/sub-${subj_id}_ses-${ses_id}/sub-${subj_id} --recursive -v
+fi
+if [ ! -e ${fmriprep_dir}/bids_dir/sub-${subj_id}_ses-${ses_id}/dataset_description.json ]; then
+	cp ${run_dir}/dataset_description.json ${fmriprep_dir}/bids_dir/sub-${subj_id}_ses-${ses_id}
+fi
+if [ ! -e ${fmriprep_dir}/bids_dir/sub-${subj_id}_ses-${ses_id}/participants.tsv ]; then
+	s3cmd get ${s3_bids_path}/participants.tsv ${fmriprep_dir}/bids_dir/sub-${subj_id}_ses-${ses_id} -v 
+fi
+
+# create fmriprep and xcp-d scratch output and workdirs
+
+if [ ! -d ${fmriprep_dir}/processed/fmriprep/sub-${subj_id}_ses-${ses_id} ]; then
+	mkdir -p ${fmriprep_dir}/processed/fmriprep/sub-${subj_id}_ses-${ses_id}
+fi
+
+if [ ! -d ${fmriprep_dir}/work_dir/fmriprep/sub-${subj_id}_ses-${ses_id} ]; then
+	mkdir -p ${fmriprep_dir}/work_dir/fmriprep/sub-${subj_id}_ses-${ses_id}
+fi
+
+if [ ! -d ${xcpd_dir}/processed/sub-${subj_id}_ses-${ses_id} ]; then
+	mkdir -p ${xcpd_dir}/processed/sub-${subj_id}_ses-${ses_id}
+fi
+
+if [ ! -d ${xcpd_dir}/work_dir/sub-${subj_id}_ses-${ses_id} ]; then
+	mkdir -p ${xcpd_dir}/work_dir/sub-${subj_id}_ses-${ses_id}
+fi
+
+
+# run fmriprep
+if [[ ! "$skip_fmriprep" = true ]] ; then
+  singularity run --cleanenv \
+  -B ${fmriprep_dir}/bids_dir/sub-${subj_id}_ses-${ses_id}:/bids_dir \
+  -B ${fmriprep_dir}/processed/fmriprep/sub-${subj_id}_ses-${ses_id}:/output_dir \
+  -B ${fmriprep_dir}/work_dir/fmriprep/sub-${subj_id}_ses-${ses_id}:/wd \
+  -B ${run_dir}/license.txt:/license.txt \
+  /home/faird/shared/code/external/pipelines/fmriprep/fmriprep_23.1.4.sif \
+  --output-spaces MNI152NLin6Asym:res-2 \
+  --fs-license-file /license.txt \
+  --project-goodvoxels \
+  --omp-nthreads 3 \
+  --cifti-output 91k \
+  ${fmriclean_string} \
+  -vv \
+  -w /wd \
+  /bids_dir /output_dir participant
+fi
+
+# run xcp-d
+if [[ ! "$skip_xcpd" = true ]] ; then
+  singularity run --cleanenv \
+  -B /home/faird/shared/code/external/utilities/freesurfer_license/license.txt:/opt/freesurfer/license.txt \
+  -B ${fmriprep_dir}/processed/fmriprep/sub-${subj_id}_ses-${ses_id}:/fmriprep_out \
+  -B ${xcpd_dir}/processed/sub-${subj_id}_ses-${ses_id}:/xcpd_out \
+  -B ${xcpd_dir}/work_dir/sub-${subj_id}_ses-${ses_id}:/wkdir \
+   /home/faird/shared/code/external/pipelines/xcp_d/xcp_d_0.5.2.sif \
+  -f 0.3 \
+  --cifti \
+  -m \
+  --participant-label ${subj_id} \
+  --dcan-qc \
+  --omp-nthreads 3 \
+  --despike \
+  --lower-bpf 0.009 \
+  ${motion_filter_string} \
+  ${xcpdclean_string} \
+  --warp-surfaces-native2std \
+  -vv \
+  --input-type fmriprep \
+  -w /wkdir \
+  /fmriprep_out /xcpd_out participant
+fi
+
+# (temporary until xcp_d includes sulc/curv/thickness derivatives -- sync them from fmriprep anat dir instead)
+rsync -urlHSE ${fmriprep_dir}/processed/fmriprep/sub-${subj_id}_ses-${ses_id}/sub-${subj_id}/ses-${ses_id}/anat/*.dscalar.nii ${xcpd_dir}/processed/sub-${subj_id}_ses-${ses_id}/xcp_d/sub-${subj_id}/ses-${ses_id}/anat
+
+# convert hdf5 motion data files to DCAN format
+/home/faird/shared/code/internal/utilities/xcpd2dcanmotion/run_xcpd2dcanmotion_on_func_dir.sh ${xcpd_dir}/processed/sub-${subj_id}_ses-${ses_id}/xcp_d/sub-${subj_id}/ses-${ses_id}/func
+
+#push processed outputs to bucket
+s3cmd sync -F --recursive -v --delete-removed ${fmriprep_dir}/processed/fmriprep/sub-${subj_id}_ses-${ses_id}/sub-${subj_id}/ ${s3_upload_path}/fmriprep/sub-${subj_id}/ses-${ses_id}/
+s3cmd sync -F --recursive -v --delete-removed ${xcpd_dir}/processed/sub-${subj_id}_ses-${ses_id}/ ${s3_upload_path}/xcpd/sub-${subj_id}_ses-${ses_id}/

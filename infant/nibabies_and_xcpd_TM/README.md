@@ -1,0 +1,2 @@
+# fmriprep / xcpd s3 wrapper
+This wrapper grabs a single subject from the s3 at time to then run fmriprep and xcp-d on it. It then does some minor post-processing before pushing the outputs back to the s3. 

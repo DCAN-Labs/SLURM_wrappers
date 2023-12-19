@@ -1,0 +1,161 @@
+{
+    "cabinet": {
+        "container_type": "singularity",
+        "stages": ["bibsnet", "nibabies", "xcpd"],
+        "verbose": true,
+        "handle_missing_host_paths": "make_directories",
+		"log_directory": "/home/feczk001/shared/projects/cabinet_paper_results/CABINET_wrapper/output_logs/"
+    },
+
+    "stages": {
+        "bibsnet": {
+            "sif_filepath": "/home/faird/shared/code/internal/pipelines/bibsnet_container/bibsnet_v3.1.1.sif",
+            "singularity_args": {
+                "--cleanenv": true,
+                "--nv": true
+            },
+            "binds": [
+                {
+                    "host_path":"/tmp",
+                    "container_path":"/input"
+                },
+                {
+                    "host_path":"/tmp/processed",
+                    "container_path":"/output"
+                },
+                {
+                    "host_path":"/tmp/work",
+                    "container_path":"/work"
+                }
+            ],
+            "positional_args": [
+                "/input", "/output", "participant"
+            ],
+            "flags": {
+                "--parameter-json":"/home/cabinet/parameter-file-container.json",
+                "-start":"prebibsnet",
+                "-end":"postbibsnet",
+                "-v": true,
+                "--participant-label":"MOD1022",
+                "--session":"V1",
+                "-age":4,
+                "-w":"/work"
+            }
+        },
+          
+        "nibabies":{
+            "sif_filepath": "/home/faird/shared/code/external/pipelines/nibabies/nibabies_unstable_10052023a.sif",
+            "singularity_args": {
+                "--cleanenv": true
+            },
+            "binds": [
+                {
+                    "host_path":"/tmp",
+                    "container_path":"/bids_dir"
+                },
+                {
+                    "host_path":"/tmp/processed/nibabies",
+                    "container_path":"/output_dir"
+                },
+                {
+                    "host_path":"/tmp/work",
+                    "container_path":"/work"
+                },
+                {
+                    "host_path":"/home/faird/shared/code/external/utilities/freesurfer_license/license.txt",
+                    "container_path":"/opt/freesurfer/license.txt"
+                },
+                {
+                    "host_path":"/tmp/processed/bibsnet",
+                    "container_path":"/derivatives"
+                }
+            ],
+            "positional_args": [
+                "/bids_dir", "/output_dir", "participant"
+            ],
+            "flags": {
+                "--project-goodvoxels": true,
+                "--omp-nthreads": 3,
+                "--cifti-output": "91k",
+                "-vv": true,
+                "-w": "/work", 
+                "--fd-radius": 35,
+                "--skip_bids_validation": true,
+                "--derivatives": "/derivatives",
+                "--participant-label":"MOD1022",
+                "--surface-recon-method": "mcribs",
+                "--output-spaces": "MNI152NLin6Asym:res-2",
+                "-s":"V1"
+            }
+        },
+        
+        "xcpd": {
+            "sif_filepath": "/home/faird/shared/code/external/pipelines/xcp_d/xcp_d_0.5.2.sif",
+            "singularity_args": {
+                "--cleanenv": true
+            },
+            "binds": [
+                {
+                    "host_path":"/tmp/work",
+                    "container_path":"/work"
+                },
+                {
+                    "host_path":"/home/faird/shared/code/external/utilities/freesurfer_license/license.txt",
+                    "container_path":"/opt/freesurfer/license.txt"
+                },
+                {
+                    "host_path":"/tmp/processed",
+                    "container_path":"/output_dir"
+                },
+                {
+					"host_path":"/home/faird/shared/code/external/pipelines/xcp_d_test_binds/PR924/xcp_d/xcp_d/tests/test_utils_bids.py",
+					"container_path":"/usr/local/miniconda/lib/python3.8/site-packages/xcp_d/tests/test_utils_bids.py"
+				},
+				{
+					"host_path":"/home/faird/shared/code/external/pipelines/xcp_d_test_binds/PR924/xcp_d/xcp_d/utils/bids.py",
+					"container_path":"/usr/local/miniconda/lib/python3.8/site-packages/xcp_d/utils/bids.py"
+				},
+				{
+					"host_path":"/home/faird/shared/code/external/pipelines/nibabies_test_binds/atlases/dHCP/dHCP.week42.L.sphere.surf.gii",
+					"container_path":"${HOME}/.cache/templateflow/tpl-fsLR/tpl-fsLR_hemi-L_den-32k_sphere.surf.gii:ro"
+				},
+				{
+					"host_path":"/home/faird/shared/code/external/pipelines/nibabies_test_binds/atlases/dHCP/dHCP.week42.R.sphere.surf.gii",
+					"container_path":"${HOME}/.cache/templateflow/tpl-fsLR/tpl-fsLR_hemi-R_den-32k_sphere.surf.gii:ro"
+				},
+				{
+					"host_path":"/home/faird/shared/code/external/pipelines/nibabies_test_binds/atlases/mcribs/lh.sphere.reg2.surf.gii",
+					"container_path":"${HOME}/.cache/templateflow/tpl-fsaverage/tpl-fsaverage_hemi-L_den-164k_sphere.surf.gii:ro"
+				},
+				{
+					"host_path":"/home/faird/shared/code/external/pipelines/nibabies_test_binds/atlases/mcribs/rh.sphere.reg2.surf.gii",
+					"container_path":"${HOME}/.cache/templateflow/tpl-fsaverage/tpl-fsaverage_hemi-R_den-164k_sphere.surf.gii:ro"
+				},
+				{
+					"host_path":"/home/faird/shared/code/external/pipelines/nibabies_test_binds/atlases/mcribs/lh.sphere.reg.dHCP42.surf.gii",
+					"container_path":"/usr/local/miniconda/lib/python3.8/site-packages/xcp_d/data/standard_mesh_atlases/fs_L/fs_L-to-fs_LR_fsaverage.L_LR.spherical_std.164k_fs_L.surf.gii:ro"
+				},
+				{
+					"host_path":"/home/faird/shared/code/external/pipelines/nibabies_test_binds/atlases/mcribs/rh.sphere.reg.dHCP42.surf.gii",
+					"container_path":"/usr/local/miniconda/lib/python3.8/site-packages/xcp_d/data/standard_mesh_atlases/fs_R/fs_R-to-fs_LR_fsaverage.R_LR.spherical_std.164k_fs_R.surf.gii:ro"
+				}
+            ],
+            "positional_args": [
+                "/output_dir/nibabies", "/output_dir/", "participant"
+            ],
+            "flags": {
+                "--input-type": "nibabies",
+                "--cifti": true,
+                "--despike":true,
+                "--dcan-qc": true,
+                "-w": "/work",
+                "--omp-nthreads": 3,
+                "--warp-surfaces-native2std": true,
+                "-f": 0.3,
+                "-m": true,
+                "-vv": true,
+                "--participant-label": "MOD1022"
+            }
+        }
+    }
+}

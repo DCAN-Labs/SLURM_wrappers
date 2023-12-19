@@ -1,0 +1,56 @@
+#!/bin/bash
+
+subj_id=SUBJECTID
+ses_id=SESID
+data_dir=DATADIR
+data_bucket=BUCKET
+run_dir=RUNDIR
+cpu_usage=8
+singularity=`which singularity`
+
+data_dir=/tmp/CABINET_dir_${subj_id}_${ses_id}
+
+if [ ! -d ${data_dir} ]; then
+	mkdir -p ${data_dir}
+
+fi
+
+cd ${data_dir}
+mkdir -p input/sub-${subj_id}/ses-${ses_id}/anat;
+mkdir processed;
+mkdir work;
+
+if [ ! -e ${data_dir}/input/dataset_description.json ]; then
+	cp ${run_dir}/dataset_description.json ${data_dir}/input/
+fi
+if [ ! -e ${data_dir}/input/participants.tsv ]; then
+	s3cmd get ${data_bucket}/participants.tsv ${data_dir}/input/ -v 
+fi
+
+data_bucket_in=s3://WashU_data_sharing/eLABE/dcaninfant-processed/dcan-infant-pipeline-beginning
+
+#sync files that are needed into temporary directory - input folder
+#s3cmd sync ${data_bucket_in}/sub-${subj_id}/ses-${ses_id}/files/T1w/T1w_acpc_dc_restore.nii.gz  ${data_dir}/input/sub-${subj_id}/ses-${ses_id}/anat/ ; #T1
+s3cmd sync ${data_bucket_in}/sub-${subj_id}/ses-${ses_id}/files/T1w/T2w_acpc_dc_restore.nii.gz  ${data_dir}/input/sub-${subj_id}/ses-${ses_id}/anat/ ; #T2
+
+# rename files to match CABINET input standards
+#mv ${data_dir}/input/sub-${subj_id}/ses-${ses_id}/anat/T1w_acpc_dc_restore.nii.gz ${data_dir}/input/sub-${subj_id}/ses-${ses_id}/anat/sub-${subj_id}_ses-${ses_id}_T1w.nii.gz 
+mv ${data_dir}/input/sub-${subj_id}/ses-${ses_id}/anat/T2w_acpc_dc_restore.nii.gz ${data_dir}/input/sub-${subj_id}/ses-${ses_id}/anat/sub-${subj_id}_ses-${ses_id}_T2w.nii.gz 
+
+# run cabinet, may need to update version
+env -i ${singularity} run \
+-B ${data_dir}/input:/input \
+-B ${data_dir}/processed:/output \
+-B ${data_dir}/work:/workdir \
+-B ${run_dir}/license.txt:/opt/freesurfer/license.txt \
+/home/faird/shared/code/internal/pipelines/bibsnet_container/cabinet_shrink_docker_build_plus_clusters_fix_09272023a.sif \
+/input /output participant -w /workdir -jargs /home/cabinet/parameter-file-container.json -start prebibsnet -end postbibsnet -v 
+
+# rename files to fit to what's expected by DCAN pip (my assumption from the examples I've seen, maybe other names work as well) and sync to s3
+mv ${data_dir}/processed/bibsnet/sub-${subj_id}/ses-${ses_id}/anat/sub-${subj_id}_ses-${ses_id}_space-T2w_desc-aseg_dseg.nii.gz ${data_dir}/processed/sub-${subj_id}_ses-${ses_id}_aseg_cc.nii.gz
+mv ${data_dir}/processed/bibsnet/sub-${subj_id}/ses-${ses_id}/anat/sub-${subj_id}_ses-${ses_id}_space-T2w_desc-brain_mask.nii.gz ${data_dir}/processed/sub-${subj_id}_ses-${ses_id}_T2w_acpc_dc_restore_brain_mask.nii.gz
+
+
+#sync to whichever location on s3 that's most convenient (doesn't need to be in and BIDS compatible format but most likely in it's own folder)
+s3cmd sync ${data_dir}/processed/sub-${subj_id}_ses-${ses_id}_aseg_cc.nii.gz s3://WashU_data_sharing/eLABE/dcaninfant-processed/dcan-infant-pipeline-segmentation-model515/sub-${subj_id}/ses-${ses_id}/
+s3cmd sync ${data_dir}/processed/sub-${subj_id}_ses-${ses_id}_T2w_acpc_dc_restore_brain_mask.nii.gz s3://WashU_data_sharing/eLABE/dcaninfant-processed/dcan-infant-pipeline-segmentation-model515/sub-${subj_id}/ses-${ses_id}/

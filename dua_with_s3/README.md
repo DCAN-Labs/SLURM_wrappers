@@ -1,4 +1,0 @@
-# Disk Usage Assessment Wrapper
-This wrapper pulls down a single subject-session's files (can be any type) from the s3, counts the number of files per subject-session, totals up the disk usage per subject-session, then reports that information out into two separate CSV files. Set your email in the resources_dua.sh script and set your s3 buckets in the make_run_files.sh script. You will also want to edit the paths in both make_run_files.sh and template.dua to reflect where your data is located and rename the output files to reflect the data you are assessing.
-
-Note: the disk usage calculation outputs in different units, so you may need to convert them to all be the same.

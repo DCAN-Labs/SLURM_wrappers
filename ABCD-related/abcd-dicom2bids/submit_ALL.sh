@@ -17,7 +17,7 @@ else
       echo "Submitting the following jobs for abcd-dicom2bids conversion now: $array"
       echo ""
 
-      abcd_dicom2bids=$(sbatch --parsable -a $array slurm_dicom2bids.sh)
+      abcd_dicom2bids=$(sbatch --parsable -a $array resources_dicom2bids.sh)
       
       echo "abcd-dicom2bids JOB ID: $abcd_dicom2bids"
 

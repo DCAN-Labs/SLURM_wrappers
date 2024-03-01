@@ -56,7 +56,8 @@ parser.add_argument('--emailed_user',help='What user to e-mail when jobs begin, 
 # Parse and gather arguments
 args = parser.parse_args()
 print(args)
-script_path=os.path.dirname(__file__)
+script_path=os.getcwd()
+
 # validate integrity of inputted arguments
 user_name = run(command='whoami')
 if not args.emailed_user:

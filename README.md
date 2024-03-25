@@ -6,8 +6,32 @@ A set of SLURM-compliant codebase wrappers originally designed to interact with 
 
 Most of these wrappers are tailored toward working with the S3 via `s3cmd` or `boto3`, but some are designed to work on disk and all can be adapted to work on disk. Using the S3, especially on MSI, is highly encouraged.
 
+## Cloning a Single Wrapper
+
+To clone a certain wrapper (subdirectory), you can use git sparse checkout. If you have a version of Git below 2.25.0 use these commands: 
+
+```
+mkdir <repo>
+cd <repo>
+git init
+git remote add -f origin <repo-url>
+git config core.sparseCheckout true
+echo "some/dir/" >> .git/info/sparse-checkout # Add folder to checkout
+echo "another/dir/" >> .git/info/sparse-checkout
+cat .git/info/sparse-checkout # Check which folders you've added
+git pull origin master
+```
+
+If you have a version of git above 2.25.0, you can use these commands instead: 
+
+```
+git sparse-checkout init   # Same as git config core.sparseCheckout true
+git sparse-checkout set "some/dir"   # Same as echo "some/dir/" >> .git/info/sparse-checkout
+git sparse-checkout list   # Same as cat .git/info/sparse-checkout
+```
+
 ## Requirements
-It is recommended that you go to the GitHub repository for the codebase itself in order to make sure all of the requirements are satisfied. This is something
+It is recommended that you go to the GitHub repository for the codebase itself in order to make sure all of the requirements are satisfied. 
 
 ## Wrapper Descriptions
 

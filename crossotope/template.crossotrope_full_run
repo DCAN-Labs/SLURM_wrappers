@@ -1,0 +1,66 @@
+#!/bin/bash
+
+roi_list=ROIBATCH
+subj_id=SUBJECTID
+ses_id=SESID
+data_dir=DATADIR
+data_bucket=BUCKET
+run_dir=RUNDIR
+out_dir=OUTDIR
+
+singularity=`which singularity`
+
+config_file="/home/faird/shared/projects/wlf-test/fr/crossotope_mapping/config.json" 
+MRE="/home/faird/shared/code/external/utilities/MATLAB_Runtime_R2019a_update9/v96/"
+
+s3_derivs=${data_bucket}/derivatives/adhd_prisma/derivatives/abcd-hcp-pipeline
+
+for i in `s3cmd ls ${s3_derivs}/sub-${subj_id}/ses-${ses_id}/func/ | awk '{print $4}'`; do
+    file=$(basename "$i")
+    exp_file=sub-${subj_id}_ses-${ses_id}_task-rest_bold_desc-filtered_timeseries.dtseries.nii
+    if [ "${exp_file}" = "${file}" ]; then
+        dtseries=$file
+    fi 
+    exp_file=sub-${subj_id}_ses-${ses_id}_task-rest_acq-PrismaSingleBand_bold_timeseries.dtseries.nii
+    if [ "${exp_file}" = "${file}" ]; then
+        dtseries=$file
+    fi 
+    exp_file=sub-${subj_id}_ses-${ses_id}_task-rest_bold_desc-filtered_motion_mask.mat
+    if [ "${exp_file}" = "${file}" ]; then
+        motion=$file
+    fi 
+    exp_file=sub-${subj_id}_ses-${ses_id}_task-rest_acq-PrismaSingleBand_motion_mask.mat
+    if [ "${exp_file}" = "${file}" ]; then
+        motion=$file
+    fi 
+done
+
+# pull down needed data and files from BIDS bucket
+s3cmd sync ${s3_derivs}/sub-${subj_id}/ses-${ses_id}/func/${dtseries} ${data_dir}/${dtseries}
+s3cmd sync ${s3_derivs}/sub-${subj_id}/ses-${ses_id}/func/${motion} ${data_dir}/${motion}
+
+#outdir=${data_dir}/LRvalues_ALL_HCP_ROIs/sub-${subj_id}/ses-${ses_id}
+outdir=${out_dir}/sub-${subj_id}/ses-${ses_id}
+mkdir -p $outdir
+
+while read r; do
+    roi_fullpath=/home/faird/shared/projects/wlf-test/fr/output-half-HCP/${r}
+    env -i ${singularity} run \
+        -B ${data_dir}:/session \
+        -B ${roi_fullpath}:/input_rois \
+        -B ${MRE}:/matlab \
+        -B ${config_file}:/config.json \
+        -B ${outdir}:/output \
+        /home/faird/shared/projects/wlf-test/fr/crossotope_mapping/crossotope.sif analysis \
+        --roi_dir /input_rois --n_samples 100 --matlab "$(which matlab)" --MRE /matlab \
+        --json_config /config.json --label ${r} \
+        /session/{${dtseries},${motion}}
+
+        #s3_out=${data_bucket}/derivatives/adhd_prisma/LRvalues_ALL_HCP_ROIs/sub-${subj_id}/ses-${ses_id}
+        #s3cmd sync -F -v ${outdir}/${r}_results.csv ${s3_out}/
+done <$roi_list
+
+#push processed outputs to bucket  
+#make sure output_sync file path ends with '/' otherwise s3cmd won't work
+#s3_out=${data_bucket}/derivatives/adhd_prisma/LRvalues_ALL_HCP_ROIs/sub-${subj_id}/ses-${ses_id}
+#s3cmd sync -F -v ${outdir}/${r}_results.csv ${s3_out}/

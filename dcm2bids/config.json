@@ -1,0 +1,63 @@
+{
+    "descriptions": [
+    {
+      "dataType": "anat",
+      "modalityLabel": "T1w",
+      "criteria": {
+          "SeriesDescription": "T1Anatomical-1",
+          "ImageType": [
+              "ORIGINAL",
+              "PRIMARY",
+              "M",
+              "ND",
+              "NORM"
+          ]
+      }
+    },
+    {
+        "dataType": "func",
+        "modalityLabel": "bold",
+        "customLabels": "task-rest",
+        "criteria": {
+            "SeriesDescription": "resting1",
+            "ImageType": [
+                "ORIGINAL",
+                "PRIMARY",
+                "M",
+                "ND",
+                "MOSAIC"
+            ]
+        }
+    },
+    {
+        "dataType": "func",
+        "modalityLabel": "bold",
+        "customLabels": "task-rest",
+        "criteria": {
+            "SeriesDescription": "resting2",
+            "ImageType": [
+                "ORIGINAL",
+                "PRIMARY",
+                "M",
+                "ND",
+                "MOSAIC"
+            ]
+        }
+    },
+    {
+        "dataType": "func",
+        "modalityLabel": "bold",
+        "customLabels": "task-rest",
+        "criteria": {
+            "SeriesDescription": "resting20",
+            "ImageType": [
+                "ORIGINAL",
+                "PRIMARY",
+                "M",
+                "ND",
+                "MOSAIC"
+            ]
+        }
+    }
+    ]
+}

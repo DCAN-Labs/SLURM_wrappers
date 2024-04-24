@@ -1,0 +1,49 @@
+#!/bin/bash
+
+subfolder=SUBFOLDER
+work_dir=WORKDIR
+run_dir=RUNDIR
+data_bucket=BUCKET
+
+dicoms=${work_dir}/dicoms
+output_dir=${work_dir}/output
+
+if [ ! -d "$dicoms" ]; then
+    mkdir -p "$dicoms"
+fi
+
+if [ ! -d "$output_dir" ]; then
+    mkdir -p "$output_dir"
+fi
+
+s3cmd sync ${subfolder} ${dicoms}/ --recursive -v
+config=${run_dir}/config.json
+
+echo "Subfolder is" ${subfolder}
+
+# Extract the subject ID by removing "6943_" prefix and operators, including anonymous labeling
+bn=$(basename "${subfolder}")
+removed_prefix="${bn#6943_}"
+removed_operator="${removed_prefix%%_Stevens*}"
+removed_operator="${removed_operator%%_6943_Carpenter_}"
+removed_operator="${removed_operator%%_Nigg_Carpenter_}"
+subject_id_w_underscores="${removed_operator}"
+subject_id=$(echo "$subject_id_w_underscores" | tr -d '_')
+echo "Subject ID is ${subject_id}"
+
+#subject_id=$(echo "$subfolder" | grep -oP '.*?_\K[0-9]+_[0-9]+(?=_Stevens)')
+
+
+# Extract the session ID by capturing the year and month from the folder path
+session_id=$(echo "$subfolder" | grep -oP 'dicoms/\K[0-9]{4}/[0-9]{2}' | sed 's/\(....\)\/\(..\)/\2\1/')
+echo "Session ID is" ${session_id}
+
+dicoms_input_folder=${dicoms}/`ls ${dicoms}`
+
+# run dicom2bids
+echo "Now running command: dcm2bids -d ${dicoms_input_folder} -p ${subject_id} -s ${session_id} -c ${config} -o ${output_dir} --forceDcm2niix --clobber"
+dcm2bids -d ${dicoms_input_folder} -p ${subject_id} -s ${session_id} -c ${config} -o ${output_dir} --forceDcm2niix --clobber
+
+#sync at subject dir
+echo "s3cmd sync -F --recursive ${output_dir}/ ${data_bucket}/niftis/"
+s3cmd sync -F --recursive ${output_dir}/ ${data_bucket}/niftis/

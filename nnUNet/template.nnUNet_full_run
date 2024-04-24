@@ -1,0 +1,29 @@
+#!/bin/bash
+
+subj_id=SUBJECTID
+ses_id=SESID
+data_dir=DATADIR
+data_bucket=BUCKET
+run_dir=RUNDIR
+
+# pull down needed data and files from BIDS bucket
+if [ ! -d ${data_dir}/sub-${subj_id}/ses-${ses_id} ]; then
+	mkdir -p ${data_dir}/sub-${subj_id}/ses-${ses_id}
+	s3cmd get ${data_bucket}/sub-${subj_id}/ses-${ses_id}/files/T1w/T1w_acpc_dc_restore.nii.gz ${data_dir}/sub-${subj_id}/ses-${ses_id}/sub-${subj_id}_ses-${ses_id}_0000.nii.gz -v
+  s3cmd get ${data_bucket}/sub-${subj_id}/ses-${ses_id}/files/T1w/T2w_acpc_dc_restore.nii.gz ${data_dir}/sub-${subj_id}/ses-${ses_id}/sub-${subj_id}_ses-${ses_id}_0001.nii.gz -v
+fi
+
+# SPECIFY YOUR OUTPUT DIR
+nnUNet_predict -i ${data_dir}/sub-${subj_id}/ses-${ses_id} -o /output/dir/ -t 552 -m 3d_fullres
+
+#commented out lines below because we are just going to write the output segmentattion to tier1
+#push processed outputs to bucket
+s3cmd sync -F --recursive -v --delete-removed ${data_dir}/processed/cabinet/bibsnet/sub-${subj_id}/ses-${ses_id}/ ${data_bucket}/derivatives/bibsnet/sub-${subj_id}/ses-${ses_id}/
+
+
+
+
+
+
+
+

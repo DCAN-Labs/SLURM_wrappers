@@ -1,0 +1,85 @@
+#!/bin/bash 
+
+subj_id=SUBJECTID
+ses_id=SESSIONID
+tm_id=TEMPLATEID
+maskfile_path=MASKFILE
+data_dir=DATADIR
+data_bucket=INBUCKET
+output_bucket=OUTBUCKET
+
+# pull down needed data and files from BIDS bucket
+if [ ! -d ${data_dir}/dtseries/sub-${subj_id}/ses-${ses_id} ]; then
+	mkdir -pv ${data_dir}/dtseries/sub-${subj_id}/ses-${ses_id}
+	s3cmd get ${data_bucket}/sub-${subj_id}_ses-${ses_id}/sub-${subj_id}/ses-${ses_id}/func/sub-${subj_id}_ses-${ses_id}_task-restMENORDICrmnoisevols_space-fsLR_den-91k_desc-interpolated_bold_spatially_interpolated.dtseries.nii ${data_dir}/dtseries/sub-${subj_id}/ses-${ses_id}/ -v
+fi
+
+if [ ! -d ${data_dir}/motion/sub-${subj_id}/ses-${ses_id} ]; then
+	mkdir -pv ${data_dir}/motion/sub-${subj_id}/ses-${ses_id}
+	s3cmd get ${data_bucket}/sub-${subj_id}_ses-${ses_id}/sub-${subj_id}/ses-${ses_id}/func/sub-${subj_id}_ses-${ses_id}_task-restMENORDICrmnoisevols_desc-dcan_qc_power_2014_FD_only.mat ${data_dir}/motion/sub-${subj_id}/ses-${ses_id}/ -v
+fi
+
+if [ ! -d ${data_dir}/left_midthickness/sub-${subj_id}/ses-${ses_id} ]; then
+	mkdir -pv ${data_dir}/left_midthickness/sub-${subj_id}/ses-${ses_id}
+	s3cmd get ${data_bucket}/sub-${subj_id}_ses-${ses_id}/sub-${subj_id}/ses-${ses_id}/anat/sub-${subj_id}_ses-${ses_id}_space-fsLR_den-32k_hemi-L_desc-hcp_midthickness.surf.gii ${data_dir}/left_midthickness/sub-${subj_id}/ses-${ses_id}/ -v
+fi
+
+if [ ! -d ${data_dir}/right_midthickness/sub-${subj_id}/ses-${ses_id} ]; then
+	mkdir -pv ${data_dir}/right_midthickness/sub-${subj_id}/ses-${ses_id}
+	s3cmd get ${data_bucket}/sub-${subj_id}_ses-${ses_id}/sub-${subj_id}/ses-${ses_id}/anat/sub-${subj_id}_ses-${ses_id}_space-fsLR_den-32k_hemi-R_desc-hcp_midthickness.surf.gii ${data_dir}/right_midthickness/sub-${subj_id}/ses-${ses_id}/ -v
+fi
+
+# create processed and derivatives folders if they do not exist
+if [ ! -d ${data_dir}/derivatives/sub-${subj_id}/ses-${ses_id}/ ]; then
+	mkdir -pv ${data_dir}/derivatives/sub-${subj_id}/ses-${ses_id}/
+fi
+
+#mask with first 10 min for each individual
+#MASK_PATH=/home/miran045/shared/projects/PDC_template_matching/masks/sub-${SUB}_ses-01_mask_10min.txt
+#MASK_PATH='none'
+
+#template paths
+if [ ${tm_id} == "elabe" ] ; then
+  TEMPLATE_PATH='/home/faird/shared/projects/infant_probabilistic_atlas_eLABE/TM_analysis/template/outputs/seedmaps_list_dtseries_SurfOnly_all_networksZscored.mat'
+elif [ ${tm_id} == "ABCD" ] ; then
+  TEMPLATE_PATH='/home/rando149/shared/projects/ABCD_template_maker/seedmaps_from_template2.0/ABCD_scan_seedmap/seedmaps_subs_withsmoothed_dtseries_n141_all_networksZscored.mat'
+elif [ ${tm_id} == "infant" ] ; then
+  TEMPLATE_PATH='/home/faird/shared/code/internal/analytics/compare_matrices_copy_to_merge_from/support_files/infant_surface_template/seedmaps_UCI_smoothed_dtseries_all_networksZscored.mat'
+fi
+
+#hardcoded
+SURF_ONLY=0 #calculate surface only
+ALREADY_SURF_ONLY=0 #only needed if surf_only=1, will scrub out subcortical data
+TR=1.761
+FD_threshold=0.2
+
+/home/miran045/shared/projects/WashU_Nordic/code/twins_mapping_wrapper_washu_nordic.sh \
+${TR} \
+${FD_threshold} \
+${data_dir}/dtseries/sub-${subj_id}/ses-${ses_id}/sub-${subj_id}_ses-${ses_id}_task-restMENORDICrmnoisevols_space-fsLR_den-91k_desc-interpolated_bold_spatially_interpolated.dtseries.nii \
+${data_dir}/motion/sub-${subj_id}/ses-${ses_id}/sub-${subj_id}_ses-${ses_id}_task-restMENORDICrmnoisevols_desc-dcan_qc_power_2014_FD_only.mat \
+${data_dir}/left_midthickness/sub-${subj_id}/ses-${ses_id}/sub-${subj_id}_ses-${ses_id}_space-fsLR_den-32k_hemi-L_desc-hcp_midthickness.surf.gii \
+${data_dir}/right_midthickness/sub-${subj_id}/ses-${ses_id}/sub-${subj_id}_ses-${ses_id}_space-fsLR_den-32k_hemi-R_desc-hcp_midthickness.surf.gii \
+sub-${subj_id}_ses-${ses_id}_CLM_test_template \
+${data_dir}/derivatives/sub-${subj_id}/ses-${ses_id} \
+${TEMPLATE_PATH} \
+${SURF_ONLY} \
+${ALREADY_SURF_ONLY} \
+${data_dir}/derivatives/sub-${subj_id}/ses-${ses_id} \
+${data_dir}/dtseries/sub-${subj_id}/ses-${ses_id}/sub-${subj_id}_ses-${ses_id}_task-restMENORDICrmnoisevols_space-fsLR_den-91k_desc-interpolated_bold_spatially_interpolated.dtseries.nii \
+${maskfile_path} \
+${INFOMAP}
+
+module load workbench
+/home/faird/shared/code/internal/analytics/compare_matrices_to_assign_networks/dscalar2dlabel.sh ${data_dir}/derivatives/sub-${subj_id}/ses-${ses_id}/*dscalar.nii
+/home/faird/shared/code/internal/analytics/compare_matrices_to_assign_networks/dscalar2dlabel.sh ${data_dir}/derivatives/sub-${subj_id}/ses-${ses_id}/*recolored.dscalar.nii
+
+#push processed outputs to bucket
+s3cmd sync --recursive -v ${data_dir}/derivatives/sub-${subj_id}/ses-${ses_id}/ ${output_bucket}/sub-${subj_id}/ses-${ses_id}/
+
+
+# To DO: download only outputs of interest from temporary directory
+
+#matlab arguments:
+#function twins_mapping_wrapper_washu_nordic(dt_or_ptseries_conc_file,motion_file,left_surface_file, right_surface_file, 
+#output_file_name, cifti_output_folder,template_path,surface_only,already_surface_only,output_directory, dtseries_conc,additional_mask)

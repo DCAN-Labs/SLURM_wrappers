@@ -1,0 +1,41 @@
+#!/bin/bash
+
+subject=SUBJECTID
+session=SESID
+data_dir=DATADIR
+input_bucket=INPUT
+output_path=OUTPUT
+run_dir=RUNDIR
+cpu_usage=8
+singularity=`which singularity`
+
+# pull down needed data and files from input bucket
+if [ ! -d ${data_dir}/${subject}/${session} ]; then
+	mkdir -p ${data_dir}/${subject}/${session}
+	s3cmd get ${input_bucket}/${subject}/${session}/ ${data_dir}/${subject}/${session} --recursive -v
+fi
+
+# optional: create processed folders in temp space if they do not exist
+if [ ! -d ${data_dir}/processed/ ]; then
+	mkdir -p ${data_dir}/processed/
+fi
+
+# run process
+
+##############################
+### ENTER CODE TO RUN HERE ###
+##############################
+
+
+# Choose where to push outputs 
+# push outputs to tier1
+cp -r -v ${data_dir}/processed/ ${output_path}
+
+# push outputs to s3 
+s3cmd sync -f -v --recursive ${data_dir}/processed/ s3://${output_path}
+
+
+
+
+
+

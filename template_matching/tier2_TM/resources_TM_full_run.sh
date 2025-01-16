@@ -6,11 +6,11 @@
 #SBATCH --mem=120gb
 #SBATCH -t 04:00:00
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=lundq163@umn.edu
+#SBATCH --mail-user=EMAIL
 #SBATCH -p ag2tb,agsmall,aglarge
 #SBATCH -o output_logs/TM_%A_%a.out
 #SBATCH -e output_logs/TM_%A_%a.err
-#SBATCH -A aopitz
+#SBATCH -A GROUP
 
 cd run_files.TM_full
 

@@ -17,6 +17,7 @@ low_resources=false # request reduced resources (default: 120c/960G/48:00:00; lo
 skip_runfiles_backup=false # if not true, back up existing files in run files dir into a subdir with the current date/time
 run_folder=`pwd`
 
+# Can edit paths directly in file or pass as command line arguments
 # Define usage function
 function usage {
   echo "Usage: $0 --s3-bids-path S3_URL --s3-upload-path S3_URL --fmriprep-dir FMRI_DIR --xcpd-dir XCPD_DIR [--band-stop-min FLOAT] [--band-stop-max FLOAT] [--skip-fmriprep] [--skip-xcpd] [--fmriprep-clean-workdir] [--xcpd-clean-workdir] [--low-resources] [--skip-runfiles-backup]"
@@ -102,12 +103,8 @@ elif [[ -z "$band_stop_min" && ! -z "$band_stop_max" ]]; then
   exit 1
 fi
 
-
 fmriprep_folder="${run_folder}/run_files.fmriprep_full"
 fmriprep_template="template.fmriprep_full_run"
-
-email=`echo $USER@umn.edu`
-group=`groups|cut -d" " -f1`
 
 # if specified, back up existing runfiles
 if [[ "$skip_runfiles_backup" = false ]] ; then
@@ -116,7 +113,7 @@ if [[ "$skip_runfiles_backup" = false ]] ; then
     cp ${fmriprep_folder}/run* ${fmriprep_folder}/backup/${backup_datetime}
 fi
 
-# if processing run folders (sMRI, fMRI,) exist delete them and recreate
+# if processing run folders exist delete them and recreate
 if [ -d "${fmriprep_folder}" ]; then
 	rm -rf "${fmriprep_folder}"
 	mkdir -p "${fmriprep_folder}/logs"
@@ -127,7 +124,7 @@ fi
 
 # counter to create run numbers
 k=0
-
+# Loop through s3 bucket to grab subject and session information
 for i in `s3cmd ls "${s3_bids_path}"/ | awk '{print $2}'`; do
 	# does said folder include subject folder?
 	sub_text=`echo ${i} | awk -F"/" '{print $(NF-1)}' | awk -F"-" '{print $1}'`
@@ -146,10 +143,15 @@ done
 
 chmod 775 -R ${fmriprep_folder}
 
+# Copy over desired resource file 
 if [[ "$low_resources" = true ]] ; then
     cp -f resources_fmriprep_full_run_low.sh resources_fmriprep_full_run_copy.sh
 else
     cp -f resources_fmriprep_full_run.sh resources_fmriprep_full_run_copy.sh
 fi
+
+# Grab user email and main group, replace in resource file 
+email=`echo $USER@umn.edu`
+group=`groups|cut -d" " -f1`
 sed -e "s|GROUP|${group}|g" -e "s|EMAIL|${email}|g" -i ${run_folder}/resources_fmriprep_full_run_copy.sh 
 

@@ -1,5 +1,5 @@
 #!/bin/bash -l
-#SBATCH -J fmriprep_full_low
+#SBATCH -J fmriprep_low
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH -c 24

@@ -1,0 +1,69 @@
+#!/bin/bash
+
+subj_id=SUBJECTID
+ses_id=SESID
+s3_preproc_path=S3PREPROCSPATH
+s3_upload_path=S3UPLOADPATH
+preproc_dir=PREPROCDIR
+xcpd_dir=XCPDDIR
+run_dir=RUNDIR
+singularity=`which singularity`
+bsmin=BSMIN
+bsmax=BSMAX
+xcpd_clean_workdir=XCPDCLEAN
+xcpdclean_string=""
+motion_filter_string=""
+
+module load matlab/R2019a
+
+if [[ "$xcpd_clean_workdir" = true ]] ; then
+  xcpdclean_string="--clean-workdir"
+fi
+
+if [[ ! -z "$bsmin" ]] ; then
+  motion_filter_string="--motion-filter-type notch --band-stop-min $bsmin --band-stop-max $bsmax"
+fi
+
+# pull down needed data and files from BIDS bucket
+if [ ! -d ${preproc_dir}/preproc_dir/sub-${subj_id}_ses-${ses_id}/sub-${subj_id}/ses-${ses_id} ]; then
+	mkdir -p ${preproc_dir}/preproc_dir/sub-${subj_id}_ses-${ses_id}/sub-${subj_id}
+	s3cmd get ${s3_preproc_path}/sub-${subj_id}/ses-${ses_id} ${preproc_dir}/preproc_dir/sub-${subj_id}_ses-${ses_id}/sub-${subj_id} --recursive -v
+fi
+
+# create xcp-d scratch output and workdirs
+if [ ! -d ${xcpd_dir}/processed/sub-${subj_id}_ses-${ses_id} ]; then
+	mkdir -p ${xcpd_dir}/processed/sub-${subj_id}_ses-${ses_id}
+fi
+
+if [ ! -d ${xcpd_dir}/work_dir/sub-${subj_id}_ses-${ses_id} ]; then
+	mkdir -p ${xcpd_dir}/work_dir/sub-${subj_id}_ses-${ses_id}
+fi
+
+# run xcp-d
+singularity run --cleanenv \
+-B /home/faird/shared/code/external/utilities/freesurfer_license/license.txt:/opt/freesurfer/license.txt \
+-B ${preproc_dir}/preproc_dir/sub-${subj_id}_ses-${ses_id}:/preproc_out \
+-B ${xcpd_dir}/processed/sub-${subj_id}_ses-${ses_id}:/xcpd_out \
+-B ${xcpd_dir}/work_dir/sub-${subj_id}_ses-${ses_id}:/wkdir \
+  /home/faird/shared/code/external/pipelines/xcp_d/xcp_d_0.10.1.sif \
+  --mode abcd \
+  --participant-label ${subj_id} \
+  --resource-monitor \
+  --omp-nthreads 3 \
+  --nprocs 8 \
+  --smoothing 0 \
+  --min-time 0 \
+  --lower-bpf 0.009 \
+  ${motion_filter_string} \
+  ${xcpdclean_string} \
+  --warp-surfaces-native2std \
+  -vv \
+  -w /wkdir \
+  /preproc_out /xcpd_out participant
+
+# convert hdf5 motion data files to DCAN format
+/home/faird/shared/code/internal/utilities/xcpd2dcanmotion/run_xcpd2dcanmotion_on_func_dir.sh ${xcpd_dir}/processed/sub-${subj_id}_ses-${ses_id}/xcp_d/sub-${subj_id}/ses-${ses_id}/func
+
+#push processed outputs to bucket
+# can optionally add --delete-removed to clear the prior contents of the directory that you are syncing to
+s3cmd sync -f --recursive -v ${xcpd_dir}/processed/sub-${subj_id}_ses-${ses_id}/ ${s3_upload_path}/xcpd/sub-${subj_id}_ses-${ses_id}/

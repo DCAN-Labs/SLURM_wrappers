@@ -7,9 +7,10 @@
 #SBATCH -t 24:00:00
 #SBATCH -p ag2tb
 #SBATCH --mail-type=ALL
+#SBATCH --mail-user=EMAIL
 #SBATCH -o output_logs/fmriprep_full_%A_%a.out
 #SBATCH -e output_logs/fmriprep_full_%A_%a.err
-#SBATCH -A znahas
+#SBATCH -A GROUP
 
 cd run_files.fmriprep_full
 

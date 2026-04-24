@@ -23,7 +23,7 @@ try:
         try:
             os.path.isabs(subject_path)
         except:
-            print('I wont work without a full path')
+            print("I won't work without a full path")
 except:
     print('I need a directory!')
 

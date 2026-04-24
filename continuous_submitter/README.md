@@ -1,4 +1,4 @@
-# Continuous Slurm Arrary Submitter
+# Continuous Slurm Array Submitter
 This script should be utilized when you have more than 2000 jobs to submit (MSI's maximum queue size per user) or there's a thershold of simultaneous actions you are trying to avoid (example: 5000 s3 syncs at once). It submits your run files (produced by another wrapper) in specified chunks at given time intervals if there is room in your queue to try to submit.
 
 ```

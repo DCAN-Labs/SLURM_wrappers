@@ -1,0 +1,7 @@
+[codespell]
+# Ref: https://github.com/codespell-project/codespell#using-a-config-file
+skip = .git,.gitignore,.gitattributes,.codespellrc
+check-hidden = true
+# ignore-regex =
+# nd - DICOM ImageType value (Non-Diagnostic), not a typo
+ignore-words-list = nd

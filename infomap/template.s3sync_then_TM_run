@@ -11,7 +11,7 @@ data_bucket_path=S3BIDSPATH
 output_dir=OUTPUT_DIR
 tmp_path=/tmp
 
-#additinal TM parameters
+#additional TM parameters
 outputname=_TMinfant
 
 if [ ! -d ${output_dir} ]; then

@@ -25,7 +25,7 @@ else
 
 
       echo ""
-      echo "If a job sucessfully completes sMRI processing, fMRI processing jobs will begin in parallel." 
+      echo "If a job successfully completes sMRI processing, fMRI processing jobs will begin in parallel." 
       echo ""
       echo "Output logs will appear in output_logs folder. Use 'squeue -al --me' to monitor jobs."
       echo ""
